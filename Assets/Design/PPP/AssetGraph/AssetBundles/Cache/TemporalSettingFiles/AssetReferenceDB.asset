@@ -1,0 +1,1063 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4bc21567f434b598a3c96ba4946372, type: 3}
+  m_Name: AssetReferenceDB
+  m_EditorClassIdentifier: 
+  m_assets:
+  - m_assetDatabaseId: 9d68513791a30aa45b90274cca1eecb2
+    m_importFrom: Assets/PPP/SceneGame.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: abaa3eb0cd4886243b8d4e82e6dfca0b
+    m_importFrom: Assets/PPP/AssetGraph
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 33216222775b6704788ac25900f92657
+    m_importFrom: Assets/PPP/AssetGraph/AssetBundles
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e731dcfb9a983c34b998721766f7ab34
+    m_importFrom: Assets/PPP/AssetGraph/AssetBundles/Cache
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e358024e4741bf94ab76f5b6bb8b1ebf
+    m_importFrom: Assets/PPP/AssetGraph/AssetBundles/Cache/TemporalSettingFiles
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 89c58279c7a543048a45adf11e760912
+    m_importFrom: Assets/PPP/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9fc0d4010bbf28b4594072e72b8655ab
+    m_importFrom: Assets/Scenes/SampleScene.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f371f131b48969b4f920a6900cbf069a
+    m_importFrom: Assets/Design/Textures/New Terrain.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: abaa3eb0cd4886243b8d4e82e6dfca0b
+    m_importFrom: Assets/PPP/AssetGraph
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 33216222775b6704788ac25900f92657
+    m_importFrom: Assets/PPP/AssetGraph/AssetBundles
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e731dcfb9a983c34b998721766f7ab34
+    m_importFrom: Assets/PPP/AssetGraph/AssetBundles/Cache
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e358024e4741bf94ab76f5b6bb8b1ebf
+    m_importFrom: Assets/PPP/AssetGraph/AssetBundles/Cache/TemporalSettingFiles
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 509e0940c1e72dc47901bd0a065c151f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 01
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7c4bc4505e514a74884c62486fe30ccc
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e8dd8ed08a6f23d42894d9abab90ea01
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & weeds
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 90f95cf0bf0f9b2489327b05c551fbf7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 01
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d9f67e210f308984d8aa27c74e1b5a04
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Dry ground
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a409e6a30f24d2b4785e2a7da887c947
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 04
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 47d8ebe367784ca49993eaa5450367e4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 06
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 92122257a80a24447aebe1da5065a733
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 03
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 90f0f4589535ff146be2e3568681940c
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Lava
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 74d7d20aabbe66a4c8762bbaf4a9d873
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 03
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a6d7a86a577ab3d4791fcf0195ab4fc5
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & moss
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e476924b499cf764c9a2ac6fa3ee4baa
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & rocks
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1b4ec6ec983b4ab4b8c977d0f41dcf32
+    m_importFrom: Assets/Design/Textures/Grounds Textures
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bc0f6c3dae3f9784fb12060aff065b7b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 02
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: cd3c2abd16f066d4898b94a06ac0eb5b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 01
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8410deddd326f9646ba38a87314d9706
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 02
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f59bed0e54e9e234e8bee0e891a28ecd
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 05
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8ff35ccedab806f46aff4f7f11b8ad26
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 02
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 52a5d91f7fa949c4d8bd81c502eea8cb
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 02
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: cff344200e51614498e78e8f88d54273
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 03/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d805d830c4023774cb6259aca09f431e
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Dry ground/Dry ground pattern.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3f700d4069d83574ea6db821b3f8c561
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 05/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 89b1108068912fd4e81b047cbe3a5182
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & moss/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b9f1ea80a0462a34bb85a1e9c91190cf
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01/NewLayer 1.terrainlayer
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 059cceb0ba6e50741bfe6ec2c755d5f4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 04/Grass pattern
+      04.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f7a9daf00304c4147a1ee9a56b163214
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01/NewLayer 2.terrainlayer
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1ce8744130c8d5542bb1f6e380e35a7e
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 02/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0eea7651b99559648ab8929cb28e591a
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & weeds/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0c64d261e58031345b9844438ceb0af9
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 02/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c65e186198f501046a0aba89c6335cac
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Lava/emissive.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5558b5711d37782468eeee5c2880e7d8
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & moss/Ground &
+      moss pattern.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9cb8a98194aa15642b2ceaa3011ccde3
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 03/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 117cca91456049f4692a3becee93522e
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 03/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 224de5a1c3ba5f948af30bd7826e4666
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 01/Ground
+      & rocks pattern 01.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1d1ca9b1ff6a5ce4bbac09d301d51462
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 01/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9f425c22a471a47459e192cb7dafd4c5
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 01/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 764d3e4236eef804e831508161d4411f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 04/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d86005a29439b7541ade84523818db1a
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 03/Grass pattern
+      03.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4602e8f26b3f5b24d8e4fd1af5e63cfb
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Dry ground/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4e395003c6632ab4a8ad3a08d72ccb21
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: cd4f831376722b54bbadd59ef7c6c744
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 02/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 923d402301de9714eb824d8234c30919
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 06/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f0a8168310b10da4faedc474bb26c20f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 05/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 42e26e838cb21e944aa7de2aae4edefc
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Lava/Lava pattern.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3787ecf31b318914f908bb48537ebf10
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 02/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 15654a743eccf384fb2312048db767f0
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 02/Grass pattern
+      02.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 87fae68485f3e8346a55ca0d453e6ea7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/NewLayer.terrainlayer
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0cc369b464e98994e9c6ddbf8a7ca0aa
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01/NewLayer.terrainlayer
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 46c9b2c471a59f24cbe88eae93a32f60
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 01/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 54092c753f93b1c42b7b1cd5f3333f93
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 02/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d06c19850ee13bf4086860fd02cf417d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 06/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9074a9b5ce95d5b4eb1a31e80b0a0a41
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 03/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 451182d55aea8cb4e90af164a14e8bee
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 03/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 748487d582b00d847bd57517f78d8e8f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01/Ground pattern
+      01.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 49c3c02661a83fd42b33859cfbf9a17d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 05/Grass pattern
+      05.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f0ec40764219f3f4787df1c70bacf45b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 05/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bf5346a62bd7d0b43a30d8188cf4163e
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 02/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2c6f5ab601d22834883d3c7e18f8be41
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 01/Grass pattern
+      01.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3449a2e698a0deb44a70dec747a3f8e9
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 02/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 12ff3c37d59e28240a8f4643c3ead3d3
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & rocks/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8d88ad474360045458b4fb808dbb4ac9
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & rocks/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f5d1de47f0f760544a5596ceb8cc895f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Dry ground/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 36508c771463abf43b7135d9539897e7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 02/Ground pattern
+      02.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 37779bd72b60e0d4395ece867eb81c63
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 02/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 893960384de673345a82517892b28bc7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 01/Grass
+      & dead leafs pattern 01.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: aaf8aa487d001f44f9726eb6ee77d298
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & weeds/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f77d739839b967e44898c8a89688369a
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 02/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 023e18c83e08fe848a850693dc1cf60a
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 04/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f3c7e12938d22604eb51dc02b394dd80
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 06/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e7268e596932cb541834f57d320a4677
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 02/Ground
+      & rocks pattern 02.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e5895469fa6440e4a876bf0672599e59
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & rocks/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e9866699a4ddce642b7da4aeaa74d279
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 03/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5674184a87d87e54ca8047426601a57b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & weeds/Ground &
+      weeds.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: af579c7a89d15d24eb8c925a43a236cf
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Dry ground/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e939889a01ba73f4c9f41bb8d6d79d5f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 04/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7d7d59aaca791d54c9726e6b4e1feb61
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 01/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: fedc75da63b32e249bccd7450cd29351
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & rocks/Grass & rocks
+      pattern.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d902345b12dd31e4a83f0c375a540341
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 02/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e09d437bd6053754dbacb0da105aa9cb
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 01/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: cc2d009b31ce2134a9438a34a78632a0
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Lava/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: eafd0beb9c624d34f812be7d14134c2f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9015343c9bb2cf74083767e91127c98d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & weeds/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c70f0b4ce904a324c8c6dbe6d66251e6
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 01/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c3f3938c7c9e3d746a4d01269c0e3bbe
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 02/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bce0cd8cdfffc2a41b798316325a24d2
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & rocks 03/Ground
+      & rocks pattern 03.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ae0e7acc3616ba441a70994eb662f6e3
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 01/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9dccf2dcc78efe741b7931e3bb85beaf
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 06/Grass pattern
+      06.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: adff895d7d9c531498b58d4586aaeeba
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01/NewLayer 3.terrainlayer
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 62bf058d0f2f5df4da1f61da15013f34
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & moss/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d9327a0e08e4ab54284a5f31a7e7db5a
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Lava/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 020b997e4fa23c74297e208cd649319c
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 02/Grass
+      & dead leafs pattern 02.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a5c98dee3744c1944a469568d41d8eb4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground & moss/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a9151bfe4152f2748846a0fa52b216be
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass & dead leafs 02/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 70e8908fa6e673249ad9ff9cb1f1e13b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Lava/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0c3232df383d7984ab0e87bf7c42aadb
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 01/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a51044dfe95257548b466bc35528b878
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Grass 01/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f49b46ff67c24a84ba0cdb7301ab7337
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Ground 01/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1f36bf12231a2ee418561cc27339b5f5
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      06
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: fc06e83736d51ff48bdea0e1ccae0da0
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      03
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 209f78877218fc74b9bd91c2d6671ab4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      02
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 444af4f7f03a3df4099a6d979cb10462
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      05
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 80b3522918dc7194e8008b0e876e708c
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      04
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1337c189888d90043b468ea00eb0f1bf
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      07
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7e4fc47b000cf0b43bb473435f6aef99
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      01
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0613550c6dbfdec4ab30cdf3b4dd63e7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      08
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 08fc95cc1a58dd64e83230f19450d5ba
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ba79f32e8355c094a990127a2628cfc7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      09
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 573734e01a86b9d40b6c8dc8d74a1932
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      03/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 427cf221b0e5f4b4da9d0821562ddc18
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      02/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c16540716d43a52419d74c2940ffe2b2
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      05/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0dd806b1d20ab4a43bf0aa049663105f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      05/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: fe410fd1abc028549802745a6ba31814
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      08/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 065a3f32f15eafa4c8ade8c33a885e9d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      03/Sand pattern 03.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d718b052bebcf3f459b8b3643a53b25a
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      02/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 983e0992e19cd6b488952f5565ef1372
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      06/Sand pattern 06.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1ca8aa938472ee44881646574d844978
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      07/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 694b20c372c6c0b45bf35c32e619ca5b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      04/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 59340c34796aba74f821afc78115b91c
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      07/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b8a33275f31850a48b5abd4c13a44cd4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      06/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5932f2760d420ff4da6d82bd54fe830d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      08/Sand pattern 08.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 02b230a6dbc126f49ac17778565ed96e
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      08/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c7ae2d77608d4fb4380bfcbf944e3282
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      01/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 290c02f76666bf444b5d58aaf8ee8151
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      01/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: fdef338877fb05e41ab50eb9c5a9835d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      08/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0fe09d884d05833478278bfad09bb050
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      05/Sand pattern 05.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b3a688c8751b80348b50c839645b1893
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      04/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 621a6429119a1554e8384aa7b111e775
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      02/Sand pattern 02.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5415f499916bc6343be05490a1cf31de
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      07/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6de787b941a84ab47aa819718eab2994
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      03/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c355b6f9819638f4c932556a463ed828
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      01/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3656d0aa017075d48939785eefd39dc1
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      07/Sand pattern 07.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ad000eaa5a11e6541a69dcd7ffa18a80
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      06/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: db2aff9b79c106746afb3167aeea3bd1
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      09/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 82f5feab8d85b3d4bb877287d1f8fb27
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      09/Sand pattern 09.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5316922ceb4b0e049a0264d9d31c6a43
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      04/Sand pattern 04.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 11a2e73c603c56348baeadc3ae3e15d5
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      09/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: db8f734d24bb14047a116ee10e629eba
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      03/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 94de8f5eb8e9a0747860c70a4105c906
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      06/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a4ceed7e55067fa4f8f7b96f3f8abc23
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      09/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 784e6c9e2fe61334ea00c90f586799b4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      05/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 249658be85c3a614fb5a8d8eb3cf0f52
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      02/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: aefa62ee04789e745b9c2b7d23a21e67
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      01/Sand pattern 01.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5b605e7f683caf04cbc4b1b74299d86d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Sand textures pack/Sand
+      04/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 175bd1e0176e2e646a2fa77b9e7f4659
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      09
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: cbf52012240b6ac478775d7295c7551b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      07
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 31fb16c296ab4714389e1b2bc73563b9
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      14
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c82fd41389386884aa23bc62c8bf32eb
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1598cf43de26a9447ac245ede0ec8e28
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      08
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f9647fa3b41efd744851a3907688e37b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      03
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 231e05b4c2c87e048a616a35866f9c34
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      05
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 88cdce3633f79df4eac8e65eaa167278
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      11
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 827e9776abdfc9b42a306309e92e3936
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      10
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f4914aa684d3eb245a4c423ba4a343a4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      06
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 97d853b653f365b41a1bf4cfdca7dfae
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      02
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 94e2edd9ddd27f74f81808044cdd9eb9
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      12
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c52fab4c9c14d3b41b155eadf0cafd8e
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      13
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6493316c4861bf04787a3c9af4b48b97
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      01
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7b73109ce647e5346b64da2e47a6d032
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      04
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3e6e6c10544e77e40911224d4e09d5ac
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      06/Stone pattern 06.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e14dbf10fd0a5e94a8f74541cdcc6d7c
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      06/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f168f630b64f9d542b90f6c0354140b8
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      12/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e5c9eb11c2bd7a2489073a08c9e2eee0
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      09/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 518b2831db5054c40835af05a89c465b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      14/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4ca185e17db0fb24293642a48b402a8d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      11/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7dc4eba3ccdf87f458c302ba247f20cb
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      02/Stone pattern 02.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 06d5dbe3bf501d5498cdad32efadc6f7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      11/Stone pattern 11.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ffedf6845d8d699479b480298a76427b
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      12/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0d109c84f195eed43b3a24a6057b6aca
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      03/Stone pattern 03.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2978069445888204cb7ea4896fb1cb86
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      03/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: af667b94c926dbd47870920fa7ea55b7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      01/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c737b525eb69287479c9cfc945968a62
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      05/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7e207e25b8538e64db92b45fff5202b4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      10/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 817cd585ba4526143b4731066b0f0144
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      03/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: dd20f5a571e46c64c811afd8af81f650
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      07/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 296110b52047b6f40b5595de664ae945
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      06/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 54ccdb26b5047c54b828ced4bf15ca47
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      01/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8fe77446e08809c4194a65e32a2d0cc9
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      06/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 214a0056ee19c1949a2e955ddba7bd0d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      14/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6bf13556e9dd65a4da9203fb7aaa0109
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      07/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 16eea386135f4b8439eea16dfd7ca628
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      10/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4f43a7a68bcd11e4ea2d51248db9dc84
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      01/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e4ede2e6c10541546b717e9b8f8e14fd
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      04/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 44d39ff6e596ca34abae5799ba6f9315
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      14/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 88789cc79522a804e8696a6823f237b6
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      12/Stone pattern 12.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bbb823d717bf5b8419eb0811b16c1d7f
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      13/Stone pattern 13.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 067c15f7ef5f5044ea0890d1596fa8d4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      13/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b169e118c58f9854bbb44103f2b40459
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      02/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f4d904284d65bb74fb0bebba5a5064d3
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      13/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: beedbf280fa9f924e85b18f504fb1d8d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      13/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9e66d158d139bf044b9b85667b295490
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      14/Stone pattern 14.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e0db8e581ce3ac94d8bced881eb705ad
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      04/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d75ed8d8ef0366d448e7c8c06166aaf7
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      10/Stone pattern 10.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ead48ad882bbaa6418934beaad63ffc3
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      11/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6f233459a12da424d8efe251784ca234
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      05/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 207a3f895420f624295c9b65abffb57c
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      09/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d17c2ba9a6d000b4d85d39780503953c
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      08/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 25a0443ae6f60894c8d6a0bd9e32c923
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      03/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e94acb8a266bbae4bac00757605a9648
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      08/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b9886d7b83688c54c98fcc7c823733cd
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      11/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a826899be454cda4fb2f87861bac2af2
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      02/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 000b68cbe19fdba4ca65073a3adda11a
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      08/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a72f21db40e12be4caadf7a529149d1d
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      09/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4fc5540dc01d5524097d4d3989266816
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      12/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c6bd004de9c164a46ae347ce2218ade4
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      07/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3a00b84d9284d254080983707c886839
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      08/Stone pattern 08.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f971c85df37f9924b9e391d870d2b7ad
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      05/diffuse.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: db0c78cd93d0892438f61547e251055c
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      10/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5961ef8ec15c15a4a93653bee68e62b9
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      02/preview.jpg
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6449059ea69669b4cac66cd9de185980
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      01/Stone pattern 01.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5cb3406ff92d34f43826287ab512ff57
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      04/Stone pattern 04.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bd42adafec928ba45819d64677017bbd
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      07/Stone pattern 07.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2ead97df5c2e3bc4192793bb5a033f0e
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      04/normal.tga
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ff04eaef2bf4b0e4da1337e723325022
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      09/Stone pattern 09.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: acb23bffac3cff04193f6eabf5ba41ee
+    m_importFrom: Assets/Design/Textures/Grounds Textures/Stone textures pack/Stone
+      05/Stone pattern 05.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 500b606b4f151c14d988c3df87d9ca04
+    m_importFrom: Assets/Design/Textures/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond02AlbedoAlpha.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a319e2ccc03a40c41863056c7407f866
+    m_importFrom: Assets/Design/Textures/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond01AlbedoAlpha.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0e5196840153aad479a377fccedbc765
+    m_importFrom: Assets/Design/Textures/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassModify.psd
+    m_exportTo: 
+    m_variantName: 
+  m_version: 2

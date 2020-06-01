@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4bc21567f434b598a3c96ba4946372, type: 3}
+  m_Name: AssetReferenceDB
+  m_EditorClassIdentifier: 
+  m_assets:
+  - m_assetDatabaseId: a336e301854673249a9f1d57aa331e54
+    m_importFrom: Assets/Scenes/Test.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4d16bf9479ff8544fbdb39b5f50a0e69
+    m_importFrom: Assets/AssetGraph
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: abc35ba6276a36e478fadea65c994e5b
+    m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8b5449a8669d7f04681734ad0237d3fa
+    m_importFrom: Assets/AssetGraph/AssetBundles/Cache
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b881b6cf35626b941b7a9b90de8eb5b3
+    m_importFrom: Assets/AssetGraph/AssetBundles
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ed9f9befdd6ac7f408e210e142d5d3f1
+    m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f371f131b48969b4f920a6900cbf069a
+    m_importFrom: Assets/Design/Terrain/TerrenoDeset.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 03b927b0264e05f479c6cf326cd5d06a
+    m_importFrom: Assets/Design/Terrain
+    m_exportTo: 
+    m_variantName: 
+  m_version: 2
