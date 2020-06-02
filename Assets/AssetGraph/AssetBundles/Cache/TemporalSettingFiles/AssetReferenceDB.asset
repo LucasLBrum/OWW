@@ -13,36 +13,12 @@ MonoBehaviour:
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
   m_assets:
-  - m_assetDatabaseId: a336e301854673249a9f1d57aa331e54
-    m_importFrom: Assets/Scenes/Test.unity
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 4d16bf9479ff8544fbdb39b5f50a0e69
-    m_importFrom: Assets/AssetGraph
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: abc35ba6276a36e478fadea65c994e5b
-    m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 8b5449a8669d7f04681734ad0237d3fa
-    m_importFrom: Assets/AssetGraph/AssetBundles/Cache
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: b881b6cf35626b941b7a9b90de8eb5b3
-    m_importFrom: Assets/AssetGraph/AssetBundles
+  - m_assetDatabaseId: fe17c6bbb3e49f247be76d4147dd1fed
+    m_importFrom: Assets/Third_Person_OverrrideController.overrideController
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: ed9f9befdd6ac7f408e210e142d5d3f1
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: f371f131b48969b4f920a6900cbf069a
-    m_importFrom: Assets/Design/Terrain/TerrenoDeset.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 03b927b0264e05f479c6cf326cd5d06a
-    m_importFrom: Assets/Design/Terrain
     m_exportTo: 
     m_variantName: 
   m_version: 2

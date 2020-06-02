@@ -92,7 +92,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rig: {fileID: 0}
   m_cineMachineOffSetsConfigs: {fileID: 0}
-  weapon: {fileID: 0}
 --- !u!1001 &6229857063382224498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213,7 +212,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9cb59f4219ec7ef48b1453a1fdefa9f0,
         type: 3}
       propertyPath: m_Name
-      value: Carter
+      value: Carter Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1651062367082650294, guid: 9cb59f4219ec7ef48b1453a1fdefa9f0,
         type: 3}

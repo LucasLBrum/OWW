@@ -12,13 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public Rig rig;
     Vector2 input;
     public CinemachineCameraOffset m_cineMachineOffSetsConfigs; //classe que controla a posicao da FreeLock camera do cinemachine.
-    public RaycastWeapon weapon;
 
     float aimDuration = 0.3f;
 
     private void Awake()
     {
-        weapon = GetComponentInChildren<RaycastWeapon>();
         anim = GetComponent<Animator>();//pegar componente desse objeto.
     }
     private void Update()
@@ -35,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         else
             anim.SetBool("Lower", false); //Soltando o Controll esquerdo a bool Lower do controle de animação recebe false
 
+        /*
         if (Input.GetMouseButton(1))
         {
             rig.weight += Time.deltaTime / aimDuration;
@@ -46,14 +45,19 @@ public class PlayerMovement : MonoBehaviour
             rig.weight -= Time.deltaTime / aimDuration;
         }
 
+    */
+
+        if (rig)
+        {
+           rig.weight = 1.0f;  
+        }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            weapon.StartFire();
         }
+
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            weapon.StopFire();
         }
     }
 }
