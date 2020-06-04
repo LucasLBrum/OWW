@@ -21,4 +21,12 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
+  - m_assetDatabaseId: faf228433f9ee0645b25bde3e1078d48
+    m_importFrom: Assets/Rifle_pickup.anim
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: dbc46e3c71f496b4a8bf86fde8614eac
+    m_importFrom: Assets/Pistol_pickup.anim
+    m_exportTo: 
+    m_variantName: 
   m_version: 2
