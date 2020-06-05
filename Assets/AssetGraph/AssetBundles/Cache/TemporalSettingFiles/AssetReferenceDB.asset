@@ -21,12 +21,36 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: faf228433f9ee0645b25bde3e1078d48
-    m_importFrom: Assets/Rifle_pickup.anim
+  - m_assetDatabaseId: 469cfd6e56645d24d81d89bf0bc50218
+    m_importFrom: Assets/Design/Animations/NPC@Idle.fbx
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: dbc46e3c71f496b4a8bf86fde8614eac
-    m_importFrom: Assets/Pistol_pickup.anim
+  - m_assetDatabaseId: 09dd28f6634bfc8499899c1028e2a57a
+    m_importFrom: Assets/Models/NPC.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a478d8d690c1d48489b0f0e60d4bbf55
+    m_importFrom: Assets/Design/Materials/Material11.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c2508609d0b77a64c902f6cf140a990c
+    m_importFrom: Assets/Design/Materials/Color 8.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c6b5da99d45f80d45b181d115993ca13
+    m_importFrom: Assets/Design/Materials/Material12.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a28801152069ffa429904b93863ab31d
+    m_importFrom: Assets/Models/Prefabs/Characters/NPC.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 79403799f2e01c340916cadcf0aff82a
+    m_importFrom: Assets/Design/Animations/NPC.controller
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a336e301854673249a9f1d57aa331e54
+    m_importFrom: Assets/Scenes/Test.unity
     m_exportTo: 
     m_variantName: 
   m_version: 2
