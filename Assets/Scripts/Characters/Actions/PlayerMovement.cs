@@ -5,6 +5,7 @@ using UnityEngine.Animations.Rigging;
 using Cinemachine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,8 +13,11 @@ public class PlayerMovement : MonoBehaviour
     public Rig rig;
     Vector2 input;
     public CinemachineCameraOffset m_cineMachineOffSetsConfigs; //classe que controla a posicao da FreeLock camera do cinemachine.
+    public GameObject panelIn;
+    public GameObject imagePanel;
+    bool withInve = false;
 
-    float aimDuration = 0.3f;
+    //float aimDuration = 0.3f;
 
     private void Awake()
     {
@@ -32,6 +36,26 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Lower", true); //Segurando o Controll esquerdo a bool Lower do controle de animação recebe true
         else
             anim.SetBool("Lower", false); //Soltando o Controll esquerdo a bool Lower do controle de animação recebe false
+
+        if (Input.GetKeyDown(KeyCode.Tab)) 
+        {
+            if (withInve)
+            {
+                withInve = false;
+                panelIn.SetActive(false);
+                imagePanel.SetActive(false);
+                UnityEngine.Cursor.visible = false;
+                UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            }
+            else 
+            {
+                withInve = true;
+                panelIn.SetActive(true);
+                imagePanel.SetActive(true);
+                UnityEngine.Cursor.visible = true;
+                UnityEngine.Cursor.lockState = CursorLockMode.Confined;
+            }
+        }
 
         /*
         if (Input.GetMouseButton(1))
