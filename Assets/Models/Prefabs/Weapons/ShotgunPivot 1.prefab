@@ -362,9 +362,10 @@ GameObject:
   - component: {fileID: 5733743682739673212}
   - component: {fileID: 3866321563947844746}
   - component: {fileID: 1368842440272881420}
+  - component: {fileID: 5318003831782033657}
   m_Layer: 0
   m_Name: ShotgunPivot 1
-  m_TagString: Weapon
+  m_TagString: Coletavel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,14 +377,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5733743682739673213}
-  m_LocalRotation: {x: -0.0650631, y: 0.561908, z: -0.01860632, w: 0.8244271}
+  m_LocalRotation: {x: -0.065063044, y: 0.5619108, z: -0.018602438, w: 0.8244252}
   m_LocalPosition: {x: -2.255, y: 1.075, z: 7.395}
-  m_LocalScale: {x: 0.10000003, y: 0.1, z: 0.10000001}
+  m_LocalScale: {x: 0.10000007, y: 0.10000001, z: 0.10000004}
   m_Children:
   - {fileID: 4331838533023214145}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -4.9550004, y: 68.814, z: -5.9800005}
 --- !u!114 &3866321563947844746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +411,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.6262245, y: 1, z: 1}
   m_Center: {x: -0.6679894, y: -0.0000013671416, z: -0.0000022361794}
+--- !u!114 &5318003831782033657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5733743682739673213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc605d05afa883419b94f229614045c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisItem: {fileID: 11400000, guid: 56aac4bb6c8c71347b0bb4aab5d19f59, type: 2}
 --- !u!1 &6619976704571855714
 GameObject:
   m_ObjectHideFlags: 0

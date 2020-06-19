@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec40cc68482cf1469f82cbe0af37bed, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: 
+  itemName: Shotgun
+  description: Uma bela Shotgun para causar grandes dano a corpo-a-corpo.
+  cost: 100
+  itemPrefab: {fileID: 5733743682739673213, guid: d5767f6f16c66d84b930ca63604ba22e,
+    type: 3}
+  itemSprite: {fileID: 21300000, guid: b7bb648020c76d4499720061017507aa, type: 3}
+  itemType: 1

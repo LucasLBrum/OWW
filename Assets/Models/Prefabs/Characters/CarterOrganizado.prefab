@@ -3859,7 +3859,6 @@ GameObject:
   - component: {fileID: 669731086}
   - component: {fileID: 8216070911054285032}
   - component: {fileID: 3174044777822639814}
-  - component: {fileID: 8824976184986933976}
   - component: {fileID: 8824976184986933975}
   - component: {fileID: 669731087}
   m_Layer: 0
@@ -3953,7 +3952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9bcb141c290bb468b646b1fccef49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carterPrefab: {fileID: 0}
+  carterPrefab: {fileID: 6858302728093937332}
   inventoryInScene: {fileID: 0}
 --- !u!114 &3174044777822639814
 MonoBehaviour:
@@ -3975,20 +3974,6 @@ MonoBehaviour:
   - rig: {fileID: 452835997}
     active: 1
   m_Effectors: []
---- !u!114 &8824976184986933976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6858302728093937332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e00dff96f58e64a9045af24e1a3ec9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnSpeed: 15
-  cinemachine_m: {fileID: 0}
 --- !u!114 &8824976184986933975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4003,8 +3988,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rig: {fileID: 406157404}
   m_cineMachineOffSetsConfigs: {fileID: 0}
-  panelIn: {fileID: 0}
   imagePanel: {fileID: 0}
+  turnSpeed: 15
+  cinemachine_m: {fileID: 0}
 --- !u!114 &669731087
 MonoBehaviour:
   m_ObjectHideFlags: 0

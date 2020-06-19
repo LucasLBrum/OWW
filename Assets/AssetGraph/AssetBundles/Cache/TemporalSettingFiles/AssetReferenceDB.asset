@@ -13,20 +13,16 @@ MonoBehaviour:
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
   m_assets:
-  - m_assetDatabaseId: 4683a8f465490d746b00fb0a2951c3f0
-    m_importFrom: Assets/Catavento.anim
+  - m_assetDatabaseId: 7d8a31a4145d5414ba8d8780a7761e9d
+    m_importFrom: Assets/Design/Materials/Color11.mat
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 4812766f511e4fe4593b54847fb3843e
-    m_importFrom: Assets/Point.controller
+  - m_assetDatabaseId: 8c37731985225a74a9e462a2bd80aa6a
+    m_importFrom: Assets/Design/Materials/Materials/sand.mat
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: ed9f9befdd6ac7f408e210e142d5d3f1
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 4fa359aa98ddffb45ba7a427115c99db
-    m_importFrom: Assets/Design/Materials/Material13.mat
     m_exportTo: 
     m_variantName: 
   m_version: 2
