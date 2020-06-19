@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float turnSpeed = 15; //velocidade de rotacao da yawcamera
     public Cinemachine.CinemachineFreeLook cinemachine_m; //componente de cinemachine
     Camera mainCamera; //main camera
+    public ActiveWeapon activeWeapon;
 
     private void Awake()
     {
@@ -106,5 +107,10 @@ public class PlayerMovement : MonoBehaviour
                 UnityEngine.Cursor.lockState = CursorLockMode.Confined;
             }
         }
+    }
+
+    void EquipWeapon()
+    {
+        //activeWeapon.Equip(other.gameObject.GetComponent<WeaponRaycast>());
     }
 }

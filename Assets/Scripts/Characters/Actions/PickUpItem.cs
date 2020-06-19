@@ -11,8 +11,7 @@ public class PickUpItem : MonoBehaviour
     {
         if(other.tag == "Coletavel") 
         {
-            item = other.gameObject;
-            PickUp(item);
+            PickUp(other.gameObject);
         }
     }
 

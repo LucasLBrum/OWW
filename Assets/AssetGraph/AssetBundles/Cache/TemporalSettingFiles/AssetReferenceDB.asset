@@ -12,17 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4bc21567f434b598a3c96ba4946372, type: 3}
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
-  m_assets:
-  - m_assetDatabaseId: 7d8a31a4145d5414ba8d8780a7761e9d
-    m_importFrom: Assets/Design/Materials/Color11.mat
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 8c37731985225a74a9e462a2bd80aa6a
-    m_importFrom: Assets/Design/Materials/Materials/sand.mat
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: ed9f9befdd6ac7f408e210e142d5d3f1
-    m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
-    m_exportTo: 
-    m_variantName: 
+  m_assets: []
   m_version: 2

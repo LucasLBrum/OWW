@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.Animations;
+using UnityEngine.Animations.Rigging;
 
 public class ActiveWeapon : MonoBehaviour
 {
-    public UnityEngine.Animations.Rigging.Rig handIK;
+    public Rig handIK;
     public WeaponRaycast weapon;
 
     public Transform weaponParent;
