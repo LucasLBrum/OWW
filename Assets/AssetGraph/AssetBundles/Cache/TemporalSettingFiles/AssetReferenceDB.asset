@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4bc21567f434b598a3c96ba4946372, type: 3}
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
-  m_assets: []
+  m_assets:
+  - m_assetDatabaseId: 5443a266b274aec4c90c663acb12df48
+    m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a336e301854673249a9f1d57aa331e54
+    m_importFrom: Assets/Scenes/Game.unity
+    m_exportTo: 
+    m_variantName: 
   m_version: 2

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Animations;
 using UnityEngine.Animations.Rigging;
 
 public class ActiveWeapon : MonoBehaviour
@@ -61,6 +60,7 @@ public class ActiveWeapon : MonoBehaviour
         overrides["empty"] = weapon.weaponAnimation;
     }
 
+    /*
     [ContextMenu("Salvar Posicao da arma/maos")]
     void SaveWeaponPose()
     {
@@ -72,4 +72,5 @@ public class ActiveWeapon : MonoBehaviour
         recorder.SaveToClip(weapon.weaponAnimation);
         UnityEditor.AssetDatabase.SaveAssets(); 
     }
+    */
 }

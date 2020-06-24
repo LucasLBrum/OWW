@@ -1,0 +1,553 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4bc21567f434b598a3c96ba4946372, type: 3}
+  m_Name: AssetReferenceDB
+  m_EditorClassIdentifier: 
+  m_assets:
+  - m_assetDatabaseId: ed9f9befdd6ac7f408e210e142d5d3f1
+    m_importFrom: Assets/Design/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 87edca54c16941d4387ef54f5e51a5a7
+    m_importFrom: Assets/Scripts/Itens/ActiveWeapon.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f46c774c7bada0c499d81983e46ac3cb
+    m_importFrom: Assets/Editor
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0000000000000000b000000000000000
+    m_importFrom: ProjectSettings/EditorBuildSettings.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: fe17c6bbb3e49f247be76d4147dd1fed
+    m_importFrom: Assets/Design/Animations/Controllers/Third_Person_OverrrideController.overrideController
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6f620a1cd4eb563418a815aa620fe5b3
+    m_importFrom: Assets/Scripts/inventario-2.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 35c09718d1bb6f8498e13d85eee7a218
+    m_importFrom: Assets/Models/Objetos/Troncos_01.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 978c57daacd32d04386902efac90d5e2
+    m_importFrom: Assets/Models/Objetos/BaldeDeMacas.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b454bb4a63f659f48854cab24240fa60
+    m_importFrom: Assets/Design/Materials/Material14.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8eb1d8f38fc125b4490e31d90f784a20
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroups
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4d16bf9479ff8544fbdb39b5f50a0e69
+    m_importFrom: Assets/Design/AssetGraph
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: abc35ba6276a36e478fadea65c994e5b
+    m_importFrom: Assets/Design/AssetGraph/AssetBundles/Cache/TemporalSettingFiles
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6b2826f61007c5446b9f63aea14c0242
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroups/Schemas
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8b5449a8669d7f04681734ad0237d3fa
+    m_importFrom: Assets/Design/AssetGraph/AssetBundles/Cache
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1e94a02bf3459e948a79e51c9d84d0bf
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroupTemplates
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9c7117db8e4ddbc40994563911b674e5
+    m_importFrom: Assets/Design/AddressableAssetsData/DataBuilders
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c2012dfcec6ec1045b9f7e3d1e473662
+    m_importFrom: Assets/Design/AddressableAssetsData
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b881b6cf35626b941b7a9b90de8eb5b3
+    m_importFrom: Assets/Design/AssetGraph/AssetBundles
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7fdb0b90bdc1ac647843f41c8a30ae3e
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroups/Default Local Group.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3ad0e55200f86f34c9fc3c4cb5a64042
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroups/Schemas/4f4a39300743d7f469f932a413701487_BundledAssetGroupSchema.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 771b8ad239b782e43bcf56cc4fb4cdd3
+    m_importFrom: Assets/Design/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ac0fb61335db3a549ab7505f50d7d076
+    m_importFrom: Assets/Design/AddressableAssetsData/DefaultObject.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a8f004732c13f99419287bce9726999b
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroups/Built In Data.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1c0a07a5f304b064b98c624886365aa2
+    m_importFrom: Assets/Design/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d70c9d5652a306b40888303bb80769a2
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroups/Schemas/4f4a39300743d7f469f932a413701487_ContentUpdateGroupSchema.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bce1444851991b54cb91ef083a87dba5
+    m_importFrom: Assets/Design/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: fb032fd8f3594364489f47875101676e
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroups/Schemas/1819fdee592c347488971361b61eba72_PlayerDataGroupSchema.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 30d6ec49e64174445af8ce36fdcca504
+    m_importFrom: Assets/Design/AddressableAssetsData/AssetGroupTemplates/Packed
+      Assets.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9ed48f2e40da07848a562f62c7a0fb8d
+    m_importFrom: Assets/Design/AddressableAssetsData/AddressableAssetSettings.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 041e195ef24924545b8b251d897b48bf
+    m_importFrom: Assets/Design/AddressableAssetsData/DataBuilders/BuildScriptPackedPlayMode.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3ee36213f3903c94db06e9ba7f5f58d6
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand/Materials
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: fb122f335d4fda84f8ac463fdada3e6c
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8b67e494e7c761c438eecd20eae769df
+    m_importFrom: Assets/Design/PolarisStarter/Textures
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 94ab1b15565c4544fa53a8d7009d83d8
+    m_importFrom: Assets/Design/PolarisStarter/Models/Materials
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8a9757b5be2d83943a99cd3f92f631cc
+    m_importFrom: Assets/Design/PolarisStarter/Models/Rocks
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9711b1a690d157940883d1380772f578
+    m_importFrom: Assets/Design/PolarisStarter/Resources
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2d6e35398843a2a4b823c37728ed9457
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3d8572492a03a0e4682c908d67e05fa6
+    m_importFrom: Assets/Design/PolarisStarter/Scripts/Editor/Resources
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a99eb089ca5ddcf47825f143d9c6da68
+    m_importFrom: Assets/Design/PolarisStarter/Scripts/Editor
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b7cdd71a97c30b64f80bead964564700
+    m_importFrom: Assets/Design/PolarisStarter/Models
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9b375c6acc5fd9b419e0b73190dbf722
+    m_importFrom: Assets/Design/PolarisStarter/Materials
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e36379cabd86b444a86dea71b207658f
+    m_importFrom: Assets/Design/PolarisStarter
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 95711cea8a47b6845b1848566eae2476
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Desert/Materials
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bad28c4bf1f8f1d419814ae86d3c5665
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f1d5d12c781fe71428ca55ee751316c0
+    m_importFrom: Assets/Design/PolarisStarter/Shader
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4cdd72ae869dfae478fffec9b364e7f8
+    m_importFrom: Assets/Design/PolarisStarter/Scripts
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f15f241f5548f2444bbfaf5dc3ed57bf
+    m_importFrom: Assets/Design/PolarisStarter/Scenes
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 84a52e1f59543ca46b94ffd52dcb49be
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Winter
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 812317df5ee834345b01fdf2a14530af
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Desert
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 332beae2ab897504e82da74b27d79f72
+    m_importFrom: Assets/Design/PolarisStarter/Scenes/Desert.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0808c1479f02a08459f8a4a194ba86fb
+    m_importFrom: Assets/Design/PolarisStarter/Scenes/Spring.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8de27e1c9fbfc024681dcb97605e2a70
+    m_importFrom: Assets/Design/PolarisStarter/Scenes/Winter.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e3bcfd1dc25a39149887a665818ad130
+    m_importFrom: Assets/Design/PolarisStarter/Scenes/Autumn.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 50c1709064ac04c45af6d7d8ff192b8f
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand/PineTree.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 10cd6ba0f4665744093b088a72cc704f
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn/TreeTexture2.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 735795f0372b8ed49aea89baa817642d
+    m_importFrom: Assets/Design/PolarisStarter/Materials/AutumnTree1.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 50333971034ddf34b9db3bd600d6be6b
+    m_importFrom: Assets/Design/PolarisStarter/Models/Rocks/LP_S-Rock_04.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2038e5e169605c2428c5636d1834228e
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand/PineDistributionMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f23a28e128c004840b6c9f88e7aec971
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn/AutumnTreeDistributionMap1.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e4b3f2f15e957ab4cb2516c5eb876a57
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Terrain.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2c136172fcfafab40b0448f92266f3be
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn/AutumnRockDistributionMap1.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1d5951a2a69fd634bab222c0c5ac3eaa
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Snowman.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3e85bac2ce6fa924b9502cbba6faaff6
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn/AutumnTreeDistributionMap3.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b0d744330c6776943844b07ecd94eb1f
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/Rock2.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4e81a733033cd324a92580c7ff99729b
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn/AutumnTreeDistributionMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4534b253803cfc949baed61e88e7df5a
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Desert/CactusDistributionMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: de58b283718058b4c85bb991e8d5a09c
+    m_importFrom: Assets/Design/PolarisStarter/Models/autumn-trees.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9a2c80d3753f2344787d4bce660183a7
+    m_importFrom: Assets/Design/PolarisStarter/Models/Materials/No Name.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7bfa60e3d7a7fb942a8b2a0de518636e
+    m_importFrom: Assets/Design/PolarisStarter/Models/Rocks/LP_S-Rock_02.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5aeb7a24b32530e43a46e8fc40a4c17b
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand/Flare.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 991dab34aeadc1f499582a575f38896c
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/AutumnTree2.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b1644e5472cb6174fac6fdd8c9fb026c
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn/AutumnTreeDistributionMap2.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 73da9e54f1c48084c9276bf23381242e
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Water.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8215e864af2e5b7438f28ef37f2dd912
+    m_importFrom: Assets/Design/PolarisStarter/Shader/VertexColor.shader
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 06d36df440fffe746bdd974f6699d4b2
+    m_importFrom: Assets/Design/PolarisStarter/Scripts/Editor/Resources/PolarisV2Icon.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e816951532c1cca42b60d09f4d9091a1
+    m_importFrom: Assets/Design/PolarisStarter/README.txt
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 047e3815235665b45ae2b946e823baf5
+    m_importFrom: Assets/Design/PolarisStarter/UserGuide.pdf
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b27b33558e1da58448fd6c4d18e78ee8
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/Pinetree.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4637c3a573a0a9148b842e982c35de9a
+    m_importFrom: Assets/Design/PolarisStarter/Models/Rocks/LP_S-Rock_03.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 39cb5ea51054e904c99ae1c7edb89b5d
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Desert/HeightMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6c8d5dd5446c3da4f9552c1a36c13dc3
+    m_importFrom: Assets/Design/PolarisStarter/Materials/GroundParticle.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1541901676058594ca57937050b87708
+    m_importFrom: Assets/Design/PolarisStarter/Models/pinetree.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 40be8d162497a4a4ca220bbaf3d032bc
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Sky.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 95cedf161cefbcf48ba21cabd6bb918b
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/Snowman.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ebd70366c46843d4eb94412901f7ba92
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/Rock3.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 76f5a0a68221c434683585b8845ec5ab
+    m_importFrom: Assets/Design/PolarisStarter/Models/cactus.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6dee3b2715f2ad045b2216dc29de66ab
+    m_importFrom: Assets/Design/PolarisStarter/Models/Rocks/LP_S-Rock_01.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5ffc7c37e94a6f048b8525e41ac6d989
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/AutumnTree1.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: daa07da72df62f04f98e14fae37ffbee
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Desert/Materials/CactusDistributionMap.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7136b5e7cb6d2da4285f19308a5d484b
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Skeleton.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ce4677e7d6bc9264a8ba53c46f51ade6
+    m_importFrom: Assets/Design/PolarisStarter/Materials/WinterPineTree.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a324a9e7defbd0c44b27d4bb0a07de9d
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Cactus.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2eef5ce709657ae4fbd4f74a88689e08
+    m_importFrom: Assets/Design/PolarisStarter/Models/Rocks/LP_S-Rock_05.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b0be451869d34e24caf635978c8495e3
+    m_importFrom: Assets/Design/PolarisStarter/Models/winter-branch.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a1d4dea8c561aa2449ca05a4315af493
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Winter/Snowman.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ae9d1ac881f86e64f9205a6ed494b4d4
+    m_importFrom: Assets/Design/PolarisStarter/Textures/CartoonSky.cubemap
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ac117709a24435141b097dfca3baca4a
+    m_importFrom: Assets/Design/PolarisStarter/Scripts/Editor/Resources/PolarisV2AdsImage.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: eb0abf598ada23e4099f91ee08ea5c91
+    m_importFrom: Assets/Design/PolarisStarter/Materials/IceLayer.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9d41d779e7ef1334b84018f265dc17ca
+    m_importFrom: Assets/Design/PolarisStarter/Models/Rocks/LP_S-Rock_06.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4d30d389aebb4ca4baec23b678f82099
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/WinterPintree.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 32f8c6997bbefe840a95979c196f5dd4
+    m_importFrom: Assets/Design/PolarisStarter/Models/skeleton.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f8a3c0f95f970754582138ed31e63813
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand/Materials/PineTree.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: dd48aef983451fe4ca00bb7032b8e9bd
+    m_importFrom: Assets/Design/PolarisStarter/Materials/GodRay.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 56f8350a4d5aaa14f8cfee81f5168995
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand/GodRay.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 734ed51a95631de45bcbdbb13da48839
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Rock.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1461a23a8ebdaa748a1b364f10051bff
+    m_importFrom: Assets/Design/PolarisStarter/Resources/GoProBanner.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 0d8f556a5db40bb449b2aac166283dd0
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/DesertLand.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f303d8cae092c5b4498c70815c61cf7e
+    m_importFrom: Assets/Design/PolarisStarter/Materials/SnowParticle.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: dea6353b368a1dd4ea7f200d8fc54434
+    m_importFrom: Assets/Design/PolarisStarter/Materials/OldTreeLeavesParticle.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7eaec53b6bd840c44adf32218708d4a1
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Desert/Materials/HeightMap.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2415fa4b8f84bcc4086f6136a1a5a81e
+    m_importFrom: Assets/Design/PolarisStarter/Resources/BasicEditionBanner.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5393bc8b17d70e44995f9681403e36a4
+    m_importFrom: Assets/Design/PolarisStarter/Models/snowman.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: edfe2a9bc36293449beaf328520e15f3
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Winter/SnowmanDistributionMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c2d1050c715faeb4ea407c698b53fc37
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Pinetree.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 58b50d1c1e3226346af664b510a6317a
+    m_importFrom: Assets/Design/PolarisStarter/Materials/Dust.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 89c1ad1c2de69444fb675f79a0baf5a4
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand/HeightMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d70a6a8c9e5cadc40b7227c42523fd76
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Winter/HeightMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b494bfbc4ee44b445b2af087c41030ed
+    m_importFrom: Assets/Design/PolarisStarter/Textures/SpringLand/RockDistributionMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f4003bec18117a34b85209e63e111c03
+    m_importFrom: Assets/Design/PolarisStarter/Materials/WinterBranch.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 25eec62dbe6fad049845fb58aac9ee29
+    m_importFrom: Assets/Design/PolarisStarter/Models/old-tree.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6f0e4c3dd6e1bbc45aec4d7514a897d0
+    m_importFrom: Assets/Design/PolarisStarter/Materials/AutumnTree2.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 74996c3da7ad92f428bb0e1f1f2da3df
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/WinterBranch.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 66ff4f3d0ef53454aa9e2389e3792e21
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn/WhiteSquare.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4b7a8d6dabe421d458f62a81909a30b9
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Autumn/TreeTexture1.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 439f1cfd5ce3ddc409d76f4f45baba23
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Winter/WinterPineTree.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8aa3174ecec0a6b47ae7e9a7fe06f455
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/GodRay.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f177245e60119f34798e2103dc69f516
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Winter/SnowParticle.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e19eaf6ede43e7443b0f88e7872a6159
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/Cactus.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 7193ffee25d9e0145bd111d59ed99356
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/Rock1.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a230c64f0ec6649409f028b69ff03b59
+    m_importFrom: Assets/Design/PolarisStarter/Resources/Terrain.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 07f7697f653699d4fa9f38273c28deb9
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/Skeleton.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f2f4f08f7dc60d042ac98c593f8e32c4
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/AutumnTree3.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 29acb29f0f59d45439757a87a7137cf5
+    m_importFrom: Assets/Design/PolarisStarter/Textures/Winter/PintreeDistribitionMap.psd
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6e3c35af30a28104ab1ec170195dc650
+    m_importFrom: Assets/Design/PolarisStarter/Prefabs/OldTree.prefab
+    m_exportTo: 
+    m_variantName: 
+  m_version: 2

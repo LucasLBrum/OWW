@@ -12,7 +12,6 @@ public class ItemResource : ScriptableObject
 	public Sprite itemSprite;
 
 	public ItemType itemType;
-
 	public Item CreateResourceItem()
 	{
 		Item resourceItem;
