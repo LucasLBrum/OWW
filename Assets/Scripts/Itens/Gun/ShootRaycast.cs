@@ -4,17 +4,46 @@ using UnityEngine;
 
 public class ShootRaycast : MonoBehaviour
 {
-   RaycastHit hit;//cria um objeto do tipo "RaycastHit"
+    [SerializeField]
+    float raycastDistance = 20f;
+    RaycastHit hit;//cria um objeto do tipo "RaycastHit"
+    Ray ray;
 
+    public LayerMask raycastMask;
 
+    int mask;
 
-   /// <summary>
-   /// Update is called every frame, if the MonoBehaviour is enabled.
-   /// </summary>
-   void Update()
+    private void Start()
+    {
+        mask = raycastMask.value;
+
+        ray = new Ray(transform.position, transform.forward);
+    }
+
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void Update()
    {
-      Shoot();//invocando a funcao
+        //Shoot();//invocando a funcao
+        PerformRaycast();
    }
+
+    void PerformRaycast()
+    {
+        Debug.DrawRay(transform.position, transform.forward * raycastDistance, Color.green);
+
+        if(Physics.Raycast(transform.position, transform.forward, out hit, raycastDistance, mask, QueryTriggerInteraction.Collide))
+        //if (Physics.Raycast(ray, out hit, raycastDistance, mask))
+        {          
+            var interactable = hit.transform.GetComponent<Interactable>();
+
+            if(interactable != null)
+            {
+                print($"Colidiu {hit.transform.name} no ponto {hit.point}");
+            }
+        }
+    }
 
    void Shoot() //Função de tiro da  arma
    {
