@@ -26,7 +26,7 @@ public class ShootRaycast : MonoBehaviour
     void Update()
    {
         //Shoot();//invocando a funcao
-        PerformRaycast();
+        //PerformRaycast();
    }
 
     void PerformRaycast()
@@ -45,6 +45,7 @@ public class ShootRaycast : MonoBehaviour
         }
     }
 
+    /*
    void Shoot() //Função de tiro da  arma
    {
       if(Input.GetKey(KeyCode.Mouse0)) //se apertar com o botão esquerdo do mouse...
@@ -56,5 +57,6 @@ public class ShootRaycast : MonoBehaviour
          }
       }
    }
+   */
    
 }

@@ -17,8 +17,4 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: a336e301854673249a9f1d57aa331e54
-    m_importFrom: Assets/Scenes/Game.unity
-    m_exportTo: 
-    m_variantName: 
   m_version: 2
