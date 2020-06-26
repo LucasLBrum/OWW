@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
+    /*
     public ActiveWeapon activeWeapon;
     public Text ChangeWeaponText;
 
@@ -15,6 +16,7 @@ public class PickUp : MonoBehaviour
         activeWeapon = GetComponentInParent<ActiveWeapon>();
     }
 
+    
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Weapon")
@@ -51,5 +53,5 @@ public class PickUp : MonoBehaviour
         ChangeWeaponText.gameObject.SetActive(false);
     }
 
-
+    */
 }

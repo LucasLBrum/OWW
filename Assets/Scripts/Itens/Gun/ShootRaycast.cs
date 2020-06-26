@@ -6,6 +6,7 @@ public class ShootRaycast : MonoBehaviour
 {
     [SerializeField]
     float raycastDistance = 20f;
+    public PickUpItem pickUp;
     RaycastHit hit;//cria um objeto do tipo "RaycastHit"
     Ray ray;
 
@@ -26,7 +27,7 @@ public class ShootRaycast : MonoBehaviour
     void Update()
    {
         //Shoot();//invocando a funcao
-        //PerformRaycast();
+        PerformRaycast();
    }
 
     void PerformRaycast()
@@ -36,11 +37,13 @@ public class ShootRaycast : MonoBehaviour
         if(Physics.Raycast(transform.position, transform.forward, out hit, raycastDistance, mask, QueryTriggerInteraction.Collide))
         //if (Physics.Raycast(ray, out hit, raycastDistance, mask))
         {          
-            var interactable = hit.transform.GetComponent<Interactable>();
+            var interactable = hit.transform.GetComponent<ItemScene>();
 
             if(interactable != null)
             {
-                print($"Colidiu {hit.transform.name} no ponto {hit.point}");
+                //print($"Colidiu {hit.transform.name} no ponto {hit.point}");
+                pickUp.PickUp(interactable.gameObject);
+                
             }
         }
     }

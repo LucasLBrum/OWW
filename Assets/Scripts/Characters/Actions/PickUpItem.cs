@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
+    /*
     public GameObject item; //item que esta dentro do collider.
 
     private void OnTriggerStay(Collider other)//enquanto o item estiver dentro do trigger da mão do character
@@ -19,10 +20,10 @@ public class PickUpItem : MonoBehaviour
     {
         item = null;
     }
-
-    void PickUp(GameObject thisItem)
+    */
+    public void PickUp(GameObject thisItem)
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             ItemResource resorce = thisItem.GetComponent<ItemScene>().thisItem;//pega o componenete de itemScene do item que esta na mão.
             Player.singleton.carterScene.inventoryInScene.VerificationItem(resorce,thisItem);//adiciona esse item ao inventario.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class WeaponInScene : MonoBehaviour
 {
-    public bool collectable;
+    public AnimationClip weaponAnimation;
 }

@@ -2,30 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
+using UnityEditor.Animations;
 
 public class ActiveWeapon : MonoBehaviour
 {
     public Rig handIK;
-    public WeaponRaycast weapon;
+    public WeaponInScene weapon;
 
     public Transform weaponParent;
 
     public Transform weaponLeftGrip; 
     public Transform weaponRightGrip;
 
+    public GameObject a;
     Animator anim;
     AnimatorOverrideController overrides;
 
 
     private void Start()
     {
+
         anim = GetComponent<Animator>();
-        overrides = anim.runtimeAnimatorController as AnimatorOverrideController; 
-        WeaponRaycast exisitingWeapon = GetComponentInChildren<WeaponRaycast>();
+        overrides = anim.runtimeAnimatorController as AnimatorOverrideController;
+        /*
+        ItemResource exisitingWeapon = GetComponentInChildren<ItemResource>();
         if (exisitingWeapon)
         {
             Equip(exisitingWeapon);
         }
+        */
     }
 
     private void Update()
@@ -41,10 +46,11 @@ public class ActiveWeapon : MonoBehaviour
         }
     }
 
-    public void Equip(WeaponRaycast newWeapon)
+    public void Equip(ItemResource resorceWeapon)
     {
-        weapon = newWeapon;
-
+        var weaponPrefab = Instantiate(resorceWeapon.itemPrefab, weaponParent.transform);
+        a = GetComponentInChildren<WeaponInScene>().gameObject;
+        weapon = weaponPrefab.GetComponent<WeaponInScene>();
         weapon.transform.parent = weaponParent.parent; 
         weapon.gameObject.transform.localPosition = Vector3.zero;
         weapon.gameObject.transform.localRotation = Quaternion.identity;
@@ -60,7 +66,7 @@ public class ActiveWeapon : MonoBehaviour
         overrides["empty"] = weapon.weaponAnimation;
     }
 
-    /*
+   
     [ContextMenu("Salvar Posicao da arma/maos")]
     void SaveWeaponPose()
     {
@@ -72,5 +78,5 @@ public class ActiveWeapon : MonoBehaviour
         recorder.SaveToClip(weapon.weaponAnimation);
         UnityEditor.AssetDatabase.SaveAssets(); 
     }
-    */
+   
 }

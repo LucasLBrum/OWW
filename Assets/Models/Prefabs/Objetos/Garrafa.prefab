@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9149542290966727624}
   - component: {fileID: 1577543164594442109}
   - component: {fileID: 2183471738946214931}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Garrafa
   m_TagString: Coletavel
   m_Icon: {fileID: 0}
@@ -106,5 +106,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc605d05afa883419b94f229614045c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectable: 0
   thisItem: {fileID: 11400000, guid: f9e4fde816f97ad4981d60aadd1d6913, type: 2}

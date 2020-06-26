@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1798733629755434678}
   - component: {fileID: 1534399689}
   - component: {fileID: 5175379223021085321}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: 'Revolver_01 '
   m_TagString: Coletavel
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 4056521714764435202}
   - component: {fileID: 1677409970193057838}
   - component: {fileID: 6532741780142406726}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595167937227149793}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 3106175807973582578}
   - component: {fileID: 8095010741728137256}
   - component: {fileID: 2000102238495765982}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Parafuso_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 7531474784104566392}
   - component: {fileID: 4542555562008145629}
   - component: {fileID: 7799707451399368393}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Corpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 4064588649093430113}
   - component: {fileID: 8254640205304698829}
   - component: {fileID: 8552170816044864903}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tambor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 1603513267589073327}
   - component: {fileID: 2882188246644123101}
   - component: {fileID: 8711977328543524867}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gatilho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 2174591007348843139}
   - component: {fileID: 498850351984399512}
   - component: {fileID: 2595978461909914433}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CanoInferior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 5965601297263828766}
   - component: {fileID: 3104963304152298664}
   - component: {fileID: 490488506471829145}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cabo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 1313064231737151718}
   - component: {fileID: 277410320008625725}
   - component: {fileID: 4663325084400758101}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Parafuso_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -2,12 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemScene : Interactable
+public class ItemScene : MonoBehaviour
 {
     public ItemResource thisItem;
 
-    private void Start()
-    {
-        collectable = true;
-    }
 }

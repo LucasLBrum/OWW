@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         CharacterMoviment();
         CharacterView();
         OpenInventory();
+        EquipWeapon();
     }
 
     void CharacterMoviment() 
@@ -111,6 +112,43 @@ public class PlayerMovement : MonoBehaviour
 
     void EquipWeapon()
     {
-        //activeWeapon.Equip(other.gameObject.GetComponent<WeaponRaycast>());
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            if(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].open == false)
+            {
+                if (activeWeapon.a != null)
+                {
+                    Destroy(activeWeapon.a);
+                }
+
+                activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item);
+
+            }
+        }
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            if (Player.singleton.carterScene.inventoryInScene.weaponSlot[1].open == false)
+            {
+                if (activeWeapon.a != null)
+                {
+                    Destroy(activeWeapon.a);
+                }
+
+                activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item);
+
+            }
+
+        }
+        if (Input.GetKey(KeyCode.Alpha3))
+        {
+            if (activeWeapon.a != null)
+            {
+                Destroy(activeWeapon.a);
+                activeWeapon.weapon = null;
+                rig.weight = 1.0f;
+            }
+        }
+
     }
 }
+
