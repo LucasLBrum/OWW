@@ -17,36 +17,24 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 317f4570d6720c4469e9de6123bee6e3
-    m_importFrom: Assets/Models/Prefabs/Weapons/Revolver_01 .prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: d5767f6f16c66d84b930ca63604ba22e
-    m_importFrom: Assets/Models/Prefabs/Weapons/ShotgunPivot 1.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 3abd02b1df448634fb92aad454f93eb9
-    m_importFrom: Assets/Models/Prefabs/Objetos/Garrafa.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 559c64d10ee69dc41b11f743d18d9f89
-    m_importFrom: Assets/Models/Prefabs/Weapons/Shotgun_02.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: a336e301854673249a9f1d57aa331e54
-    m_importFrom: Assets/Scenes/Game.unity
+  - m_assetDatabaseId: f9e4fde816f97ad4981d60aadd1d6913
+    m_importFrom: Assets/ScriptablesObjects/Whisky.asset
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: fe17c6bbb3e49f247be76d4147dd1fed
     m_importFrom: Assets/Design/Animations/Controllers/Third_Person_OverrrideController.overrideController
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 2831abbf03632a64589db7f8dbf030d1
-    m_importFrom: Assets/Models/Prefabs/Characters/CarterOrganizado.prefab
+  - m_assetDatabaseId: 9cb59f4219ec7ef48b1453a1fdefa9f0
+    m_importFrom: Assets/Models/Characters/Carter.fbx
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: faf228433f9ee0645b25bde3e1078d48
-    m_importFrom: Assets/Design/Animations/Rifle_pickup.anim
+  - m_assetDatabaseId: a336e301854673249a9f1d57aa331e54
+    m_importFrom: Assets/Scenes/Game.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2831abbf03632a64589db7f8dbf030d1
+    m_importFrom: Assets/Models/Prefabs/Characters/CarterOrganizado.prefab
     m_exportTo: 
     m_variantName: 
   m_version: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Pistola
   description: "Pistola Inicial com muni\xE7\xE3o infinita."
   cost: 60
-  itemPrefab: {fileID: 1291617908177594450, guid: 317f4570d6720c4469e9de6123bee6e3,
+  itemPrefab: {fileID: 3397699309482941988, guid: 26e8a9bc2f7d4334bb799589596e9789,
     type: 3}
   itemSprite: {fileID: 21300000, guid: 23560d6aa5a23114a9126c84a4548c46, type: 3}
   itemType: 1

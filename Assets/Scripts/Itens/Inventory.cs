@@ -41,7 +41,7 @@ public class Inventory : MonoBehaviour
             }
             else
             {
-                Debug.Log("Nenhum slot diponivel campeão");
+                //Debug.Log("Nenhum slot diponivel campeão");
             }
         }
     }

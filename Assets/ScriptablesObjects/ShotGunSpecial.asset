@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Special Shotgun
   description: Uma Shotgun especial apenas encontradas por grandes jogadores.
   cost: 200
-  itemPrefab: {fileID: 4776713314577673657, guid: 559c64d10ee69dc41b11f743d18d9f89,
+  itemPrefab: {fileID: 3381110024668523829, guid: ab077f9eaefb7c64893234870276002d,
     type: 3}
   itemSprite: {fileID: 21300000, guid: 5f005b6796d09d0409ccd5c4aed1b521, type: 3}
   itemType: 1
