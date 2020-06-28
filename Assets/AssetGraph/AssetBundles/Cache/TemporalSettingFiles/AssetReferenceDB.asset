@@ -17,24 +17,12 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: f9e4fde816f97ad4981d60aadd1d6913
-    m_importFrom: Assets/ScriptablesObjects/Whisky.asset
-    m_exportTo: 
-    m_variantName: 
   - m_assetDatabaseId: fe17c6bbb3e49f247be76d4147dd1fed
     m_importFrom: Assets/Design/Animations/Controllers/Third_Person_OverrrideController.overrideController
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 9cb59f4219ec7ef48b1453a1fdefa9f0
-    m_importFrom: Assets/Models/Characters/Carter.fbx
-    m_exportTo: 
-    m_variantName: 
   - m_assetDatabaseId: a336e301854673249a9f1d57aa331e54
     m_importFrom: Assets/Scenes/Game.unity
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 2831abbf03632a64589db7f8dbf030d1
-    m_importFrom: Assets/Models/Prefabs/Characters/CarterOrganizado.prefab
     m_exportTo: 
     m_variantName: 
   m_version: 2

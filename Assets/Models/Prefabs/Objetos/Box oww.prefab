@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 4184141389525908763}
   - component: {fileID: 2369078279238427989}
   - component: {fileID: 3310461020096680171}
+  - component: {fileID: 5004969251684758243}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -191,6 +192,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5004969251684758243
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8153034808929254486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 6ce925a9c005b1244b98a69266ff7c71, type: 3}
 --- !u!1 &9046309029078460291
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +217,7 @@ GameObject:
   - component: {fileID: 6255715519900662938}
   - component: {fileID: 536470799931942195}
   - component: {fileID: 9132203573366968529}
+  - component: {fileID: 7390062039120538464}
   m_Layer: 0
   m_Name: Contorno
   m_TagString: Untagged
@@ -270,3 +286,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7390062039120538464
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9046309029078460291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7070126713949109448, guid: 6ce925a9c005b1244b98a69266ff7c71, type: 3}

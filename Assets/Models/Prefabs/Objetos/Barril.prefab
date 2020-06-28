@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4385138355549966737}
   - component: {fileID: 7677036083264750750}
   - component: {fileID: 306492929497413378}
+  - component: {fileID: 8058021773114924599}
   m_Layer: 0
   m_Name: Tampa
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8058021773114924599
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301070668210990770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -256365695689816287, guid: c75783cfe853bd04b82b8f49879edf79, type: 3}
 --- !u!1 &1091761113060028319
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +184,7 @@ GameObject:
   - component: {fileID: 3471537209536303454}
   - component: {fileID: 6587560106743645790}
   - component: {fileID: 3511253100699824108}
+  - component: {fileID: 1332725580532465630}
   m_Layer: 0
   m_Name: Madeiras
   m_TagString: Untagged
@@ -237,6 +253,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1332725580532465630
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913545508633462806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 766870237510181832, guid: c75783cfe853bd04b82b8f49879edf79, type: 3}
 --- !u!1 &2197432746825675281
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +314,7 @@ GameObject:
   - component: {fileID: 8729567464676858671}
   - component: {fileID: 6302204984017572793}
   - component: {fileID: 3918595747225751119}
+  - component: {fileID: 5094240046680274308}
   m_Layer: 0
   m_Name: Argola2
   m_TagString: Untagged
@@ -352,6 +383,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5094240046680274308
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155014390615122395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5907322961067810649, guid: c75783cfe853bd04b82b8f49879edf79, type: 3}
 --- !u!1 &4795734064589651936
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +408,7 @@ GameObject:
   - component: {fileID: 1492076919716228033}
   - component: {fileID: 1274428265203007133}
   - component: {fileID: 501067283794109163}
+  - component: {fileID: 8818822403600349020}
   m_Layer: 0
   m_Name: Argola
   m_TagString: Untagged
@@ -431,6 +477,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8818822403600349020
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795734064589651936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -705696586640060106, guid: c75783cfe853bd04b82b8f49879edf79, type: 3}
 --- !u!1 &5802586528274679386
 GameObject:
   m_ObjectHideFlags: 0

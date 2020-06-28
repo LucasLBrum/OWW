@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5788777000274327132}
   - component: {fileID: 6475901274463538328}
   - component: {fileID: 4209622424113697744}
+  - component: {fileID: 6377481347343864482}
   m_Layer: 0
   m_Name: Tampas
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6377481347343864482
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4648328969838614402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6443823317915127029, guid: 0345b4f1aecb2a049a35c7ae81cd931f, type: 3}
 --- !u!1 &6621023492530791847
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +105,7 @@ GameObject:
   - component: {fileID: 5348112136532657716}
   - component: {fileID: 6497214558420213771}
   - component: {fileID: 5748951114438475246}
+  - component: {fileID: 9042630078716631034}
   m_Layer: 0
   m_Name: Caixa
   m_TagString: Untagged
@@ -158,6 +174,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &9042630078716631034
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6621023492530791847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8420232193779099810, guid: 0345b4f1aecb2a049a35c7ae81cd931f, type: 3}
 --- !u!1 &8139226077734593717
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +232,7 @@ GameObject:
   - component: {fileID: 4323284926388988657}
   - component: {fileID: 7060548621579038770}
   - component: {fileID: 5087689428658383531}
+  - component: {fileID: 8634602544523425635}
   m_Layer: 0
   m_Name: Bordas
   m_TagString: Untagged
@@ -270,3 +301,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8634602544523425635
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8675770547918739875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2777071377989403592, guid: 0345b4f1aecb2a049a35c7ae81cd931f, type: 3}

@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 2231347116579924706}
   - component: {fileID: 3789497173058651966}
   - component: {fileID: 3248551033914795669}
+  - component: {fileID: 9054939001006395715}
   m_Layer: 0
   m_Name: Balde
   m_TagString: Untagged
@@ -191,6 +192,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &9054939001006395715
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2923089203595377386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7924619765015334884, guid: 978c57daacd32d04386902efac90d5e2, type: 3}
 --- !u!1 &3143065025253922987
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +217,7 @@ GameObject:
   - component: {fileID: 7794537193174654614}
   - component: {fileID: 1900346441000825855}
   - component: {fileID: 3590163364757654224}
+  - component: {fileID: 8648063184060607702}
   m_Layer: 0
   m_Name: Macas
   m_TagString: Untagged
@@ -270,3 +286,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8648063184060607702
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3143065025253922987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1461323886353489009, guid: 978c57daacd32d04386902efac90d5e2, type: 3}
