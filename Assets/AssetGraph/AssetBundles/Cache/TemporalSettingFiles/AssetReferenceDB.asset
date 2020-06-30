@@ -25,4 +25,76 @@ MonoBehaviour:
     m_importFrom: Assets/Scenes/Game.unity
     m_exportTo: 
     m_variantName: 
+  - m_assetDatabaseId: e5f3b381a51db0a48ab6d9b941a80ce2
+    m_importFrom: "Assets/Models/Contru\xE7\xF5es/Po\xE7o.fbx"
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b0420bfc89e5de745b8ad38ec0fcbe84
+    m_importFrom: "Assets/Models/Prefabs/Constructions/Po\xE7o.prefab"
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 87edca54c16941d4387ef54f5e51a5a7
+    m_importFrom: Assets/Scripts/Itens/ActiveWeapon.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 26e8a9bc2f7d4334bb799589596e9789
+    m_importFrom: Assets/Models/Prefabs/Weapons/Revolver.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1992525059694704a97da44f6b89f13e
+    m_importFrom: Assets/ScriptablesObjects/Pistol.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c440fffe701f3514995f375d44712a3f
+    m_importFrom: Assets/Models/Prefabs/Weapons/Shotgun_01.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 61b74e26d42d43541a4caf699243602a
+    m_importFrom: "Assets/Models/Contru\xE7\xF5es/CasaCarter2.fbx"
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8212733d5b0955248ab29a2103b90e5e
+    m_importFrom: Assets/Models/Prefabs/Constructions/CasaCarter2.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 28dac382d04df6f4188254ec42f7f63e
+    m_importFrom: Assets/Models/Enemys/Witche.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c7e88450ed100c344b5410ba1055aabc
+    m_importFrom: Assets/Scripts/Characters/Actions/PlayerMovement.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2831abbf03632a64589db7f8dbf030d1
+    m_importFrom: Assets/Models/Prefabs/Characters/CarterOrganizado.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8c50db485fca093459af5fe2576b147e
+    m_importFrom: Assets/Design/Animations/Controllers/ThirdPersonPlayer.controller
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5ea0bf9b635bfdc4ba83bef3e97b942b
+    m_importFrom: "Assets/Models/Contru\xE7\xF5es/Saloon_.fbx"
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: aca701293b5c76a458c77e9e725a0cb2
+    m_importFrom: Assets/Design/Materials/Letreiros/Saloon.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 091b030ed298d5248979b1e8fcee986e
+    m_importFrom: Assets/Design/Materials/Textures/LetreiroSallon.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 091b030ed298d5248979b1e8fcee986e
+    m_importFrom: Assets/LetreiroSallon.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c923a8a7d8c4b1b469dca24dddbf8435
+    m_importFrom: Assets/Models/Prefabs/Constructions/Saloon_.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: aca701293b5c76a458c77e9e725a0cb2
+    m_importFrom: Assets/Design/Materials/Saloon.mat
+    m_exportTo: 
+    m_variantName: 
   m_version: 2

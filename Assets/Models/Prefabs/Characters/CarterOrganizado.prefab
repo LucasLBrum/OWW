@@ -3879,6 +3879,7 @@ GameObject:
   - component: {fileID: 3174044777822639814}
   - component: {fileID: 8824976184986933975}
   - component: {fileID: 669731087}
+  - component: {fileID: 1289275299}
   m_Layer: 11
   m_Name: CarterOrganizado
   m_TagString: Player
@@ -3916,7 +3917,7 @@ Animator:
   m_GameObject: {fileID: 6858302728093937332}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 9cb59f4219ec7ef48b1453a1fdefa9f0, type: 3}
-  m_Controller: {fileID: 22100000, guid: fe17c6bbb3e49f247be76d4147dd1fed, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8c50db485fca093459af5fe2576b147e, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -4029,6 +4030,18 @@ MonoBehaviour:
   weaponLeftGrip: {fileID: 475407383}
   weaponRightGrip: {fileID: 1783684714}
   a: {fileID: 0}
+--- !u!114 &1289275299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6858302728093937332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd13ce8cfa9819946bcad01283c0305d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7167716597301320535
 GameObject:
   m_ObjectHideFlags: 0

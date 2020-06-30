@@ -43,11 +43,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (away == false)
         {
-            input.x = Input.GetAxis("Horizontal"); //recebe o valor dos parametros da unity de horizontal e vertical.
-            input.y = Input.GetAxis("Vertical");
+            input.x = Input.GetAxisRaw("Horizontal"); //recebe o valor dos parametros da unity de horizontal e vertical.
+            input.y = Input.GetAxisRaw("Vertical");
 
-            anim.SetFloat("InputX", input.x);
-            anim.SetFloat("InputY", input.y); //"conecta" as variaveis do script aos paramentros do animator.
+            //anim.SetFloat("InputX", input.x);
+            //anim.SetFloat("InputY", input.y); //"conecta" as variaveis do script aos paramentros do animator.
+            anim.SetFloat("InputX", input.x, 0.2f, Time.deltaTime);
+            anim.SetFloat("InputY", input.y, 0.2f, Time.deltaTime);
 
 
             if (Input.GetKey(KeyCode.LeftControl))
