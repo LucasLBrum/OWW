@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
     {
         CharacterMoviment();
         CharacterView();
-        OpenInventory();
-        EquipWeapon();
+        //OpenInventory();
+        //EquipWeapon();
     }
 
     void CharacterMoviment() 

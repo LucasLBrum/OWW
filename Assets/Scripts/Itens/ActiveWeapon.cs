@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
-//using UnityEditor.Animations;
+using UnityEditor.Animations;
 
 public class ActiveWeapon : MonoBehaviour
 {
@@ -24,13 +24,13 @@ public class ActiveWeapon : MonoBehaviour
 
         anim = GetComponent<Animator>();
         overrides = anim.runtimeAnimatorController as AnimatorOverrideController;
-        /*
+        
         ItemResource exisitingWeapon = GetComponentInChildren<ItemResource>();
         if (exisitingWeapon)
         {
             Equip(exisitingWeapon);
         }
-        */
+        
     }
 
     private void Update()
@@ -66,7 +66,7 @@ public class ActiveWeapon : MonoBehaviour
         overrides["empty"] = weapon.weaponAnimation;
     }
 
- /*
+
     [ContextMenu("Salvar Posicao da arma/maos")]
     void SaveWeaponPose()
     {
@@ -78,5 +78,5 @@ public class ActiveWeapon : MonoBehaviour
         recorder.SaveToClip(weapon.weaponAnimation);
         UnityEditor.AssetDatabase.SaveAssets(); 
     }
-  */
+
 }
