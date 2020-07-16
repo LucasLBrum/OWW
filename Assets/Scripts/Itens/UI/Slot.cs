@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Slot : MonoBehaviour
 {
     public bool open = true; //Há algum item no slot?
+    public bool use = false;
     public Image itemImage;//Componente de Imagem do slot
     public ItemResource item;//Componente de "ItemResource", que vai abrigar o item que o character recolher.
     public Sprite nothing;//Sprite padrão da Imagem.
@@ -18,6 +19,7 @@ public class Slot : MonoBehaviour
         if (!open)
         {
             var prefab = Instantiate(item.itemPrefab, characterTranform.position, transform.rotation);
+            prefab.gameObject.GetComponent<BoxCollider>().enabled = true;
             open = true;
             itemImage.sprite = nothing;
             item = null;

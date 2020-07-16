@@ -36,13 +36,15 @@ public class ShootRaycast : MonoBehaviour
 
         if(Physics.Raycast(transform.position, transform.forward, out hit, raycastDistance, mask, QueryTriggerInteraction.Collide))
         //if (Physics.Raycast(ray, out hit, raycastDistance, mask))
-        {          
+        {
             var interactable = hit.transform.GetComponent<ItemScene>();
-
-            if(interactable != null)
+            Debug.Log("b");
+            if (interactable != null)
             {
+                Debug.Log("a");
                 //print($"Colidiu {hit.transform.name} no ponto {hit.point}");
                 pickUp.PickUp(interactable.gameObject);
+
                 
             }
         }

@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public Cinemachine.CinemachineFreeLook cinemachine_m; //componente de cinemachine
     Camera mainCamera; //main camera
     public ActiveWeapon activeWeapon;
+    public Slot slotWeaponUse;
 
     private void Awake()
     {
@@ -35,8 +36,8 @@ public class PlayerMovement : MonoBehaviour
     {
         CharacterMoviment();
         CharacterView();
-        //OpenInventory();
-        //EquipWeapon();
+        OpenInventory();
+        EquipWeapon();
     }
 
     void CharacterMoviment() 
@@ -118,36 +119,37 @@ public class PlayerMovement : MonoBehaviour
         {
             if(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].open == false)
             {
-                if (activeWeapon.a != null)
+                if (activeWeapon.weaponObject != null)
                 {
-                    Destroy(activeWeapon.a);
+                    Destroy(activeWeapon.weaponObject);
                 }
 
                 activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item);
-
+                slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[0];
             }
         }
         if (Input.GetKey(KeyCode.Alpha2))
         {
             if (Player.singleton.carterScene.inventoryInScene.weaponSlot[1].open == false)
             {
-                if (activeWeapon.a != null)
+                if (activeWeapon.weaponObject != null)
                 {
-                    Destroy(activeWeapon.a);
+                    Destroy(activeWeapon.weaponObject);
                 }
 
                 activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item);
-
+                slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[1];
             }
 
         }
         if (Input.GetKey(KeyCode.Alpha3))
         {
-            if (activeWeapon.a != null)
+            if (activeWeapon.weaponObject != null)
             {
-                Destroy(activeWeapon.a);
+                Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
                 rig.weight = 1.0f;
+                slotWeaponUse = null;
             }
         }
 

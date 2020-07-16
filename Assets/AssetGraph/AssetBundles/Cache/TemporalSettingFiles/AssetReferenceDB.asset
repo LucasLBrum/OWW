@@ -17,4 +17,8 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
+  - m_assetDatabaseId: 42592b8c16b88e74db8ad09fb6146e6d
+    m_importFrom: Assets/Design/Animations/Controllers/ThirdPersonOver.overrideController
+    m_exportTo: 
+    m_variantName: 
   m_version: 2

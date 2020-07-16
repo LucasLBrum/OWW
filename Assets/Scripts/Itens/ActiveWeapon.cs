@@ -14,23 +14,15 @@ public class ActiveWeapon : MonoBehaviour
     public Transform weaponLeftGrip; 
     public Transform weaponRightGrip;
 
-    public GameObject a;
+    public GameObject weaponObject;
     Animator anim;
-    AnimatorOverrideController overrides;
+    public AnimatorOverrideController overrides;
 
 
     private void Start()
     {
-
         anim = GetComponent<Animator>();
         overrides = anim.runtimeAnimatorController as AnimatorOverrideController;
-        
-        ItemResource exisitingWeapon = GetComponentInChildren<ItemResource>();
-        if (exisitingWeapon)
-        {
-            Equip(exisitingWeapon);
-        }
-        
     }
 
     private void Update()
@@ -49,12 +41,13 @@ public class ActiveWeapon : MonoBehaviour
     public void Equip(ItemResource resorceWeapon)
     {
         var weaponPrefab = Instantiate(resorceWeapon.itemPrefab, weaponParent.transform);
-        a = GetComponentInChildren<WeaponInScene>().gameObject;
+        weaponObject = GetComponentInChildren<WeaponInScene>().gameObject;
         weapon = weaponPrefab.GetComponent<WeaponInScene>();
         weapon.transform.parent = weaponParent.parent; 
         weapon.gameObject.transform.localPosition = Vector3.zero;
         weapon.gameObject.transform.localRotation = Quaternion.identity;
 
+        weapon.GetComponent<BoxCollider>().enabled = false;
         handIK.weight = 1.0f;
         anim.SetLayerWeight(1, 1.0f);
         Invoke(nameof(SetAnimationDelayed), 0.001f);
