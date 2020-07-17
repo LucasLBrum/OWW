@@ -154,5 +154,20 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
+
+    public void Desequip()
+    {
+        if(slotWeaponUse != null)
+        {
+            if (activeWeapon.weaponObject.GetComponent<ItemScene>().thisItem == slotWeaponUse.item)
+            {
+                Destroy(activeWeapon.weaponObject);
+                activeWeapon.weapon = null;
+                rig.weight = 1.0f;
+                slotWeaponUse = null;
+            }
+        }
+    }
 }
 

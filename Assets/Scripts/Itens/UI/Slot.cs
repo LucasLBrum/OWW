@@ -18,6 +18,7 @@ public class Slot : MonoBehaviour
     {
         if (!open)
         {
+            Player.singleton.carterScene.GetComponent<PlayerMovement>().Desequip();
             var prefab = Instantiate(item.itemPrefab, characterTranform.position, transform.rotation);
             prefab.gameObject.GetComponent<BoxCollider>().enabled = true;
             open = true;
