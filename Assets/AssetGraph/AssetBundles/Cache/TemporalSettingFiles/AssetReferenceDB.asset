@@ -13,92 +13,20 @@ MonoBehaviour:
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
   m_assets:
-  - m_assetDatabaseId: 0000000000000000b000000000000000
-    m_importFrom: ProjectSettings/EditorBuildSettings.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 1992525059694704a97da44f6b89f13e
-    m_importFrom: Assets/ScriptablesObjects/Pistol.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 6661d6a0ef30c0d4c92f73c8c2f0e371
-    m_importFrom: Assets/Models/Prefabs/Objetos/Box oww.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 3abd02b1df448634fb92aad454f93eb9
-    m_importFrom: Assets/Models/Prefabs/Objetos/Garrafa.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 0345b4f1aecb2a049a35c7ae81cd931f
-    m_importFrom: Assets/Models/Objetos/Caixa_Grande.fbx
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: faf228433f9ee0645b25bde3e1078d48
-    m_importFrom: Assets/Design/Animations/Rifle_pickup.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: d29dd9c50fa4e3f4480ed9f25993c4a2
-    m_importFrom: Assets/Models/Weapons/Shotgun_01.fbx
-    m_exportTo: 
-    m_variantName: 
   - m_assetDatabaseId: 5443a266b274aec4c90c663acb12df48
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 358b7587deeb8e14e8cf40e93e84f22d
-    m_importFrom: Assets/Design/Animations/ShotGun2_pickup.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 8c50db485fca093459af5fe2576b147e
-    m_importFrom: Assets/Design/Animations/Controllers/ThirdPersonPlayer.controller
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: f9e4fde816f97ad4981d60aadd1d6913
-    m_importFrom: Assets/ScriptablesObjects/Whisky.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 6ce925a9c005b1244b98a69266ff7c71
-    m_importFrom: Assets/Models/Objetos/Box oww.fbx
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: e7d8422a1f1e7594a89721b7da38aa6c
-    m_importFrom: Assets/ScriptablesObjects/ShotGunSpecial.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: b9078f2acb2f45144ae185a74ce66053
-    m_importFrom: Assets/Models/Objetos/PortaArmas_01.fbx
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 4fa359aa98ddffb45ba7a427115c99db
-    m_importFrom: Assets/Design/Materials/Ferro.mat
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 978c57daacd32d04386902efac90d5e2
-    m_importFrom: Assets/Models/Objetos/BaldeDeMacas.fbx
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 56aac4bb6c8c71347b0bb4aab5d19f59
-    m_importFrom: Assets/ScriptablesObjects/Shotgun.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: dbc46e3c71f496b4a8bf86fde8614eac
-    m_importFrom: Assets/Design/Animations/Pistol_pickup.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: b981ad0ff17d42341bff40f9a023c445
-    m_importFrom: Assets/Models/Objetos/Caixa_Pequena.fbx
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: 42592b8c16b88e74db8ad09fb6146e6d
     m_importFrom: Assets/Design/Animations/Controllers/ThirdPersonOver.overrideController
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: c7e88450ed100c344b5410ba1055aabc
-    m_importFrom: Assets/Scripts/Characters/Actions/PlayerMovement.cs
+  - m_assetDatabaseId: 03d79ae09d912c74c80d30f44cdbcad8
+    m_importFrom: Assets/ScriptablesObjects/New Item.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: f37c9da28323645478ef9a2d983c448f
-    m_importFrom: Assets/Scripts/Itens/UI/Slot.cs
+  - m_assetDatabaseId: 213c4e805fecf404cbc2800bd746008f
+    m_importFrom: Assets/Scripts/Itens/Gun/ShootRaycast.cs
     m_exportTo: 
     m_variantName: 
   m_version: 2
