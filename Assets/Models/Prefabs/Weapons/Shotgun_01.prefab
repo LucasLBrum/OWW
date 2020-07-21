@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 2411296489731416699}
   - component: {fileID: 1348548514113187840}
   - component: {fileID: 7648671338060254245}
+  - component: {fileID: 2069432415773351084}
   - component: {fileID: 1670534725000905548}
   m_Layer: 12
   m_Name: Shotgun_01
@@ -114,6 +115,7 @@ Transform:
   - {fileID: 5091257685931733589}
   - {fileID: 5647669993561352120}
   - {fileID: 4506671784783034168}
+  - {fileID: 4416337506132290118}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -143,6 +145,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponAnimation: {fileID: 7400000, guid: faf228433f9ee0645b25bde3e1078d48, type: 2}
+  inUse: 0
+--- !u!114 &2069432415773351084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670268909682462824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635ef84bec0f7a24f88a5a4651c00600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirePoint: {fileID: 3894648598151660565}
+  vfx:
+  - {fileID: 5158075454591896984, guid: bf590de6115667044a7ef898d47b7118, type: 3}
 --- !u!65 &1670534725000905548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -393,6 +411,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &3894648598151660565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4416337506132290118}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4416337506132290118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894648598151660565}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.519, y: 0.062, z: 0.005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2411296489731416699}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &5095133505104976728
 GameObject:
   m_ObjectHideFlags: 0

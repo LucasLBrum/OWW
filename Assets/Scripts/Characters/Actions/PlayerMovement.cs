@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 input;//input para ser usado na movimentação
     public CinemachineCameraOffset m_cineMachineOffSetsConfigs; //classe que controla a posicao da FreeLock camera do cinemachine.
     public GameObject imagePanel;//inventario
+    public GameObject LookCamera;//inventario
     bool away = false;// o jogador esta com o inventario aberto?
 
     public float turnSpeed = 15; //velocidade de rotacao da yawcamera
@@ -32,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         cinemachine_m.m_XAxis.m_InvertInput = false; //deixando o InvertInput false, poderia ter feito pelo Inspector mas estava bugado, acredito que seja por conta do componente ainda estar em testes.
         cinemachine_m.m_YAxis.m_InvertInput = true;
     }
-    private void Update()
+    private void Update() 
     {
         CharacterMoviment();
         CharacterView();
@@ -76,8 +77,13 @@ public class PlayerMovement : MonoBehaviour
             {
             }
 
-            if (Input.GetKeyUp(KeyCode.Mouse0))
+            if (Input.GetKey(KeyCode.Mouse1))
             {
+                cinemachine_m.Follow = LookCamera.transform;
+            }
+            else
+            {
+                cinemachine_m.Follow = gameObject.transform;
             }
         }
     }
