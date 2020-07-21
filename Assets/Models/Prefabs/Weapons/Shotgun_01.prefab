@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49306c89fab9e5644ba2fa1af786f9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponAnimation: {fileID: 7400000, guid: faf228433f9ee0645b25bde3e1078d48, type: 2}
+  weaponName: rifle
   inUse: 0
 --- !u!114 &2069432415773351084
 MonoBehaviour:

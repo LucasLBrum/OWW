@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49306c89fab9e5644ba2fa1af786f9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponAnimation: {fileID: 7400000, guid: 358b7587deeb8e14e8cf40e93e84f22d, type: 2}
+  weaponName: shotgun
   inUse: 0
 --- !u!65 &3676658813826524091
 BoxCollider:

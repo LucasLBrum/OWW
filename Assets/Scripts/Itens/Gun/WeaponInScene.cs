@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class WeaponInScene : MonoBehaviour
 {
-    public AnimationClip weaponAnimation;
+    public string weaponName;
     public bool inUse;
 }

@@ -7,7 +7,6 @@ using Cinemachine;
 public class PlayerMovement : MonoBehaviour
 {
     Animator anim; //componente de animação.
-    public Rig rig;//componente de Rig 
     Vector2 input;//input para ser usado na movimentação
     public CinemachineCameraOffset m_cineMachineOffSetsConfigs; //classe que controla a posicao da FreeLock camera do cinemachine.
     public GameObject imagePanel;//inventario
@@ -68,11 +67,6 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("Jump", false);
             }
 
-            if (rig)
-            {
-                rig.weight = 1.0f;
-            }
-
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
             }
@@ -91,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
     void CharacterView()
     {
         
-        float yawCamera = mainCamera.transform.rotation.eulerAngles.y; // Ainda nao entendi o codigo.
+        float yawCamera = mainCamera.transform.rotation.eulerAngles.y; 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnSpeed * Time.fixedDeltaTime);
         
     }
@@ -154,8 +148,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
-                rig.weight = 1.0f;
                 slotWeaponUse = null;
+                activeWeapon.handIK.weight = 0;
+                activeWeapon.rigController.Play("Default");
             }
         }
 
@@ -170,8 +165,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
-                rig.weight = 1.0f;
                 slotWeaponUse = null;
+                activeWeapon.handIK.weight = 0;
+                activeWeapon.rigController.Play("Default");
             }
         }
     }

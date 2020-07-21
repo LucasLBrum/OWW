@@ -15,28 +15,7 @@ public class ActiveWeapon : MonoBehaviour
     public Transform weaponRightGrip;
 
     public GameObject weaponObject;
-    Animator anim;
-    public AnimatorOverrideController overrides;
-
-
-    private void Start()
-    {
-        anim = GetComponent<Animator>();
-        overrides = anim.runtimeAnimatorController as AnimatorOverrideController;
-    }
-
-    private void Update()
-    {
-        if (weapon)
-        {
-
-        }
-        else
-        {
-            handIK.weight = 0f;
-            anim.SetLayerWeight(1, 0.0f); 
-        }
-    }
+    public Animator rigController;
 
     public void Equip(ItemResource resorceWeapon)
     {
@@ -46,30 +25,9 @@ public class ActiveWeapon : MonoBehaviour
         weapon.transform.parent = weaponParent.parent; 
         weapon.gameObject.transform.localPosition = Vector3.zero;
         weapon.gameObject.transform.localRotation = Quaternion.identity;
+        handIK.weight = 1;
+        rigController.Play("equip_" + weapon.weaponName);
 
         weapon.GetComponent<BoxCollider>().enabled = false;
-        handIK.weight = 1.0f;
-        anim.SetLayerWeight(1, 1.0f);
-        Invoke(nameof(SetAnimationDelayed), 0.001f);
-
     }
-
-    void SetAnimationDelayed()
-    {
-        overrides["empty"] = weapon.weaponAnimation;
-    }
-
-
-    [ContextMenu("Salvar Posicao da arma/maos")]
-    void SaveWeaponPose()
-    {
-        GameObjectRecorder recorder = new GameObjectRecorder(gameObject);
-        recorder.BindComponentsOfType<Transform>(weaponParent.gameObject, false);
-        recorder.BindComponentsOfType<Transform>(weaponLeftGrip.gameObject, false);
-        recorder.BindComponentsOfType<Transform>(weaponRightGrip.gameObject, false);
-        recorder.TakeSnapshot(0.0f);
-        recorder.SaveToClip(weapon.weaponAnimation);
-        UnityEditor.AssetDatabase.SaveAssets(); 
-    }
-
 }

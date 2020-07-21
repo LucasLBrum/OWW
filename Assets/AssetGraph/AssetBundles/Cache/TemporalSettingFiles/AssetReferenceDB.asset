@@ -13,16 +13,40 @@ MonoBehaviour:
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
   m_assets:
+  - m_assetDatabaseId: b151f951087a18c4899fd5ebf2feb12f
+    m_importFrom: Assets/Design/Animations/Controllers/RigControl.controller
+    m_exportTo: 
+    m_variantName: 
   - m_assetDatabaseId: 5443a266b274aec4c90c663acb12df48
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 42592b8c16b88e74db8ad09fb6146e6d
-    m_importFrom: Assets/Design/Animations/Controllers/ThirdPersonOver.overrideController
+  - m_assetDatabaseId: 87edca54c16941d4387ef54f5e51a5a7
+    m_importFrom: Assets/Scripts/Itens/ActiveWeapon.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: cabb17f88acfd5e4989c3fa8b8fccf25
-    m_importFrom: Assets/Models/Characters/CarterModel.fbx
+  - m_assetDatabaseId: ab077f9eaefb7c64893234870276002d
+    m_importFrom: Assets/Models/Prefabs/Weapons/ShotGunEspecial.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8c50db485fca093459af5fe2576b147e
+    m_importFrom: Assets/Design/Animations/Controllers/ThirdPersonPlayer.controller
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: dbc46e3c71f496b4a8bf86fde8614eac
+    m_importFrom: Assets/Design/Animations/equip_pistol.anim
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c7e88450ed100c344b5410ba1055aabc
+    m_importFrom: Assets/Scripts/Characters/Actions/PlayerMovement.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: be46bd5191367374593675497df73496
+    m_importFrom: Assets/Scenes/TestTerrain.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bf590de6115667044a7ef898d47b7118
+    m_importFrom: Assets/Models/xfx_Projectile_tutorial.prefab
     m_exportTo: 
     m_variantName: 
   m_version: 2
