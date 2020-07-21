@@ -493,6 +493,7 @@ MonoBehaviour:
   FirePoint: {fileID: 7076325437086807891}
   vfx:
   - {fileID: 5158075454591896984, guid: bf590de6115667044a7ef898d47b7118, type: 3}
+  rigController: {fileID: 0}
 --- !u!1 &4838589731424868285
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,7 +676,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7076325437086807891}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.42299986, y: 0.035999298, z: 0}
+  m_LocalPosition: {x: -0.586, y: 0.139, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1780967492608843558}

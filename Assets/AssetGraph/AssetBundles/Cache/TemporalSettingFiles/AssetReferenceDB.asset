@@ -21,32 +21,32 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 87edca54c16941d4387ef54f5e51a5a7
-    m_importFrom: Assets/Scripts/Itens/ActiveWeapon.cs
+  - m_assetDatabaseId: 29e059781533fec40b8a2b93e53642f5
+    m_importFrom: Assets/Design/Animations/weapon_recoil_shotgun.anim
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 635ef84bec0f7a24f88a5a4651c00600
+    m_importFrom: Assets/Scripts/ShootProject.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c440fffe701f3514995f375d44712a3f
+    m_importFrom: Assets/Models/Prefabs/Weapons/Shotgun_01.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 26e8a9bc2f7d4334bb799589596e9789
+    m_importFrom: Assets/Models/Prefabs/Weapons/Revolver.prefab
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: ab077f9eaefb7c64893234870276002d
     m_importFrom: Assets/Models/Prefabs/Weapons/ShotGunEspecial.prefab
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 8c50db485fca093459af5fe2576b147e
-    m_importFrom: Assets/Design/Animations/Controllers/ThirdPersonPlayer.controller
+  - m_assetDatabaseId: d8160125c920a9a448bb959e89b4c450
+    m_importFrom: Assets/Design/Animations/weapon_recoil_pistol.anim
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: dbc46e3c71f496b4a8bf86fde8614eac
-    m_importFrom: Assets/Design/Animations/equip_pistol.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: c7e88450ed100c344b5410ba1055aabc
-    m_importFrom: Assets/Scripts/Characters/Actions/PlayerMovement.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: be46bd5191367374593675497df73496
-    m_importFrom: Assets/Scenes/TestTerrain.unity
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: bf590de6115667044a7ef898d47b7118
-    m_importFrom: Assets/Models/xfx_Projectile_tutorial.prefab
+  - m_assetDatabaseId: c195e398d6513e94cb4bf111d817100d
+    m_importFrom: Assets/Design/Animations/weapon_recoil_rifle.anim
     m_exportTo: 
     m_variantName: 
   m_version: 2

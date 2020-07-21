@@ -27,6 +27,7 @@ public class ActiveWeapon : MonoBehaviour
         weapon.gameObject.transform.localRotation = Quaternion.identity;
         handIK.weight = 1;
         rigController.Play("equip_" + weapon.weaponName);
+        weapon.GetComponent<ShootProject>().rigController = rigController;
 
         weapon.GetComponent<BoxCollider>().enabled = false;
     }

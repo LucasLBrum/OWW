@@ -6,6 +6,7 @@ public class ShootProject : MonoBehaviour
 {
     public GameObject FirePoint;
     public List<GameObject> vfx = new List<GameObject>();
+    public Animator rigController;
 
     private GameObject effectToSpawn;
     float timeTofire = 0;
@@ -23,6 +24,7 @@ public class ShootProject : MonoBehaviour
             {
                 if (Input.GetMouseButton(0) && Time.time >= timeTofire)
                 {
+                    rigController.Play("weapon_recoil_" + GetComponent<WeaponInScene>().weaponName, 1, 0.0f);
                     timeTofire = Time.time + 1 / effectToSpawn.GetComponent<ProjectileMove>().fireRate;
                     SpawnVFX();
                 }

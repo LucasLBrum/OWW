@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93414221324670225}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.252, y: 0.0681, z: 0}
+  m_LocalPosition: {x: -0.401, y: 0.161, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1836435509770251319}
@@ -352,6 +352,7 @@ MonoBehaviour:
   FirePoint: {fileID: 93414221324670225}
   vfx:
   - {fileID: 5158075454591896984, guid: bf590de6115667044a7ef898d47b7118, type: 3}
+  rigController: {fileID: 0}
 --- !u!65 &7209033830704239482
 BoxCollider:
   m_ObjectHideFlags: 0
