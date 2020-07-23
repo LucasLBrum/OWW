@@ -23,11 +23,11 @@ public class Carter : Character//classe do personagem principal que tem varios d
 
 public class Witch : Character//classe da bruxa que tem varios diferenciais dos demais personagens.
 {
-    public float magic;//variavel que demonstra o dano da bruxa.
-    public Witch(string Name, float Life, float Magic)//contrutor
+    public float damage;//variavel que demonstra o dano da bruxa.
+    public Witch(string Name, float Life, float Damage)//contrutor
     {
         nameCharacter = Name;
         lifeCharacter = Life;
-        magic = Magic;
+        damage = Damage;
     }
 }

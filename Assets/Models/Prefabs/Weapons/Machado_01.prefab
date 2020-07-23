@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8224625674653310697}
   - component: {fileID: 6521966817954287937}
   - component: {fileID: 695297793982301591}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 1542459261539341259}
   - component: {fileID: 7464782965151940447}
   - component: {fileID: 3882725314055941954}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 4944781106427941918}
   - component: {fileID: 7751704642912539442}
   - component: {fileID: 2773156612762740570}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6585154678607151453}
-  m_Layer: 0
+  - component: {fileID: 1587865015}
+  - component: {fileID: 1587865016}
+  - component: {fileID: 1587865017}
+  m_Layer: 12
   m_Name: Machado_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +263,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7870166322619315022}
-  m_LocalRotation: {x: 0.65184796, y: 0.27403343, z: -0.27403337, w: 0.65184796}
+  m_LocalRotation: {x: 0.65184855, y: 0.27403197, z: -0.27403194, w: 0.65184855}
   m_LocalPosition: {x: -66.75286, y: 51.201, z: -39.771305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -270,3 +273,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -45.603}
+--- !u!65 &1587865015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7870166322619315022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &1587865016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7870166322619315022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc605d05afa883419b94f229614045c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisItem: {fileID: 11400000, guid: 03d79ae09d912c74c80d30f44cdbcad8, type: 2}
+--- !u!114 &1587865017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7870166322619315022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49306c89fab9e5644ba2fa1af786f9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: machado
+  inUse: 0
