@@ -47,29 +47,20 @@ public class PlayerMovement : MonoBehaviour
             input.x = Input.GetAxisRaw("Horizontal"); //recebe o valor dos parametros da unity de horizontal e vertical.
             input.y = Input.GetAxisRaw("Vertical");
 
-            //anim.SetFloat("InputX", input.x);
-            //anim.SetFloat("InputY", input.y); //"conecta" as variaveis do script aos paramentros do animator.
             anim.SetFloat("InputX", input.x, 0.2f, Time.deltaTime);
             anim.SetFloat("InputY", input.y, 0.2f, Time.deltaTime);
 
-
-            if (Input.GetKey(KeyCode.LeftControl))
-                anim.SetBool("Lower", true); //Segurando o Controll esquerdo a bool Lower do controle de animação recebe true
-            else
-                anim.SetBool("Lower", false); //Soltando o Controll esquerdo a bool Lower do controle de animação recebe false
-
-            if (Input.GetKeyDown(KeyCode.Space))
+            if(slotWeaponUse == null)
             {
-                anim.SetBool("Jump", true);
-            }
-            else
-            {
-                anim.SetBool("Jump", false);
+                if (Input.GetKey(KeyCode.S) == false)
+                {
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        anim.SetTrigger("Roll");
+                    }
+                }
             }
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-            }
 
             if (Input.GetKey(KeyCode.Mouse1))
             {
@@ -115,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
 
     void EquipWeapon()
     {
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].open == false)
             {
@@ -128,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[0];
             }
         }
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             if (Player.singleton.carterScene.inventoryInScene.weaponSlot[1].open == false)
             {
@@ -142,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
-        if (Input.GetKey(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (activeWeapon.weaponObject != null)
             {
