@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject LookCamera;//inventario
     bool away = false;// o jogador esta com o inventario aberto?
 
-    public float turnSpeed = 15; //velocidade de rotacao da yawcamera
+    private float turnSpeed = 10; //velocidade de rotacao da yawcamera
     public Cinemachine.CinemachineFreeLook cinemachine_m; //componente de cinemachine
     Camera mainCamera; //main camera
     public ActiveWeapon activeWeapon;
@@ -70,6 +70,19 @@ public class PlayerMovement : MonoBehaviour
             {
                 cinemachine_m.Follow = gameObject.transform;
             }
+
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                if (!activeWeapon.rigController.GetBool("Holster"))
+                {
+                    activeWeapon.rigController.SetBool("Holster", true);
+                }
+                else
+                {
+                    activeWeapon.rigController.SetBool("Holster", false);
+                }
+            }
         }
     }
 
@@ -110,11 +123,16 @@ public class PlayerMovement : MonoBehaviour
         {
             if(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].open == false)
             {
-                if (activeWeapon.weaponObject != null)
+                if(slotWeaponUse != null)
                 {
-                    Destroy(activeWeapon.weaponObject);
+                    if (Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item == slotWeaponUse.item)
+                    {
+                        return;
+                    }
                 }
 
+                Destroy(activeWeapon.weaponObject);
+                activeWeapon.weapon = null;
                 activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item);
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[0];
             }
@@ -123,11 +141,16 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Player.singleton.carterScene.inventoryInScene.weaponSlot[1].open == false)
             {
-                if (activeWeapon.weaponObject != null)
+                if (slotWeaponUse != null)
                 {
-                    Destroy(activeWeapon.weaponObject);
+                    if (Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item == slotWeaponUse.item)
+                    {
+                        return;
+                    }
                 }
 
+                Destroy(activeWeapon.weaponObject);
+                activeWeapon.weapon = null;
                 activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item);
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[1];
             }
@@ -135,7 +158,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            if (activeWeapon.weaponObject != null)
+            if (activeWeapon.weapon != null)
             {
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;

@@ -20,9 +20,9 @@ public class ActiveWeapon : MonoBehaviour
     public void Equip(ItemResource resorceWeapon)
     {
         var weaponPrefab = Instantiate(resorceWeapon.itemPrefab, weaponParent.transform);
-        weaponObject = GetComponentInChildren<WeaponInScene>().gameObject;
+        weaponObject = weaponPrefab;
         weapon = weaponPrefab.GetComponent<WeaponInScene>();
-        weapon.transform.parent = weaponParent.parent; 
+        weapon.transform.parent = weaponParent; 
         weapon.gameObject.transform.localPosition = Vector3.zero;
         weapon.gameObject.transform.localRotation = Quaternion.identity;
         handIK.weight = 1;
