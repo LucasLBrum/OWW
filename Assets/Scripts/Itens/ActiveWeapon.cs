@@ -17,6 +17,7 @@ public class ActiveWeapon : MonoBehaviour
     public GameObject weaponObject;
     public Animator rigController;
 
+
     public void Equip(ItemResource resorceWeapon)
     {
         var weaponPrefab = Instantiate(resorceWeapon.itemPrefab, weaponParent.transform);

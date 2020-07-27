@@ -50,17 +50,14 @@ public class PlayerMovement : MonoBehaviour
             anim.SetFloat("InputX", input.x, 0.2f, Time.deltaTime);
             anim.SetFloat("InputY", input.y, 0.2f, Time.deltaTime);
 
-            if(slotWeaponUse == null)
+
+            if (Input.GetKey(KeyCode.S) == false)
             {
-                if (Input.GetKey(KeyCode.S) == false)
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    if (Input.GetKeyDown(KeyCode.Space))
-                    {
-                        anim.SetTrigger("Roll");
-                    }
+                    anim.SetTrigger("Roll");
                 }
             }
-
 
             if (Input.GetKey(KeyCode.Mouse1))
             {
@@ -82,6 +79,19 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("Running", false);
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                if (activeWeapon.rigController.GetBool("Take") == true)
+                {
+                    activeWeapon.rigController.SetBool("Take", false);
+                }
+                else
+                {
+                    activeWeapon.rigController.SetBool("Take", true);
+                }
+            }
+
         }
     }
 
