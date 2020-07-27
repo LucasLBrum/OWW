@@ -71,16 +71,15 @@ public class PlayerMovement : MonoBehaviour
                 cinemachine_m.Follow = gameObject.transform;
             }
 
-
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKey(KeyCode.S) == false)
             {
-                if (!activeWeapon.rigController.GetBool("Holster"))
+                if (Input.GetKey(KeyCode.LeftShift))
                 {
-                    activeWeapon.rigController.SetBool("Holster", true);
+                    anim.SetBool("Running", true);
                 }
                 else
                 {
-                    activeWeapon.rigController.SetBool("Holster", false);
+                    anim.SetBool("Running", false);
                 }
             }
         }

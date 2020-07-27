@@ -12,45 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4bc21567f434b598a3c96ba4946372, type: 3}
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
-  m_assets:
-  - m_assetDatabaseId: 5443a266b274aec4c90c663acb12df48
-    m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 016192dfaa77ae946bb96b747968ddf0
-    m_importFrom: Assets/Design/Animations/Enemy/WitchController.controller
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 406601829becbac4e9f610dfa2530df7
-    m_importFrom: Assets/Scripts/Characters/EnemyMovement.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: ed8b0387a0e50c2478819ea545a66012
-    m_importFrom: Assets/Design/Animations/Enemy/1@Zombie Attack.fbx
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 03d79ae09d912c74c80d30f44cdbcad8
-    m_importFrom: Assets/ScriptablesObjects/Machado.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 0f11ff391a96a824eac5eacf785353b5
-    m_importFrom: Assets/Design/baixados.png
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: b9989c1ff0133cf45b8a2fb754d93f16
-    m_importFrom: Assets/Models/Prefabs/Weapons/Machado_01.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: c0d193e0103e9c742966e2fd1ecd55e7
-    m_importFrom: Assets/Design/Animations/equip_machado.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: be46bd5191367374593675497df73496
-    m_importFrom: Assets/Scenes/TestTerrain.unity
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: b151f951087a18c4899fd5ebf2feb12f
-    m_importFrom: Assets/Design/Animations/Controllers/RigControl.controller
-    m_exportTo: 
-    m_variantName: 
+  m_assets: []
   m_version: 2
