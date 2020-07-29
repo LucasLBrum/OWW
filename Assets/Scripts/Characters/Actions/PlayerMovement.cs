@@ -1,36 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
-using Cinemachine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField]
+    GameObject imagePanel = null;//inventario.
     Animator anim; //componente de animação.
-    Vector2 input;//input para ser usado na movimentação
-    public CinemachineCameraOffset m_cineMachineOffSetsConfigs; //classe que controla a posicao da FreeLock camera do cinemachine.
-    public GameObject imagePanel;//inventario
-    public GameObject LookCamera;//inventario
-    bool away = false;// o jogador esta com o inventario aberto?
-
-    private float turnSpeed = 10; //velocidade de rotacao da yawcamera
-    public Cinemachine.CinemachineFreeLook cinemachine_m; //componente de cinemachine
+    Vector2 input;//input para ser usado na movimentação.
     Camera mainCamera; //main camera
-    public ActiveWeapon activeWeapon;
+    ActiveWeapon activeWeapon;
     public Slot slotWeaponUse;
 
     private void Awake()
     {
+        activeWeapon = GetComponent<ActiveWeapon>();
         anim = GetComponent<Animator>();//pegar componente desse objeto.
-    }
-    private void Start()
-    {
+        mainCamera = Camera.main; //colocando a man camera na referencia.
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        mainCamera = Camera.main; //colocando a man camera na referencia
-
-        cinemachine_m.m_XAxis.m_InvertInput = false; //deixando o InvertInput false, poderia ter feito pelo Inspector mas estava bugado, acredito que seja por conta do componente ainda estar em testes.
-        cinemachine_m.m_YAxis.m_InvertInput = true;
     }
     private void Update() 
     {
@@ -38,12 +29,11 @@ public class PlayerMovement : MonoBehaviour
         CharacterView();
         OpenInventory();
         EquipWeapon();
+        Drop();
     }
-
     void CharacterMoviment() 
     {
-        if (away == false)
-        {
+
             input.x = Input.GetAxisRaw("Horizontal"); //recebe o valor dos parametros da unity de horizontal e vertical.
             input.y = Input.GetAxisRaw("Vertical");
 
@@ -59,25 +49,17 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
 
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
-                cinemachine_m.Follow = LookCamera.transform;
-            }
-            else
-            {
-                cinemachine_m.Follow = gameObject.transform;
-            }
-
             if (Input.GetKey(KeyCode.S) == false)
             {
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
+                    GuardarArma();
                     anim.SetBool("Running", true);
                 }
                 else
                 {
                     anim.SetBool("Running", false);
-                }
+                }   
             }
 
             if (Input.GetKeyDown(KeyCode.R))
@@ -92,41 +74,32 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
 
-        }
     }
-
     void CharacterView()
     {
-        
+        float turnSpeed = 10;
         float yawCamera = mainCamera.transform.rotation.eulerAngles.y; 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnSpeed * Time.fixedDeltaTime);
-        
     }
-
-    void OpenInventory()
+    void OpenInventory()//Abrir o Inventário.
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (away)
+            if (imagePanel.activeSelf == true)
             {
-                away = false;
-                //panelIn.SetActive(false);
                 imagePanel.SetActive(false);
                 UnityEngine.Cursor.visible = false;
                 UnityEngine.Cursor.lockState = CursorLockMode.Locked;
             }
             else
             {
-                away = true;
-                //panelIn.SetActive(true);
                 imagePanel.SetActive(true);
                 UnityEngine.Cursor.visible = true;
                 UnityEngine.Cursor.lockState = CursorLockMode.Confined;
             }
         }
     }
-
-    void EquipWeapon()
+    void EquipWeapon()//Acessar os slots de armas do inventário.
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -139,13 +112,13 @@ public class PlayerMovement : MonoBehaviour
                         return;
                     }
                 }
-
+                activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
                 activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item);
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[0];
             }
-        }
+        }//Acessar slot 1.
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             if (Player.singleton.carterScene.inventoryInScene.weaponSlot[1].open == false)
@@ -157,29 +130,28 @@ public class PlayerMovement : MonoBehaviour
                         return;
                     }
                 }
-
+                activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
                 activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item);
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[1];
             }
 
-        }
+        }//Acessar slot 2.
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (activeWeapon.weapon != null)
             {
+                activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
                 slotWeaponUse = null;
                 activeWeapon.handIK.weight = 0;
                 activeWeapon.rigController.Play("Default");
             }
-        }
+        }//Ficar com as mãos nuas.
 
     }
-
-
     public void Desequip()
     {
         if(slotWeaponUse != null)
@@ -193,6 +165,24 @@ public class PlayerMovement : MonoBehaviour
                 activeWeapon.rigController.Play("Default");
             }
         }
+    }
+    public void Drop()
+    {
+        if(slotWeaponUse != null)
+        {
+            if (Input.GetKeyDown(KeyCode.G)) //Deseqipar item.
+            {
+                slotWeaponUse.RemoveItem();
+            }
+        }
+    }
+    public void GuardarArma()
+    {
+        activeWeapon.rigController.SetBool("Take", true);
+    }
+    public void SacarArma()
+    {
+        activeWeapon.rigController.SetBool("Take", false);
     }
 }
 

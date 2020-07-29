@@ -9,5 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/TestTerrain.unity
     guid: be46bd5191367374593675497df73496
   m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: ac0fb61335db3a549ab7505f50d7d076,
+    com.unity.addressableassets: {fileID: 11400000, guid: a41925929dd04c646a67d65f14e75dcf,
       type: 2}

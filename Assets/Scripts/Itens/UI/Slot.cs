@@ -21,6 +21,9 @@ public class Slot : MonoBehaviour
             Player.singleton.carterScene.GetComponent<PlayerMovement>().Desequip();
             var prefab = Instantiate(item.itemPrefab, characterTranform.position, transform.rotation);
             prefab.gameObject.GetComponent<BoxCollider>().enabled = true;
+            prefab.gameObject.GetComponent<Rigidbody>().useGravity = true;
+            prefab.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+
             open = true;
             itemImage.sprite = nothing;
             item = null;

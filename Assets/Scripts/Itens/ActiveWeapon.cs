@@ -31,5 +31,8 @@ public class ActiveWeapon : MonoBehaviour
         weapon.GetComponent<ShootProject>().rigController = rigController;
 
         weapon.GetComponent<BoxCollider>().enabled = false;
+        weapon.gameObject.GetComponent<Rigidbody>().useGravity = false;
+        weapon.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+
     }
 }

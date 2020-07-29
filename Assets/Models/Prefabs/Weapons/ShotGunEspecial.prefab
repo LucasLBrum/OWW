@@ -406,8 +406,9 @@ GameObject:
   - component: {fileID: 1780967492608843558}
   - component: {fileID: 1403860569814205714}
   - component: {fileID: 5547648584824205383}
-  - component: {fileID: 3676658813826524091}
   - component: {fileID: 5424022213400808166}
+  - component: {fileID: 3676658813826524091}
+  - component: {fileID: 1354064267}
   m_Layer: 12
   m_Name: ShotGunEspecial
   m_TagString: Coletavel
@@ -465,19 +466,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: shotgun
   inUse: 0
---- !u!65 &3676658813826524091
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3381110024668523829}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5424022213400808166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,6 +482,35 @@ MonoBehaviour:
   vfx:
   - {fileID: 5158075454591896984, guid: bf590de6115667044a7ef898d47b7118, type: 3}
   rigController: {fileID: 0}
+--- !u!65 &3676658813826524091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3381110024668523829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8213066, y: 0.0750269, z: 0.1}
+  m_Center: {x: 0.018655237, y: 0.012486535, z: -4.997738e-10}
+--- !u!54 &1354064267
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3381110024668523829}
+  serializedVersion: 2
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &4838589731424868285
 GameObject:
   m_ObjectHideFlags: 0

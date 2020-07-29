@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 7648671338060254245}
   - component: {fileID: 2069432415773351084}
   - component: {fileID: 1670534725000905548}
+  - component: {fileID: 5735576516927952063}
   m_Layer: 12
   m_Name: Shotgun_01
   m_TagString: Untagged
@@ -170,11 +171,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670268909682462824}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0648297, y: 0.15227935, z: 0.088352196}
+  m_Center: {x: -0.024337767, y: -0.0028630423, z: -0.018440727}
+--- !u!54 &5735576516927952063
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670268909682462824}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2100510945528115364
 GameObject:
   m_ObjectHideFlags: 0
