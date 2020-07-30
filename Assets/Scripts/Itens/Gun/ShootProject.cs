@@ -38,6 +38,10 @@ public class ShootProject : MonoBehaviour
                         SpawnVFX();
                     }
                 }
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    rigController.SetTrigger("Reload");
+                }
             }
         }
     }

@@ -17760,7 +17760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c430f382484144e925c097c2d33cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 1
+  m_Weight: 0
   m_Data:
     m_ConstrainedObject: {fileID: 1772081905}
     m_SourceObjects:
@@ -21746,7 +21746,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imagePanel: {fileID: 150725481}
   slotWeaponUse: {fileID: 0}
-  a: 0
 --- !u!114 &964844160093862634
 MonoBehaviour:
   m_ObjectHideFlags: 0

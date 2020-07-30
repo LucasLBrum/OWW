@@ -13,140 +13,120 @@ MonoBehaviour:
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
   m_assets:
-  - m_assetDatabaseId: 3f9f0356c4a21c14f86135c2fa6e2a53
-    m_importFrom: Assets/Design/Animations/Male/Animations/Exploration/RunForwards.anim
+  - m_assetDatabaseId: b151f951087a18c4899fd5ebf2feb12f
+    m_importFrom: Assets/Design/Animations/Controllers/RigControl.controller
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2501b1322cc12274eabeed1e52d611f5
+    m_importFrom: Assets/Design/reload_pistol.anim
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: 5443a266b274aec4c90c663acb12df48
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 8c50db485fca093459af5fe2576b147e
-    m_importFrom: Assets/Design/Animations/Controllers/ThirdPersonPlayer.controller
+  - m_assetDatabaseId: 2c809b99e1c148c47989dc7074abda94
+    m_importFrom: Assets/Design/reload_shotgun.anim
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 364a8869e610daa459d9dfd1d62300f7
-    m_importFrom: Assets/Design/Animations/Male/Animations/Exploration/RunForwardLeft.anim
+  - m_assetDatabaseId: 203919bf3b5922145b8a362667e6c4c3
+    m_importFrom: Assets/Design/reload_rifle.anim
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: e7ff922f2c8a5eb4b834ac2cd0cb65ba
-    m_importFrom: Assets/Design/Animations/Male/Animations/Exploration/RunForwardRight.anim
+  - m_assetDatabaseId: 4b3a360162b155a419af55faa68c3cee
+    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States/Playing.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 75c0107a77d8b4c45912a66194afc470
-    m_importFrom: Assets/Design/Animations/MovimentPlayer/RollRightForward.anim
+  - m_assetDatabaseId: 6d75f003997f6144cb49321c1842b32d
+    m_importFrom: Assets/StateMachine/Scripts
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 9cc3324bc989b334bad2ecc081df14d9
-    m_importFrom: Assets/Design/Animations/MovimentPlayer/RollLeft.anim
+  - m_assetDatabaseId: 86d88b733954dcb4ba7a07253dfd94b8
+    m_importFrom: Assets/StateMachine/Scenes
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 078b1c7b928b9cb43a407c175dc56ba7
-    m_importFrom: Assets/Design/Animations/MovimentPlayer/Roll.anim
+  - m_assetDatabaseId: 6b0b41742cc7de74d8ccd83dd3870989
+    m_importFrom: Assets/StateMachine/Scenes/Demo.unity
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: e77f1c2c8bc86974397d67b7280d5492
-    m_importFrom: Assets/Design/Animations/MovimentPlayer/RollLeftForward.anim
+  - m_assetDatabaseId: c03b0ac4c4a8c0d489ab6ed194c77b25
+    m_importFrom: Assets/StateMachine
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 5fd668cc880c91a4c99952dd3435bda6
-    m_importFrom: Assets/Design/Animations/MovimentPlayer/RollRight.anim
+  - m_assetDatabaseId: 953be255aa5ad6a43aeaea87d6efc4e2
+    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States/Paused.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 10a2f5f33906c1b48bd247e7b5f81081
-    m_importFrom: Assets/Design/Animations/Male/Animations/Exploration/RunLeft 1.anim
+  - m_assetDatabaseId: ff4fbd85cf8b95d409d9de76abdeeb03
+    m_importFrom: Assets/StateMachine/Scripts/Game.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 78941a165f1ce6b44b7398d293d66c99
-    m_importFrom: Assets/Design/Animations/Male/Animations/Exploration/RunRight 1.anim
+  - m_assetDatabaseId: 6ef1f5f5100d778489aebcaed09a59fd
+    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States/Navigation.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 57a47b20f8ab18d49aa5d918066b48f2
-    m_importFrom: Assets/Scripts/Outline.cs
+  - m_assetDatabaseId: 08d9f739ae66681498b78ad1450ae80e
+    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: e5e348a4223a4334588f43726576b016
-    m_importFrom: Assets/AddressableAssetsData
+  - m_assetDatabaseId: d507da3a1fd00304381785a77de03b14
+    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States/Cutscene.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 2b2e948abdc18f2478cb74c85f0383a0
-    m_importFrom: Assets/AddressableAssetsData/AssetGroupTemplates
+  - m_assetDatabaseId: e8cb1ecb8ad6dd84aa3849f9a47fb9f4
+    m_importFrom: Assets/StateMachine/Animations
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 56de7ceffbc379042a4d0a64712784bf
-    m_importFrom: Assets/AddressableAssetsData/AssetGroupTemplates/Packed Assets.asset
+  - m_assetDatabaseId: cec4d6eb65f3ff64d9621212705ea700
+    m_importFrom: Assets/StateMachine/Scripts/StateMachine.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: df41e911f632abf4ebe67651f8eade2e
-    m_importFrom: Assets/AddressableAssetsData/DataBuilders
+  - m_assetDatabaseId: 9d8d80fbeaf12414193f7d3f35355b8b
+    m_importFrom: Assets/StateMachine/Materials
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 4516ccf9d29839747aa6f78ba60a4e11
-    m_importFrom: Assets/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset
+  - m_assetDatabaseId: b2fcb9aced667704c84e496df1592091
+    m_importFrom: Assets/StateMachine/Scripts/State.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 8fe593a9d39b14742886f1522e07cf81
-    m_importFrom: Assets/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset
+  - m_assetDatabaseId: 1eb3697f8414d4343933f7f729eaef44
+    m_importFrom: Assets/StateMachine/Scripts/StateMachine
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 53d7d629631b86b4089412867fef1b72
-    m_importFrom: Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedPlayMode.asset
+  - m_assetDatabaseId: 11b209dfdacb378468cea714b10c9eb3
+    m_importFrom: Assets/StateMachine/Animator
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: dc97ccdacbbbf2f4780afb2e91e3100b
-    m_importFrom: Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset
+  - m_assetDatabaseId: 801d88d1abf68aa4496a01a954a7e681
+    m_importFrom: Assets/StateMachine/Animations/Navegacao.anim
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 54e28d92479b29a48a652f2f9c6529ce
-    m_importFrom: Assets/AddressableAssetsData/AddressableAssetSettings.asset
+  - m_assetDatabaseId: c7e248f18036f5a46a4056bae49cb47a
+    m_importFrom: Assets/StateMachine/Animations/Pausado.anim
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 8dbf0dd951fc6e44fb7577400e77b587
-    m_importFrom: Assets/AddressableAssetsData/AssetGroups
+  - m_assetDatabaseId: a5e6fa79370ff5242a9f7c266adafa7c
+    m_importFrom: Assets/StateMachine/Animations/Jogando.anim
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: cbb33ad49d8f48c42a9571b5a0393eab
-    m_importFrom: Assets/AddressableAssetsData/AssetGroups/Built In Data.asset
+  - m_assetDatabaseId: 9ae5aae994da26043921b5ed72efbe6b
+    m_importFrom: Assets/StateMachine/Materials/Esfera.mat
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: d269fac53c24bd94991f46608c6f5433
-    m_importFrom: Assets/AddressableAssetsData/AssetGroups/Schemas
+  - m_assetDatabaseId: d97694bc70c9f304ca80ba071a2dd03d
+    m_importFrom: Assets/StateMachine/Animator/MaquinaDeEstados.controller
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: a314fc9dbde0ddf43ba4a964f9796c59
-    m_importFrom: Assets/AddressableAssetsData/AssetGroups/Schemas/f24a0ca0dd08af349ab644924d37074e_PlayerDataGroupSchema.asset
+  - m_assetDatabaseId: ea26834d043e76f47a60f9211f9ffd26
+    m_importFrom: Assets/StateMachine/Animations/Cutscene.anim
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: cf37cfa3d18d6d640a28baaf6ef8ad37
-    m_importFrom: Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset
+  - m_assetDatabaseId: 691cda6e67af503448a5987948dad9cc
+    m_importFrom: Assets/StateMachine/Materials/Base.mat
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 33817562a68623943b0437546286919c
-    m_importFrom: Assets/AddressableAssetsData/AssetGroups/Schemas/089f81711cf3f814f86a7ba1f7bf3785_ContentUpdateGroupSchema.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 3aaaac5bf57fa254ebb24276b4a8bc63
-    m_importFrom: Assets/AddressableAssetsData/AssetGroups/Schemas/089f81711cf3f814f86a7ba1f7bf3785_BundledAssetGroupSchema.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: a41925929dd04c646a67d65f14e75dcf
-    m_importFrom: Assets/AddressableAssetsData/DefaultObject.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 0000000000000000b000000000000000
-    m_importFrom: ProjectSettings/EditorBuildSettings.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 9326eb03909e21c4eaa0619f2952003d
-    m_importFrom: Assets/Design/Materials/Common.png
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 124e3772962cdb848bf4decdd8be3c62
-    m_importFrom: Assets/Design/Materials/Common.mat
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 124e3772962cdb848bf4decdd8be3c62
-    m_importFrom: Assets/Design/Materials/Common.mat
+  - m_assetDatabaseId: b0499a3f8ac319246aa63f7db4597d83
+    m_importFrom: Assets/StateMachine/Animations/TrocaDeTela.anim
     m_exportTo: 
     m_variantName: 
   m_version: 2

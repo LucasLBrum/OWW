@@ -23,14 +23,6 @@ public class PlayerMovement : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
-    private void Update() 
-    {
-        CharacterMoviment();
-        CharacterView();
-        OpenInventory();
-        EquipWeapon();
-        Drop();
-    }
     void CharacterMoviment() 
     {
 
@@ -62,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
                 }   
             }
 
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 if (activeWeapon.rigController.GetBool("Take") == true)
                 {
@@ -183,6 +175,15 @@ public class PlayerMovement : MonoBehaviour
     public void SacarArma()
     {
         activeWeapon.rigController.SetBool("Take", false);
+    }
+
+    public void All()
+    {
+        CharacterMoviment();
+        CharacterView();
+        OpenInventory();
+        EquipWeapon();
+        Drop();
     }
 }
 
