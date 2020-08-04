@@ -16,6 +16,11 @@ public class Playing : State
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoPausado);
+            Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(0,0);
         }
+
+        Player.singleton.carterScene.GetComponent<PlayerMovement>().All();
+        Game.singleton.catavento.Rotate();
+        Game.singleton.shootRay.PerformRaycast();
     }
 }

@@ -13,120 +13,40 @@ MonoBehaviour:
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
   m_assets:
-  - m_assetDatabaseId: b151f951087a18c4899fd5ebf2feb12f
-    m_importFrom: Assets/Design/Animations/Controllers/RigControl.controller
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 2501b1322cc12274eabeed1e52d611f5
-    m_importFrom: Assets/Design/reload_pistol.anim
-    m_exportTo: 
-    m_variantName: 
   - m_assetDatabaseId: 5443a266b274aec4c90c663acb12df48
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 2c809b99e1c148c47989dc7074abda94
-    m_importFrom: Assets/Design/reload_shotgun.anim
+  - m_assetDatabaseId: 635ef84bec0f7a24f88a5a4651c00600
+    m_importFrom: Assets/Scripts/Itens/Gun/ShootProject.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 203919bf3b5922145b8a362667e6c4c3
-    m_importFrom: Assets/Design/reload_rifle.anim
+  - m_assetDatabaseId: 60154e5fa684cba49a7d4a757b44f438
+    m_importFrom: Assets/Scenes/New Scene.unity
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 4b3a360162b155a419af55faa68c3cee
-    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States/Playing.cs
+  - m_assetDatabaseId: f81904db7c61152409c702875cacff9a
+    m_importFrom: Assets/Models/vfx_muzzle.prefab
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 6d75f003997f6144cb49321c1842b32d
-    m_importFrom: Assets/StateMachine/Scripts
+  - m_assetDatabaseId: e2fe498d719433146853a49833807a17
+    m_importFrom: Assets/Models/muzzle.prefab
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 86d88b733954dcb4ba7a07253dfd94b8
-    m_importFrom: Assets/StateMachine/Scenes
+  - m_assetDatabaseId: ab077f9eaefb7c64893234870276002d
+    m_importFrom: Assets/Models/Prefabs/Weapons/ShotGunEspecial.prefab
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 6b0b41742cc7de74d8ccd83dd3870989
-    m_importFrom: Assets/StateMachine/Scenes/Demo.unity
+  - m_assetDatabaseId: 26e8a9bc2f7d4334bb799589596e9789
+    m_importFrom: Assets/Models/Prefabs/Weapons/Revolver.prefab
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: c03b0ac4c4a8c0d489ab6ed194c77b25
-    m_importFrom: Assets/StateMachine
+  - m_assetDatabaseId: c440fffe701f3514995f375d44712a3f
+    m_importFrom: Assets/Models/Prefabs/Weapons/Shotgun_01.prefab
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 953be255aa5ad6a43aeaea87d6efc4e2
-    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States/Paused.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: ff4fbd85cf8b95d409d9de76abdeeb03
-    m_importFrom: Assets/StateMachine/Scripts/Game.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 6ef1f5f5100d778489aebcaed09a59fd
-    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States/Navigation.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 08d9f739ae66681498b78ad1450ae80e
-    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: d507da3a1fd00304381785a77de03b14
-    m_importFrom: Assets/StateMachine/Scripts/StateMachine/States/Cutscene.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: e8cb1ecb8ad6dd84aa3849f9a47fb9f4
-    m_importFrom: Assets/StateMachine/Animations
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: cec4d6eb65f3ff64d9621212705ea700
-    m_importFrom: Assets/StateMachine/Scripts/StateMachine.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 9d8d80fbeaf12414193f7d3f35355b8b
-    m_importFrom: Assets/StateMachine/Materials
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: b2fcb9aced667704c84e496df1592091
-    m_importFrom: Assets/StateMachine/Scripts/State.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 1eb3697f8414d4343933f7f729eaef44
-    m_importFrom: Assets/StateMachine/Scripts/StateMachine
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 11b209dfdacb378468cea714b10c9eb3
-    m_importFrom: Assets/StateMachine/Animator
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 801d88d1abf68aa4496a01a954a7e681
-    m_importFrom: Assets/StateMachine/Animations/Navegacao.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: c7e248f18036f5a46a4056bae49cb47a
-    m_importFrom: Assets/StateMachine/Animations/Pausado.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: a5e6fa79370ff5242a9f7c266adafa7c
-    m_importFrom: Assets/StateMachine/Animations/Jogando.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 9ae5aae994da26043921b5ed72efbe6b
-    m_importFrom: Assets/StateMachine/Materials/Esfera.mat
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: d97694bc70c9f304ca80ba071a2dd03d
-    m_importFrom: Assets/StateMachine/Animator/MaquinaDeEstados.controller
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: ea26834d043e76f47a60f9211f9ffd26
-    m_importFrom: Assets/StateMachine/Animations/Cutscene.anim
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 691cda6e67af503448a5987948dad9cc
-    m_importFrom: Assets/StateMachine/Materials/Base.mat
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: b0499a3f8ac319246aa63f7db4597d83
-    m_importFrom: Assets/StateMachine/Animations/TrocaDeTela.anim
+  - m_assetDatabaseId: 213c4e805fecf404cbc2800bd746008f
+    m_importFrom: Assets/Scripts/Itens/Gun/ShootRaycast.cs
     m_exportTo: 
     m_variantName: 
   m_version: 2

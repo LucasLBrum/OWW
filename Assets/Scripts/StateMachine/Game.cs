@@ -7,8 +7,12 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
     public static Game singleton { get; private set; }
+
+    public Catavento catavento;
+    public ShootRaycast shootRay;
     
     public StateMachine m_StateMachine = new StateMachine();
+
 
     //Estados do sistema
 
@@ -35,7 +39,7 @@ public class Game : MonoBehaviour
         estadoJogando = new Playing("Jogando");
         estadoPausado = new Paused("Pausado");
 
-        m_StateMachine.ChangeState(estadoNavegacao);
+        m_StateMachine.ChangeState(estadoJogando);
     }
 
     // Update is called once per frame

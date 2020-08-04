@@ -21,13 +21,7 @@ public class ShootRaycast : MonoBehaviour
         ray = new Ray(transform.position, transform.forward);
     }
 
-
-    void Update()
-    {
-        PerformRaycast();
-    }
-
-    void PerformRaycast()
+    public void PerformRaycast()
     {
         Debug.DrawRay(transform.position, transform.forward * raycastDistance, Color.green);
 

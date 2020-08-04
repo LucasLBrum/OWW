@@ -6,15 +6,9 @@ using UnityEngine;
 public class Catavento : MonoBehaviour
 {
     public float speed = 4;
-    // Start is called before the first frame update
-    void Start()
+  
+    public void Rotate()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Rotate(2 * speed,0,0);
+        transform.Rotate(2 * speed, 0, 0);
     }
 }

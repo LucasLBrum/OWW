@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Cinemachine;
 using UnityEngine.Animations.Rigging;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     Animator anim; //componente de animação.
     Vector2 input;//input para ser usado na movimentação.
     Camera mainCamera; //main camera
+    public CinemachineFreeLook freeLookCamera;
+
     ActiveWeapon activeWeapon;
     public Slot slotWeaponUse;
 
@@ -175,6 +178,11 @@ public class PlayerMovement : MonoBehaviour
     public void SacarArma()
     {
         activeWeapon.rigController.SetBool("Take", false);
+    }
+    public void StopCamera(int speedY, int speedX)
+    {
+        freeLookCamera.m_XAxis.m_MaxSpeed = speedX;
+        freeLookCamera.m_YAxis.m_MaxSpeed = speedY;
     }
 
     public void All()
