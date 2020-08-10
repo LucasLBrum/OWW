@@ -10,6 +10,9 @@ public class Inventory : MonoBehaviour
     public List<ItemResource> itemResources = new List<ItemResource>();
     public List<ItemResource> weaponsResorces = new List<ItemResource>();
 
+    public Munition munitionL;
+    public Munition munitionB;
+
     public void VerificationItem(ItemResource newItem, GameObject itemScene)//atraves de um switch verifico o tipo do item e chamo a funcao de adicionar o item à determinada lista.
     {
         switch (newItem.itemType)
@@ -32,12 +35,23 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < list.Count; i++)//verifico a quantidade de itens na lista
         {
-            if (list[i].open)//verifico se ha algum slot aberto parao item
+            if (list[i].open)//verifico se ha algum slot aberto para o item
             {
-                Destroy(ItemScene);
-                list[i].AddItem(item);
-                listItens.Add(item);
-                return;
+                if(listItens == weaponsResorces)
+                {
+                    list[i].GetComponent<WeaponInScene>().GetDetailsWeapon(list[i].GetComponent<WeaponInScene>(), ItemScene.GetComponent<WeaponInScene>());
+                    Destroy(ItemScene);
+                    list[i].AddItem(item);
+                    listItens.Add(item);
+                    return;
+                }
+                else
+                {
+                    Destroy(ItemScene);
+                    list[i].AddItem(item);
+                    listItens.Add(item);
+                    return;
+                }
             }
             else
             {

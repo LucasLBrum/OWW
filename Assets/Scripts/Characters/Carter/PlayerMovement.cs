@@ -13,10 +13,11 @@ public class PlayerMovement : MonoBehaviour
     Animator anim; //componente de animação.
     Vector2 input;//input para ser usado na movimentação.
     Camera mainCamera; //main camera
-    public CinemachineFreeLook freeLookCamera;
+    public CinemachineFreeLook freeLookCamera;//componente da cinemachine 
 
-    ActiveWeapon activeWeapon;
-    public Slot slotWeaponUse;
+    public ActiveWeapon activeWeapon;//componente que contem as refêrencias do rig do jogador.
+
+    public Slot slotWeaponUse;//a arma que esta sendo usada atualmente 
 
     private void Awake()
     {
@@ -107,11 +108,16 @@ public class PlayerMovement : MonoBehaviour
                         return;
                     }
                 }
+                if (slotWeaponUse == Player.singleton.carterScene.inventoryInScene.weaponSlot[1])
+                {
+                    activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+                }
                 activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
-                activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item);
+                activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item, Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>());
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[0];
+
             }
         }//Acessar slot 1.
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -125,10 +131,14 @@ public class PlayerMovement : MonoBehaviour
                         return;
                     }
                 }
+                if(slotWeaponUse == Player.singleton.carterScene.inventoryInScene.weaponSlot[0])
+                {
+                    activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+                }
                 activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
-                activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item);
+                activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item, Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>());
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[1];
             }
 
@@ -137,6 +147,14 @@ public class PlayerMovement : MonoBehaviour
         {
             if (activeWeapon.weapon != null)
             {
+                if(slotWeaponUse.item == Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item)
+                {
+                    activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>(),activeWeapon.weapon);
+                }
+                else if(slotWeaponUse.item == Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item)
+                {
+                    activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+                }
                 activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
@@ -151,6 +169,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if(slotWeaponUse != null)
         {
+            if (slotWeaponUse.item == Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item)
+            {
+                activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+            }
+            else if (slotWeaponUse.item == Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item)
+            {
+                activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+            }
+
             if (activeWeapon.weaponObject.GetComponent<ItemScene>().thisItem == slotWeaponUse.item)
             {
                 Destroy(activeWeapon.weaponObject);
@@ -160,7 +187,7 @@ public class PlayerMovement : MonoBehaviour
                 activeWeapon.rigController.Play("Default");
             }
         }
-    }
+    }//desequipa a arma, caso esteja em suas mãos.
     public void Drop()
     {
         if(slotWeaponUse != null)
@@ -170,11 +197,11 @@ public class PlayerMovement : MonoBehaviour
                 slotWeaponUse.RemoveItem();
             }
         }
-    }
+    }//derruba a arma caso esteja em suas mãos.
     public void GuardarArma()
     {
         activeWeapon.rigController.SetBool("Take", true);
-    }
+    }//guarda a arma caso esteja em suas mãos.
     public void SacarArma()
     {
         activeWeapon.rigController.SetBool("Take", false);
@@ -183,7 +210,7 @@ public class PlayerMovement : MonoBehaviour
     {
         freeLookCamera.m_XAxis.m_MaxSpeed = speedX;
         freeLookCamera.m_YAxis.m_MaxSpeed = speedY;
-    }
+    }//para a camera quando o jogador pausa o 
 
     public void All()
     {

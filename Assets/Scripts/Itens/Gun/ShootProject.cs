@@ -4,36 +4,110 @@ using UnityEngine;
 
 public class ShootProject : MonoBehaviour
 {
-    public GameObject FirePoint;
-    public Animator rigController;
+    public GameObject firePoint;//ponto de disparo
+    public Animator rigController;//animator dos rig
+    public ShootRaycast shootRaycast;//componente que controla os raycasts
 
-    public ParticleSystem effectToSpawn;
-    float timeTofire = 0;
+    public GameObject muzzlePrefab;//prefab do muzzle flash
 
-    private void Update()
+    WeaponInScene weaponScene;
+
+    float timeTofire = 0;//tempo entre um disparo a outro
+
+    private void Start()
     {
-        Shoot();
+        weaponScene = GetComponent<WeaponInScene>();
+        shootRaycast = Camera.main.GetComponent<ShootRaycast>();//componente que controla os raycasts
+    }
+
+    void Update()
+    {
+        Shoot();//função de disparo.
+        Reaload();
     }
 
     void Shoot()
     {
-        if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)
+        if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)//se haver algum slot de arma em uso.
         {
-            if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)
+            if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)//se esse item for o que estiver em uso.
             {
-                if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >= timeTofire)
+                if(weaponScene.bullets > 0)
                 {
-
-                    if (rigController.GetBool("Take") == false)
+                    if (Input.GetMouseButton(0) && Time.time >= timeTofire)//se apertar o botão esquerdo do mouse e o tempo for maior ou igual à tempo de disparo.
                     {
-                        rigController.Play("weapon_recoil_" + GetComponent<WeaponInScene>().weaponName, 1, 0.0f);
-                        effectToSpawn.Emit(1);
+                        weaponScene.bullets -= 1;                        
+                        rigController.Play("weapon_recoil_" + weaponScene.weaponName, 1, 0.0f);//fazer a animação de disparo da arma.
+                        SpawnMuzzle();//intanciar o efeito de explosão
+                        timeTofire = Time.time + 1 / weaponScene.fireRate;//verificar a taxa de disparo da arma atual e colocar no tempo de disparo.
+                        if (shootRaycast.ShootR() != null)//se haver algum inimigo no caminho do disparo.
+                        {
+                            var enemy = shootRaycast.ShootR().thisCharacter;//variavel vaia brigar esse inimigo.
+                            if (enemy != null)
+                            {
+                                enemy.TakeDamage(weaponScene.damage);//vai diminuir a vida do inimigo dependendo da arma que o jogador estiver utilizando.);
+                                Debug.Log("a vida da bruxa é " + enemy.lifeCharacter);
+                            }
+                        }
                     }
                 }
-                if (Input.GetKeyDown(KeyCode.R))
+            }
+        }
+    }
+
+    void Reaload()
+    {
+        if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)//se haver algum slot de arma em uso.
+        {
+            if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)//se esse item for o que estiver em uso.
+            {
+                if(rigController.GetBool("Take") == false)
                 {
-                    rigController.SetTrigger("Reload");
+                    if (Input.GetKeyDown(KeyCode.R))
+                    {
+                        if(weaponScene.bullets != weaponScene.bulletsMax)
+                        {
+                            if (weaponScene.typeWeapon == MunitionType.Little)
+                            {
+                                if (Player.singleton.carterScene.inventoryInScene.munitionL.boxMunition > 0)
+                                {
+                                    Player.singleton.carterScene.inventoryInScene.munitionL.RemoveMuniton(1);
+                                    weaponScene.bullets = weaponScene.bulletsMax;
+                                    rigController.SetTrigger("Reload");
+                                }
+                            }
+                            else if (weaponScene.typeWeapon == MunitionType.Big)
+                            {
+                                if (Player.singleton.carterScene.inventoryInScene.munitionB.boxMunition > 0)
+                                {
+                                    Player.singleton.carterScene.inventoryInScene.munitionB.RemoveMuniton(1);
+                                    weaponScene.bullets = weaponScene.bulletsMax;
+                                    rigController.SetTrigger("Reload");
+                                }
+                            }
+                        }
+                    }
                 }
+            }
+        }
+    }
+
+    void SpawnMuzzle()
+    {
+        if (muzzlePrefab != null)
+        {
+            var muzzleVFX = Instantiate(muzzlePrefab, firePoint.transform.position, Quaternion.identity);
+            muzzleVFX.transform.forward = firePoint.transform.forward;
+            muzzleVFX.transform.parent = null;
+            var psMuzzle = muzzleVFX.GetComponent<ParticleSystem>();
+            if (psMuzzle != null)
+            {
+                Destroy(muzzleVFX, psMuzzle.main.duration);
+            }
+            else
+            {
+                var psChild = muzzleVFX.transform.GetChild(0).GetComponent<ParticleSystem>();
+                Destroy(muzzleVFX, psChild.main.duration);
             }
         }
     }

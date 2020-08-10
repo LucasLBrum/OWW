@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Slot : MonoBehaviour
 {
     public bool open = true; //Há algum item no slot?
-    public bool use = false;
     public Image itemImage;//Componente de Imagem do slot
     public ItemResource item;//Componente de "ItemResource", que vai abrigar o item que o character recolher.
     public Sprite nothing;//Sprite padrão da Imagem.
@@ -18,11 +17,22 @@ public class Slot : MonoBehaviour
     {
         if (!open)
         {
-            Player.singleton.carterScene.GetComponent<PlayerMovement>().Desequip();
+            if(Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)
+            {
+                if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item == this.item)
+                {
+                    Player.singleton.carterScene.GetComponent<PlayerMovement>().Desequip();
+                }
+
+            }
             var prefab = Instantiate(item.itemPrefab, characterTranform.position, transform.rotation);
             prefab.gameObject.GetComponent<BoxCollider>().enabled = true;
             prefab.gameObject.GetComponent<Rigidbody>().useGravity = true;
             prefab.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            if(GetComponent<WeaponInScene>() != null)
+            {
+                prefab.GetComponent<WeaponInScene>().GetDetailsWeapon(prefab.GetComponent<WeaponInScene>(), GetComponent<WeaponInScene>());
+            }
 
             open = true;
             itemImage.sprite = nothing;
@@ -35,6 +45,7 @@ public class Slot : MonoBehaviour
         itemImage.sprite = resource.itemSprite;
         open = false;
     }
+   
     public void ReturnInformation()
     {
         itemDetails.GetSlotDetails(this);

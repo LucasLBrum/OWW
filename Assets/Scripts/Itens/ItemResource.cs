@@ -7,7 +7,9 @@ public class ItemResource : ScriptableObject
 {
 	public string itemName;
 	public string description;
+	public bool stackable;
 	public int cost;
+	public float amount;
 	public GameObject itemPrefab;
 	public Sprite itemSprite;
 

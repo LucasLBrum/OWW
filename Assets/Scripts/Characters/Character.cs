@@ -7,6 +7,11 @@ public abstract class Character //classe base de todo personagem no jogo.
     public GameObject characterPrefab;//prefab do character
     public string nameCharacter;//nome do character
     public float lifeCharacter;//vida do character
+
+    public void TakeDamage(float damage)
+    {
+        lifeCharacter -= damage;
+    }
 }
 
 public class Carter : Character//classe do personagem principal que tem varios diferenciais dos demais personagens.

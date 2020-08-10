@@ -18,10 +18,13 @@ public abstract class Item
 	{
 		get { return itemName; }
 	}
-
 	public int ItemCost
 	{
 		get { return itemCost; }
+	}
+	public bool Stackable
+	{
+		get { return stackable; }
 	}
 
 }
@@ -51,7 +54,6 @@ public abstract class Item
 			itemName = name;
 			itemCost = cost;
 			stackable = false;
-
 			type = ItemType.Equipment;
 		}
 	}

@@ -17,20 +17,16 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 635ef84bec0f7a24f88a5a4651c00600
-    m_importFrom: Assets/Scripts/Itens/Gun/ShootProject.cs
+  - m_assetDatabaseId: c7e88450ed100c344b5410ba1055aabc
+    m_importFrom: Assets/Scripts/Characters/Carter/PlayerMovement.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 60154e5fa684cba49a7d4a757b44f438
-    m_importFrom: Assets/Scenes/New Scene.unity
+  - m_assetDatabaseId: 3abd02b1df448634fb92aad454f93eb9
+    m_importFrom: Assets/Models/Prefabs/Objetos/Garrafa.prefab
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: f81904db7c61152409c702875cacff9a
-    m_importFrom: Assets/Models/vfx_muzzle.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: e2fe498d719433146853a49833807a17
-    m_importFrom: Assets/Models/muzzle.prefab
+  - m_assetDatabaseId: f37c9da28323645478ef9a2d983c448f
+    m_importFrom: Assets/Scripts/Itens/UI/Slot.cs
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: ab077f9eaefb7c64893234870276002d
@@ -43,10 +39,6 @@ MonoBehaviour:
     m_variantName: 
   - m_assetDatabaseId: c440fffe701f3514995f375d44712a3f
     m_importFrom: Assets/Models/Prefabs/Weapons/Shotgun_01.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 213c4e805fecf404cbc2800bd746008f
-    m_importFrom: Assets/Scripts/Itens/Gun/ShootRaycast.cs
     m_exportTo: 
     m_variantName: 
   m_version: 2

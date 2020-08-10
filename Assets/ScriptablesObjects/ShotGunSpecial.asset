@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec40cc68482cf1469f82cbe0af37bed, type: 3}
   m_Name: ShotGunSpecial
   m_EditorClassIdentifier: 
-  itemName: Special Shotgun
+  itemName: Especial Shotgun
   description: Uma Shotgun especial apenas encontradas por grandes jogadores.
   cost: 200
+  fireRate: 1
   itemPrefab: {fileID: 3381110024668523829, guid: ab077f9eaefb7c64893234870276002d,
     type: 3}
   itemSprite: {fileID: 21300000, guid: 5f005b6796d09d0409ccd5c4aed1b521, type: 3}
