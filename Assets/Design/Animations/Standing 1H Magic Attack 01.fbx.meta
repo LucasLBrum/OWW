@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 8a0ca4623a6c8fa41a668f3c9933a515
+guid: ff5d50c3457f7af49ad3a6803ad1417e
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Idle
+    second: AtackWitch
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -19,7 +19,14 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
+      copied configuration does not match position in animation file:\n\t'mixamorig:LeftUpLeg'
+      : position error = 5.943785 mm\n\t'mixamorig:LeftLeg' : position error = 1.017174
+      mm\n\t'mixamorig:LeftFoot' : position error = 6.727011 mm\n\t'mixamorig:LeftToeBase'
+      : position error = 4.366205 mm\n\t'mixamorig:RightUpLeg' : position error =
+      7.897626 mm\n\t'mixamorig:RightLeg' : position error = 1.207315 mm\n\t'mixamorig:RightFoot'
+      : position error = 6.423758 mm\n\t'mixamorig:RightToeBase' : position error
+      = 4.521930 mm\n"
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -35,22 +42,22 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: AtackWitch
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 240
+      lastFrame: 137
       wrapMode: 0
-      orientationOffsetY: 0
+      orientationOffsetY: -75
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 0
+      loopBlendPositionXZ: 1
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0

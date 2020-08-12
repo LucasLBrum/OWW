@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WitchMelee : Enemy
 {
-    Witch witch = new Witch("", 50, 23); //Character da bruxa, é aqui onde é definido seus stattus
+    Witch witch = new Witch("", 50, 50, 23); //Character da bruxa, é aqui onde é definido seus stattus
     public string witchName; //nome da bruxa para possíveis interações 
 
     private void Awake()

@@ -41,21 +41,24 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    anim.SetTrigger("Roll");
+                    if (Player.singleton.carterScene.carter.stamina > 5)
+                    {
+                        Player.singleton.carterScene.carter.TakeStamina(5, 1);
+                        //Debug.Log(Player.singleton.carterScene.carter.stamina);
+                        Player.singleton.carterScene.carterStatus.UpdateUI(Player.singleton.carterScene.carter.stamina, Player.singleton.carterScene.carter.staminaFull, Player.singleton.carterScene.carterStatus.staminaImage);
+                        anim.SetTrigger("Roll");
+                        if(Player.singleton.carterScene.carterStatus.regen == false)
+                        {
+                            StartCoroutine(Player.singleton.carterScene.carterStatus.RegenStamina(2, 2));
+                        }
+                    }
                 }
             }
 
             if (Input.GetKey(KeyCode.S) == false)
             {
-                if (Input.GetKey(KeyCode.LeftShift))
-                {
-                    GuardarArma();
-                    anim.SetBool("Running", true);
-                }
-                else
-                {
-                    anim.SetBool("Running", false);
-                }   
+                if(Input.GetKey(KeyCode.LeftShift))
+                StartCoroutine(Run());
             }
 
             if (Input.GetKeyDown(KeyCode.Q))
@@ -212,6 +215,7 @@ public class PlayerMovement : MonoBehaviour
         freeLookCamera.m_YAxis.m_MaxSpeed = speedY;
     }//para a camera quando o jogador pausa o 
 
+
     public void All()
     {
         CharacterMoviment();
@@ -219,6 +223,33 @@ public class PlayerMovement : MonoBehaviour
         OpenInventory();
         EquipWeapon();
         Drop();
+    }
+
+    public IEnumerator Run()
+    {
+        GuardarArma();
+        while (Input.GetKey(KeyCode.LeftShift))
+        {
+            if (Player.singleton.carterScene.carter.stamina > 1)
+            {
+                Player.singleton.carterScene.carterStatus.regen = false;
+                anim.SetBool("Running", true);
+                Player.singleton.carterScene.carter.stamina -= 0.1f;
+                Player.singleton.carterScene.carterStatus.UpdateUI(Player.singleton.carterScene.carter.stamina, Player.singleton.carterScene.carter.staminaFull, Player.singleton.carterScene.carterStatus.staminaImage);
+                yield return new WaitForSeconds(2);
+            }
+            else
+            {
+                anim.SetBool("Running", false);
+                yield return null;
+            }
+        }
+        anim.SetBool("Running", false);
+        if (Player.singleton.carterScene.carterStatus.regen == false)
+        {
+            StartCoroutine(Player.singleton.carterScene.carterStatus.RegenStamina(2, 2));
+        }
+        yield return null;
     }
 }
 

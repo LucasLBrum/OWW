@@ -17,28 +17,8 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: c7e88450ed100c344b5410ba1055aabc
-    m_importFrom: Assets/Scripts/Characters/Carter/PlayerMovement.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 3abd02b1df448634fb92aad454f93eb9
-    m_importFrom: Assets/Models/Prefabs/Objetos/Garrafa.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: f37c9da28323645478ef9a2d983c448f
-    m_importFrom: Assets/Scripts/Itens/UI/Slot.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: ab077f9eaefb7c64893234870276002d
-    m_importFrom: Assets/Models/Prefabs/Weapons/ShotGunEspecial.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 26e8a9bc2f7d4334bb799589596e9789
-    m_importFrom: Assets/Models/Prefabs/Weapons/Revolver.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: c440fffe701f3514995f375d44712a3f
-    m_importFrom: Assets/Models/Prefabs/Weapons/Shotgun_01.prefab
+  - m_assetDatabaseId: 5ec2137bf3c06954b8a52fe7bd84287d
+    m_importFrom: "Assets/Models/Po\xE7\xE3o1.prefab"
     m_exportTo: 
     m_variantName: 
   m_version: 2

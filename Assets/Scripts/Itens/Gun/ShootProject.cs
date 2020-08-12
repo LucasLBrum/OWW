@@ -28,28 +28,32 @@ public class ShootProject : MonoBehaviour
 
     void Shoot()
     {
-        if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)//se haver algum slot de arma em uso.
+        if (Input.GetMouseButton(0) && Time.time >= timeTofire)//se apertar o botão esquerdo do mouse e o tempo for maior ou igual à tempo de disparo.
         {
-            if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)//se esse item for o que estiver em uso.
+            if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)//se haver algum slot de arma em uso.
             {
-                if(weaponScene.bullets > 0)
+                if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)//se esse item for o que estiver em uso.
                 {
-                    if (Input.GetMouseButton(0) && Time.time >= timeTofire)//se apertar o botão esquerdo do mouse e o tempo for maior ou igual à tempo de disparo.
+                    if (Player.singleton.carterScene.GetComponent<PlayerMovement>().activeWeapon.rigController.GetBool("Take") != true)
                     {
-                        weaponScene.bullets -= 1;                        
-                        rigController.Play("weapon_recoil_" + weaponScene.weaponName, 1, 0.0f);//fazer a animação de disparo da arma.
-                        SpawnMuzzle();//intanciar o efeito de explosão
-                        timeTofire = Time.time + 1 / weaponScene.fireRate;//verificar a taxa de disparo da arma atual e colocar no tempo de disparo.
-                        if (shootRaycast.ShootR() != null)//se haver algum inimigo no caminho do disparo.
+                        if (weaponScene.bullets > 0)
                         {
-                            var enemy = shootRaycast.ShootR().thisCharacter;//variavel vaia brigar esse inimigo.
-                            if (enemy != null)
+                            weaponScene.bullets -= 1;
+                            rigController.Play("weapon_recoil_" + weaponScene.weaponName, 1, 0.0f);//fazer a animação de disparo da arma.
+                            SpawnMuzzle();//intanciar o efeito de explosão
+                            timeTofire = Time.time + 1 / weaponScene.fireRate;//verificar a taxa de disparo da arma atual e colocar no tempo de disparo.
+                            if (shootRaycast.ShootR() != null)//se haver algum inimigo no caminho do disparo.
                             {
-                                enemy.TakeDamage(weaponScene.damage);//vai diminuir a vida do inimigo dependendo da arma que o jogador estiver utilizando.);
-                                Debug.Log("a vida da bruxa é " + enemy.lifeCharacter);
+                                var enemy = shootRaycast.ShootR().thisCharacter;//variavel vaia brigar esse inimigo.
+                                if (enemy != null)
+                                {
+                                    enemy.TakeLife(enemy, weaponScene.damage, 1);//vai diminuir a vida do inimigo dependendo da arma que o jogador estiver utilizando.);
+                                    Debug.Log("a vida da bruxa é " + enemy.lifeCharacter);
+                                }
                             }
                         }
                     }
+
                 }
             }
         }
@@ -57,15 +61,15 @@ public class ShootProject : MonoBehaviour
 
     void Reaload()
     {
-        if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)//se haver algum slot de arma em uso.
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)//se esse item for o que estiver em uso.
+            if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)//se haver algum slot de arma em uso.
             {
-                if(rigController.GetBool("Take") == false)
+                if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)//se esse item for o que estiver em uso.
                 {
-                    if (Input.GetKeyDown(KeyCode.R))
+                    if (rigController.GetBool("Take") == false)
                     {
-                        if(weaponScene.bullets != weaponScene.bulletsMax)
+                        if (weaponScene.bullets != weaponScene.bulletsMax)
                         {
                             if (weaponScene.typeWeapon == MunitionType.Little)
                             {
