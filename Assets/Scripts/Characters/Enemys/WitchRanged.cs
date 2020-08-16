@@ -6,7 +6,8 @@ public class WitchRanged : Enemy
 {
     Animator anim;
     public PotionSlow potion;
-    public GameObject potionObject;
+    public GameObject potionObjectE;
+    public GameObject potionObjectS;
     public GameObject pivot;
 
     private void Start()
@@ -18,11 +19,21 @@ public class WitchRanged : Enemy
 
     public void Atack()
     {
-
-        var potion = Instantiate(potionObject, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
-        this.potion = potion.GetComponent<PotionSlow>(); 
-        transform.LookAt(Player.singleton.carterScene.transform);
-        anim.SetTrigger("Atack");
+        int a = Random.Range(1, 3);
+        if(a == 1)
+        {
+            var potion = Instantiate(potionObjectS, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
+            this.potion = potion.GetComponent<PotionSlow>();
+            transform.LookAt(Player.singleton.carterScene.transform);
+            anim.SetTrigger("Atack");
+        }
+        else
+        {
+            var potion = Instantiate(potionObjectE, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
+            this.potion = potion.GetComponent<PotionSlow>();
+            transform.LookAt(Player.singleton.carterScene.transform);
+            anim.SetTrigger("Atack");
+        }
     }
 
     public void TakePotion()

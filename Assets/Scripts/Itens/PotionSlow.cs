@@ -27,14 +27,6 @@ public class PotionSlow : MonoBehaviour
         rb.useGravity = true;
         transform.SetParent(null);
         transform.LookAt(target.transform);
-        //rb.AddForce(transform.forward * speed);
-        var a = new Vector3(0,1,0);
         rb.AddForce(transform.forward * speed, ForceMode.Impulse);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.M))
-            TakeImpulse(Player.singleton.carterScene.gameObject);
     }
 }

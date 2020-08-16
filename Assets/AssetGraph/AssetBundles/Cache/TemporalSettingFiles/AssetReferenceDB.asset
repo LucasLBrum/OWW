@@ -17,8 +17,12 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 5ec2137bf3c06954b8a52fe7bd84287d
-    m_importFrom: "Assets/Models/Po\xE7\xE3o1.prefab"
+  - m_assetDatabaseId: 705da80d57dbb564da751e4239a58479
+    m_importFrom: Assets/Bruxa Necromancer.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: be46bd5191367374593675497df73496
+    m_importFrom: Assets/Scenes/TestTerrain.unity
     m_exportTo: 
     m_variantName: 
   m_version: 2
