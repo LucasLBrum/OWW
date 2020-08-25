@@ -48,10 +48,6 @@ public class ShootProject : MonoBehaviour
                                 if (enemy != null)
                                 {
                                     enemy.TakeLife(enemy, weaponScene.damage, 1);//vai diminuir a vida do inimigo dependendo da arma que o jogador estiver utilizando.);
-                                    if(enemy.lifeCharacter <= 0)
-                                    {
-                                        enemy.characterPrefab.GetComponent<Animator>().SetTrigger("isDead");
-                                    }
                                     Debug.Log("a vida da bruxa é " + enemy.lifeCharacter);
                                 }
                             }

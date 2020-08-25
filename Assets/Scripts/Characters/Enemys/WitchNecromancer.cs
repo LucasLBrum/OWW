@@ -24,7 +24,6 @@ public class WitchNecromancer : Enemy
         anim = GetComponent<Animator>();
     }
 
-
     public void SpawnEsqueleton()
     {
         transform.LookAt(Player.singleton.carterScene.transform.position);
@@ -41,7 +40,6 @@ public class WitchNecromancer : Enemy
         a.GetComponent<Crow>().follow = true;
         a.GetComponent<Crow>().witch = this;
     }
-
 
     public IEnumerator CrowEffect()
     {

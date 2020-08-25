@@ -9,6 +9,11 @@ public class EnemyMovement : MonoBehaviour
 {
     NavMeshAgent agent; //Agente do navmesh
     Animator anim;//componenete de animação desse objeto
+    public bool inBattle;
+    [SerializeField]
+    private float maxDistance;
+    Enemy enemy;
+    bool alive;
 
     private void Awake()
     {
@@ -16,24 +21,38 @@ public class EnemyMovement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        enemy = GetComponent<Enemy>();
+    }
+
 
     private void Update()
     {
-        float distance = Vector3.Distance(transform.position, Player.singleton.carterScene.transform.position);//a variável "distance", agora recebe a distancia entre o agente e o player.
+        Movement();
+    }
 
-        if(distance > 1.5)// caso ele esteja longe do jogador
+
+    void Movement()
+    {
+        if (inBattle)
         {
-            agent.updatePosition = true; //caso a distancia seja mais que 1.5 o inimigo continua atuzlizando sua posição 
-            agent.SetDestination(Player.singleton.carterScene.transform.position); //e o player continua sendo seu destino
-            anim.SetBool("isLocomotion", true);//ele continua execultando a animação de locomoção
-            anim.SetBool("isAtack", false);
-        }
-        else// caso ele esteja perto do jogador
-        {
-            agent.updatePosition = false;//ele para de andar
-            anim.SetBool("isLocomotion", false);//para de fazer a animação de locomoção
-            transform.LookAt(Player.singleton.carterScene.transform);//olha para o player
-            anim.SetBool("isAtack", true);//faz animação de ataque
+            float distance = Vector3.Distance(transform.position, Player.singleton.carterScene.transform.position);//a variável "distance", agora recebe a distancia entre o agente e o player.
+
+            if (distance > maxDistance)// caso ele esteja longe do jogador
+            {
+                agent.updatePosition = true; //caso a distancia seja mais que 1.5 o inimigo continua atuzlizando sua posição 
+                agent.SetDestination(Player.singleton.carterScene.transform.position); //e o player continua sendo seu destino
+                anim.SetBool("isLocomotion", true);//ele continua execultando a animação de locomoção
+                anim.SetBool("isAtack", false);
+            }
+            else// caso ele esteja perto do jogador
+            {
+                agent.updatePosition = false;//ele para de andar
+                anim.SetBool("isLocomotion", false);//para de fazer a animação de locomoção
+                transform.LookAt(Player.singleton.carterScene.transform);//olha para o player
+                anim.SetBool("isAtack", true);//faz animação de ataque
+            }
         }
     }
 }

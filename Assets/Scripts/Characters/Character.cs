@@ -10,14 +10,17 @@ public abstract class Character //classe base de todo personagem no jogo.
     public string nameCharacter;//nome do character
     public float lifeCharacter;//vida do character
     public float lifeFullCharacter;//vida do character
+    public Animator anim;
 
     public void TakeLife(Character character, float value, int op)
     {
         if(op == 1)
         {
             character.lifeCharacter -= value;
-            if (character.lifeCharacter < 0)
+            
+            if (character.lifeCharacter <= 0)
             {
+                character.anim.SetBool("isDead", true);
                 character.lifeCharacter = 0;
             }
         }

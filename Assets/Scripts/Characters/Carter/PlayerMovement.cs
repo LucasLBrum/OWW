@@ -234,7 +234,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Player.singleton.carterScene.carterStatus.regen = false;
                 anim.SetBool("Running", true);
-                Player.singleton.carterScene.carter.stamina -= 0.1f;
+                Player.singleton.carterScene.carter.stamina -= 0.03f;
                 Player.singleton.carterScene.carterStatus.UpdateUI(Player.singleton.carterScene.carter.stamina, Player.singleton.carterScene.carter.staminaFull, Player.singleton.carterScene.carterStatus.staminaImage);
                 yield return new WaitForSeconds(2);
             }
