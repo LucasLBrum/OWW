@@ -44,11 +44,10 @@ public class ShootProject : MonoBehaviour
                             timeTofire = Time.time + 1 / weaponScene.fireRate;//verificar a taxa de disparo da arma atual e colocar no tempo de disparo.
                             if (shootRaycast.ShootR() != null)//se haver algum inimigo no caminho do disparo.
                             {
-                                var enemy = shootRaycast.ShootR().thisCharacter;//variavel vaia brigar esse inimigo.
+                                var enemy = shootRaycast.ShootR();//variavel vaia brigar esse inimigo.
                                 if (enemy != null)
                                 {
-                                    enemy.TakeLife(enemy, weaponScene.damage, 1);//vai diminuir a vida do inimigo dependendo da arma que o jogador estiver utilizando.);
-                                    Debug.Log("a vida da bruxa é " + enemy.lifeCharacter);
+                                    enemy.enemy.TakeLife(enemy.enemy, weaponScene.damage, 1);//vai diminuir a vida do inimigo dependendo da arma que o jogador estiver utilizando.);
                                 }
                             }
                         }

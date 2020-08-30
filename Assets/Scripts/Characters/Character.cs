@@ -7,32 +7,40 @@ public abstract class Character //classe base de todo personagem no jogo.
 {
 
     public GameObject characterPrefab;//prefab do character
+    public CharacterStatus status;
     public string nameCharacter;//nome do character
     public float lifeCharacter;//vida do character
     public float lifeFullCharacter;//vida do character
-    public Animator anim;
 
     public void TakeLife(Character character, float value, int op)
     {
         if(op == 1)
         {
             character.lifeCharacter -= value;
+            status.UpdateStatus(this);
             
             if (character.lifeCharacter <= 0)
             {
-                character.anim.SetBool("isDead", true);
+                character.Dead(character.characterPrefab.GetComponent<Animator>());
                 character.lifeCharacter = 0;
             }
         }
         else
         {
             character.lifeCharacter += value;
+            status.UpdateStatus(this);
             if (character.lifeCharacter > character.lifeFullCharacter)
             {
                 character.lifeCharacter = character.lifeFullCharacter;
             }
         }
     }
+
+    public virtual void Dead(Animator anim)
+    {
+        anim.SetBool("Dead", true);
+    }
+
 }
 
 public class Carter : Character//classe do personagem principal que tem varios diferenciais dos demais personagens.
@@ -50,7 +58,6 @@ public class Carter : Character//classe do personagem principal que tem varios d
         staminaFull = StaminaFull;
         staminaRegen = StaminaRegen;
     }
-
     public void TakeStamina(float value, int op)
     {
         switch(op)
@@ -81,3 +88,40 @@ public class Witch : Character//classe da bruxa que tem varios diferenciais dos 
         damage = Damage;
     }
 }
+
+public class WitchNecromancer : Character
+{
+    public float damage;//variavel que demonstra o dano da bruxa.
+    public WitchNecromancer(string Name, float Life, float LifeFull, float Damage)//contrutor
+    {
+        nameCharacter = Name;
+        lifeCharacter = Life;
+        lifeFullCharacter = LifeFull;
+        damage = Damage;
+    }
+}
+
+public class Esqueleton : Character
+{
+    public float damage;//variavel que demonstra o dano da bruxa.
+    public Esqueleton(string Name, float Life, float LifeFull, float Damage)//contrutor
+    {
+        nameCharacter = Name;
+        lifeCharacter = Life;
+        lifeFullCharacter = LifeFull;
+        damage = Damage;
+    }
+}
+
+public class WitchRanged : Character
+{
+    public float damage;//variavel que demonstra o dano da bruxa.
+    public WitchRanged(string Name, float Life, float LifeFull, float Damage)//contrutor
+    {
+        nameCharacter = Name;
+        lifeCharacter = Life;
+        lifeFullCharacter = LifeFull;
+        damage = Damage;
+    }
+}
+

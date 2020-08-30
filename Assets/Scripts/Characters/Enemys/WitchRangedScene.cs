@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WitchRanged : Enemy
+public class WitchRangedScene : CharacterScene
 {
-    Animator anim;
     public PotionSlow potion;
     public GameObject potionObjectE;
     public GameObject potionObjectS;
     public GameObject pivot;
 
-    private void Start()
-    {
+    WitchRanged witchRanged = new WitchRanged("", 50, 50, 10);
 
+    private void Awake()
+    {
+        witchRanged.characterPrefab = gameObject;
         anim = GetComponent<Animator>();
+        thisCharacter = witchRanged;
         TakePotion();
     }
 

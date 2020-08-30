@@ -10,7 +10,7 @@ public class MeleeCollider : MonoBehaviour
         var carter = other.GetComponent<CharacterStatus>();
         if (carter != null)
         {
-            carter.TakeValueAndUpdate(damageOnCollison);
+            //carter.TakeValueAndUpdate(damageOnCollison);
         }
     }
 }

@@ -12,7 +12,6 @@ public class PoolSlow : MonoBehaviour
         if (character != null)
         {
             character.GetComponent<Animator>().speed = 0.5f;
-            character.TakeValueAndUpdate(0.3f);
         }
     }
     private void OnTriggerExit(Collider other)

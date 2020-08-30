@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WitchMelee : Enemy
+public class WitchMelee : CharacterScene
 {
     Witch witch = new Witch("", 50, 50, 23); //Character da bruxa, é aqui onde é definido seus stattus
-    public string witchName; //nome da bruxa para possíveis interações 
 
     private void Awake()
     {
-        witch.characterPrefab = gameObject; //conectando o prefab do character á esse objeto
+        witch.characterPrefab = gameObject;
+        anim = GetComponent<Animator>();
+        thisCharacter = witch;
     }
 
-    private void Start()
+    public void Atack()
     {
-        thisCharacter = witch; //o Character do componenete de "Enemy" vai receber a witch.
-        witch.nameCharacter = witchName; //trocando o nome.
     }
 }

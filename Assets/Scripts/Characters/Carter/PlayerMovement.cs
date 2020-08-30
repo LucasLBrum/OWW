@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 input;//input para ser usado na movimentação.
     Camera mainCamera; //main camera
     public CinemachineFreeLook freeLookCamera;//componente da cinemachine 
+    public CarterStatus status;
 
     public ActiveWeapon activeWeapon;//componente que contem as refêrencias do rig do jogador.
 
@@ -26,6 +27,11 @@ public class PlayerMovement : MonoBehaviour
         mainCamera = Camera.main; //colocando a man camera na referencia.
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Start()
+    {
+        status = Player.singleton.carterScene.carterStatus;
     }
     void CharacterMoviment() 
     {
@@ -43,13 +49,11 @@ public class PlayerMovement : MonoBehaviour
                 {
                     if (Player.singleton.carterScene.carter.stamina > 5)
                     {
-                        Player.singleton.carterScene.carter.TakeStamina(5, 1);
-                        //Debug.Log(Player.singleton.carterScene.carter.stamina);
-                        Player.singleton.carterScene.carterStatus.UpdateUI(Player.singleton.carterScene.carter.stamina, Player.singleton.carterScene.carter.staminaFull, Player.singleton.carterScene.carterStatus.staminaImage);
+                        status.TakeStamina(5);
                         anim.SetTrigger("Roll");
                         if(Player.singleton.carterScene.carterStatus.regen == false)
                         {
-                            StartCoroutine(Player.singleton.carterScene.carterStatus.RegenStamina(2, 2));
+                            StartCoroutine(status.RegenStamina());
                         }
                     }
                 }
@@ -214,8 +218,6 @@ public class PlayerMovement : MonoBehaviour
         freeLookCamera.m_XAxis.m_MaxSpeed = speedX;
         freeLookCamera.m_YAxis.m_MaxSpeed = speedY;
     }//para a camera quando o jogador pausa o 
-
-
     public void All()
     {
         CharacterMoviment();
@@ -230,13 +232,14 @@ public class PlayerMovement : MonoBehaviour
         GuardarArma();
         while (Input.GetKey(KeyCode.LeftShift))
         {
-            if (Player.singleton.carterScene.carter.stamina > 1)
+            
+            if (status.carter.stamina > 1)
             {
-                Player.singleton.carterScene.carterStatus.regen = false;
+                status.regen = false;
                 anim.SetBool("Running", true);
-                Player.singleton.carterScene.carter.stamina -= 0.03f;
-                Player.singleton.carterScene.carterStatus.UpdateUI(Player.singleton.carterScene.carter.stamina, Player.singleton.carterScene.carter.staminaFull, Player.singleton.carterScene.carterStatus.staminaImage);
-                yield return new WaitForSeconds(2);
+                status.carter.stamina -= status.StaminaPrice;
+                status.UpdateStamina();
+                yield return new WaitForSeconds(0.1f);
             }
             else
             {
@@ -245,9 +248,10 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         anim.SetBool("Running", false);
-        if (Player.singleton.carterScene.carterStatus.regen == false)
+
+        if (status.regen == false)
         {
-            StartCoroutine(Player.singleton.carterScene.carterStatus.RegenStamina(2, 2));
+            StartCoroutine(status.RegenStamina());
         }
         yield return null;
     }

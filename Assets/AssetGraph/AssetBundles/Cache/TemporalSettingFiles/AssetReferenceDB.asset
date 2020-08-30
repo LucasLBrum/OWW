@@ -17,8 +17,8 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: be46bd5191367374593675497df73496
-    m_importFrom: Assets/Scenes/TestTerrain.unity
+  - m_assetDatabaseId: 426e709c16667f844ae81cfe9b62b3f2
+    m_importFrom: Assets/Design/Animations/Enemy/EsqueletonController.controller
     m_exportTo: 
     m_variantName: 
   m_version: 2

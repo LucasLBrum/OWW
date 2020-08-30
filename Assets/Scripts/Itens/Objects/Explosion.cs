@@ -9,7 +9,6 @@ public class Explosion : MonoBehaviour
         float distance = Vector3.Distance(transform.position, Player.singleton.carterScene.transform.position);//a variável "distance", agora recebe a distancia entre o agente e o player.
         if(distance < 1.5)
         {
-            Player.singleton.carterScene.carterStatus.TakeValueAndUpdate(15);
         }
         Destroy(gameObject, 1);
     }

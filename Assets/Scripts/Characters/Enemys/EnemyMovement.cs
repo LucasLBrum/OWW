@@ -12,7 +12,6 @@ public class EnemyMovement : MonoBehaviour
     public bool inBattle;
     [SerializeField]
     private float maxDistance;
-    Enemy enemy;
     bool alive;
 
     private void Awake()
@@ -20,12 +19,6 @@ public class EnemyMovement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();//pegando refêrencia dos componenetes nesse objeto.
         anim = GetComponent<Animator>();
     }
-
-    private void Start()
-    {
-        enemy = GetComponent<Enemy>();
-    }
-
 
     private void Update()
     {

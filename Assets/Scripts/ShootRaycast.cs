@@ -7,6 +7,8 @@ public class ShootRaycast : MonoBehaviour
     float raycastDistancePickup = 10f;
     float raycastDistanceShoot = 25f;
     public PickUpItem pickUp;
+    public GameObject blood;
+    public GameObject smoke;
     RaycastHit hit;//cria um objeto do tipo "RaycastHit"
     Ray ray;
 
@@ -40,17 +42,23 @@ public class ShootRaycast : MonoBehaviour
         }
     } 
    
-    public Enemy ShootR()
+    public EnemyStatus ShootR()
     {
         Debug.DrawRay(transform.position, transform.forward * raycastDistanceShoot, Color.red);
-
-        if(Physics.Raycast(transform.position, transform.forward, out hit, raycastDistanceShoot, mask, QueryTriggerInteraction.Collide))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, raycastDistanceShoot, mask, QueryTriggerInteraction.Collide))
         {
-            Enemy enemy = hit.transform.GetComponent<Enemy>();
+            EnemyStatus enemy = hit.transform.GetComponent<EnemyStatus>();
             if (enemy != null)
             {
+                var blood = Instantiate(this.blood, hit.point, Quaternion.identity);
+                Destroy(blood, 1);
                 Debug.Log("atirou no inimigo");
                 return enemy;
+            }
+            else
+            {
+                var smoke = Instantiate(this.smoke, hit.point, Quaternion.identity);
+                Destroy(smoke, 1);
             }
         }
 

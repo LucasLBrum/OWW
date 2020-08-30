@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 
 
-public class WitchNecromancer : Enemy
+public class WitchNecromancerScene : CharacterScene
 {
     public GameObject box;
     public GameObject esqueleton;
@@ -14,45 +13,25 @@ public class WitchNecromancer : Enemy
     public GameObject pivot1;
     public GameObject pivot2;
 
-    public PostProcessVolume ppv;
+    public WitchNecromancer necromancer = new WitchNecromancer("necromancer", 50, 50, 20);
 
-    Animator anim;
-
-    private void Start()
+    private void Awake()
     {
-        ppv = GameObject.Find("PostProcessVolume").GetComponent<PostProcessVolume>();
+        necromancer.characterPrefab = gameObject;
         anim = GetComponent<Animator>();
+        thisCharacter = necromancer;
     }
-
     public void SpawnEsqueleton()
     {
         transform.LookAt(Player.singleton.carterScene.transform.position);
         var a = Instantiate(box, pivot.transform.position, pivot.transform.rotation, null);
         var b = Instantiate(box, pivot1.transform.position, pivot1.transform.rotation, null);
-        //a.transform.LookAt(Player.singleton.carterScene.transform);
-
     }
 
     public void SpawnCrow()
     {
         transform.LookAt(Player.singleton.carterScene.transform.position);
         var a = Instantiate(crow, pivot2.transform.position, pivot2.transform.rotation, null);
-        a.GetComponent<Crow>().follow = true;
-        a.GetComponent<Crow>().witch = this;
-    }
-
-    public IEnumerator CrowEffect()
-    {
-        float time = 1;
-        while (time <= 10)
-        {
-            ppv.weight = 1;
-            time++;
-            Debug.Log(time);
-            yield return new WaitForSeconds(1f);
-        }
-        ppv.weight = 0;
-        yield return null;
     }
 
     private void Update()

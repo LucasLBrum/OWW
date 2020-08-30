@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Esqueleton : Enemy
+public class EsqueletonScene : CharacterScene
 {
     public GameObject pointFire;
     public GameObject pointFire1;
 
     public GameObject muzzle;
 
-    Witch esqueleton = new Witch("Billy", 100, 100, 20);
+    Esqueleton esqueleton = new Esqueleton("Billy", 100, 100, 20);
 
     public float raycastDistanceShoot;
 
@@ -18,15 +18,16 @@ public class Esqueleton : Enemy
     public LayerMask raycastMask;
     int mask;
 
-
-    private void Start()
+    private void Awake()
     {
         mask = raycastMask.value;
-
         ray = new Ray(transform.position, transform.forward);
+        esqueleton.characterPrefab = gameObject;
+        thisCharacter = esqueleton;
+        anim = GetComponent<Animator>();
     }
 
-    public Enemy ShootR()
+    public void ShootR()
     {
         SpawnMuzzle(pointFire);
         Debug.DrawRay(pointFire.transform.position, pointFire.transform.forward * raycastDistanceShoot, Color.red);
@@ -37,15 +38,12 @@ public class Esqueleton : Enemy
             if (carter != null)
             {
                 Debug.Log("atirou no player");
-                carter.TakeValueAndUpdate(10);
             }
         }
-
         Debug.Log("nenhum inimigo");
-        return null;
     }
 
-    public Enemy ShootL()
+    public void ShootL()
     {
         SpawnMuzzle(pointFire1);
         Debug.DrawRay(pointFire1.transform.position, pointFire1.transform.forward * raycastDistanceShoot, Color.red);
@@ -56,12 +54,9 @@ public class Esqueleton : Enemy
             if (carter != null)
             {
                 Debug.Log("atirou no player");
-                carter.TakeValueAndUpdate(10);
             }
         }
-
         Debug.Log("nenhum inimigo");
-        return null;
     }
 
     void SpawnMuzzle(GameObject firePoint)
