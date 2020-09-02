@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowPool: {fileID: 8181481304715068471, guid: 75dc622e7d02d4f4f989a0846923b0c9,
     type: 3}
-  speed: 20
+  speed: 30
 --- !u!1 &6921946035083990752
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class PoolSlow : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        character = other.GetComponentInChildren<CharacterStatus>();
+        character = other.GetComponent<CharacterStatus>();
         if (character != null)
         {
             character.GetComponent<Animator>().speed = 0.5f;
@@ -16,6 +16,7 @@ public class PoolSlow : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        if(character != null)
         character.GetComponent<Animator>().speed = 1;
     }
 

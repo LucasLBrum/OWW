@@ -108,13 +108,14 @@ GameObject:
   - component: {fileID: 373548859267100277}
   - component: {fileID: 373548859267100170}
   - component: {fileID: 373548859267100276}
+  - component: {fileID: 1348074336}
   m_Layer: 12
   m_Name: Witch Melee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3707664730795072610
 Transform:
   m_ObjectHideFlags: 0
@@ -212,8 +213,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406601829becbac4e9f610dfa2530df7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  carter: {fileID: 0}
+  maxDistance: 3
+  DropItem: {fileID: 0}
+  spawn: {fileID: 0}
   inBattle: 0
-  maxDistance: 1.5
+--- !u!114 &1348074336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373548859267100273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f4fc9eec7b7c04797bd6b0d20e38aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSlider: {fileID: 3299664623357353611}
+  lifeText: {fileID: 6495127123866359251}
 --- !u!1 &1107651900456732132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,12 +1484,27 @@ PrefabInstance:
     - target: {fileID: 4053862449802855777, guid: 9c692c16002fc684ba05a69917c25df8,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4053862449802855777, guid: 9c692c16002fc684ba05a69917c25df8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898859203229822598, guid: 9c692c16002fc684ba05a69917c25df8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.22745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898859203229822598, guid: 9c692c16002fc684ba05a69917c25df8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.20784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898859203229822598, guid: 9c692c16002fc684ba05a69917c25df8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.20784314
       objectReference: {fileID: 0}
     - target: {fileID: 5711805081369955809, guid: 9c692c16002fc684ba05a69917c25df8,
         type: 3}
@@ -1490,3 +1524,27 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 456390141}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3299664623357353611 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3299664622970252150, guid: 9c692c16002fc684ba05a69917c25df8,
+    type: 3}
+  m_PrefabInstance: {fileID: 456390141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6495127123866359251 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6495127123483484206, guid: 9c692c16002fc684ba05a69917c25df8,
+    type: 3}
+  m_PrefabInstance: {fileID: 456390141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

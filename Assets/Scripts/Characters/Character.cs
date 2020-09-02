@@ -16,6 +16,18 @@ public abstract class Character //classe base de todo personagem no jogo.
     {
         if(op == 1)
         {
+            if (characterPrefab.GetComponent<EnemyMovement>() != null)
+            {
+                if(characterPrefab.GetComponent<EnemyMovement>().inBattle == false)
+                characterPrefab.GetComponent<EnemyMovement>().StartCoroutine(characterPrefab.GetComponent<EnemyMovement>().Chase());
+            }
+            if (characterPrefab.GetComponent<CrowScene>() != null)
+            {
+                
+                characterPrefab.GetComponent<CrowScene>().DestroyCrow();
+                return;
+
+            }
             character.lifeCharacter -= value;
             status.UpdateStatus(this);
             
@@ -124,4 +136,18 @@ public class WitchRanged : Character
         damage = Damage;
     }
 }
+public class Crow : Character
+{
+    public float damage;//variavel que demonstra o dano da bruxa.
+    public Crow(string Name, float Life, float LifeFull, float Damage)//contrutor
+    {
+        nameCharacter = Name;
+        lifeCharacter = Life;
+        lifeFullCharacter = LifeFull;
+        damage = Damage;
+    }
+}
+
+
+
 

@@ -4,35 +4,17 @@ using UnityEngine;
 
 public class BattleRange : MonoBehaviour
 {
-    public GameObject[] parts = new GameObject[32];
-    public Material glassMaterial;
-    void Start()
-    {
-        GetRef();
-        StartCoroutine(ChangeMaterial());
-    }
+    public List<EnemyMovement> enemy;
 
-    void GetRef()
+    private void OnTriggerEnter(Collider other)
     {
-        for (int i = 0; i < gameObject.transform.childCount; i++)
+        if (other.GetComponent<CarterScene>())
         {
-            parts[i] = gameObject.transform.GetChild(i).gameObject;
-            parts[i].GetComponent<MeshRenderer>().enabled = false;
+            for (int i = 0; i < enemy.Count; i++)
+            {
+                if(enemy[i].inBattle == false)
+                StartCoroutine(enemy[i].Chase());
+            }
         }
     }
-
-    IEnumerator ChangeMaterial()
-   {
-        int i = 0;
-        while(i < parts.Length)
-        {
-            parts[i].GetComponent<MeshRenderer>().enabled = true;
-            parts[i].GetComponent<MeshRenderer>().material = glassMaterial;
-            i++;
-            yield return new WaitForSeconds(0.08f);
-
-        }
-
-        yield return null;
-   }
 }

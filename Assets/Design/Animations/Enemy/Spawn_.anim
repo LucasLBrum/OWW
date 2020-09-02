@@ -113631,7 +113631,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1.0333333
+  - time: 0.68333334
     functionName: SpawnEsqueleton
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: cbf7a20221ef9b148bda4162e5ae7fc2,

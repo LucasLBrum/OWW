@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestTerrain.unity
+    path: Assets/Scenes/Winchester.unity
     guid: be46bd5191367374593675497df73496
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a41925929dd04c646a67d65f14e75dcf,

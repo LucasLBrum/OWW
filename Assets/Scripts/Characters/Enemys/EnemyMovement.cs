@@ -4,15 +4,19 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations;
 using UnityEngine.PlayerLoop;
+using System;
 
 public class EnemyMovement : MonoBehaviour
 {
-    NavMeshAgent agent; //Agente do navmesh
+    public NavMeshAgent agent; //Agente do navmesh
     Animator anim;//componenete de animação desse objeto
-    public bool inBattle;
+    public CarterScene carter;
+    public Character enemy;
     [SerializeField]
     private float maxDistance;
-    bool alive;
+    [SerializeField]
+    public GameObject DropItem = null;
+    public bool inBattle;
 
     private void Awake()
     {
@@ -20,22 +24,30 @@ public class EnemyMovement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Update()
+    private void Start()
     {
-        Movement();
+        carter = Player.singleton.carterScene;
+        enemy = GetComponent<CharacterScene>().thisCharacter;
     }
-
-
-    void Movement()
+    public IEnumerator Chase()
     {
-        if (inBattle)
+        inBattle = true;
+        float distance = Vector3.Distance(transform.position, carter.transform.position);//a variável "distance", agora recebe a distancia entre o agente e o player.
+        while (enemy.lifeCharacter > 0 && carter.carter.lifeCharacter > 0)
         {
-            float distance = Vector3.Distance(transform.position, Player.singleton.carterScene.transform.position);//a variável "distance", agora recebe a distancia entre o agente e o player.
-
+            distance = Vector3.Distance(transform.position, carter.transform.position);//a variável "distance", agora recebe a distancia entre o agente e o player.  
+            if(distance > 30)
+            {
+                agent.updatePosition = false;//ele para de andar
+                anim.SetBool("isLocomotion", false);//para de fazer a animação de locomoção
+                anim.SetBool("isAtack", false);//faz animação de ataque
+                anim.SetTrigger("celebrate");//faz animação de ataque
+                yield break;
+            }
             if (distance > maxDistance)// caso ele esteja longe do jogador
             {
                 agent.updatePosition = true; //caso a distancia seja mais que 1.5 o inimigo continua atuzlizando sua posição 
-                agent.SetDestination(Player.singleton.carterScene.transform.position); //e o player continua sendo seu destino
+                agent.SetDestination(carter.transform.position); //e o player continua sendo seu destino
                 anim.SetBool("isLocomotion", true);//ele continua execultando a animação de locomoção
                 anim.SetBool("isAtack", false);
             }
@@ -43,9 +55,34 @@ public class EnemyMovement : MonoBehaviour
             {
                 agent.updatePosition = false;//ele para de andar
                 anim.SetBool("isLocomotion", false);//para de fazer a animação de locomoção
-                transform.LookAt(Player.singleton.carterScene.transform);//olha para o player
+                transform.LookAt(carter.transform);//olha para o player
                 anim.SetBool("isAtack", true);//faz animação de ataque
             }
+            yield return new WaitForSeconds(1f);
         }
+        if(carter.carter.lifeCharacter > 0)
+        {
+            agent.updatePosition = false;//ele para de andar
+            anim.SetBool("isLocomotion", false);//para de fazer a animação de locomoção
+            anim.SetBool("isAtack", true);//faz animação de ataque
+        }
+        if(enemy.lifeCharacter > 0)
+        {
+            agent.updatePosition = false;//ele para de andar
+            anim.SetBool("isLocomotion", false);//para de fazer a animação de locomoção
+            anim.SetBool("isAtack", false);//faz animação de ataque
+            anim.SetTrigger("celebrate");//faz animação de ataque
+        }
+    }
+
+
+    public void DeadFuncion()
+    {
+        if(DropItem != null)
+        {
+            Instantiate(DropItem, transform.position, Quaternion.identity);
+        }
+        GetComponent<Collider>().enabled = false;
+        GetComponent<EnemyMovement>().enabled = false;
     }
 }

@@ -34,13 +34,12 @@ public class EsqueletonScene : CharacterScene
 
         if (Physics.Raycast(pointFire.transform.position, pointFire.transform.forward, out hit, raycastDistanceShoot, mask, QueryTriggerInteraction.Collide))
         {
-            CharacterStatus carter = hit.transform.GetComponent<CharacterStatus>();
+            Carter carter = hit.transform.GetComponent<CarterScene>().carter;
             if (carter != null)
             {
-                Debug.Log("atirou no player");
+                carter.TakeLife(carter, esqueleton.damage, 1);
             }
         }
-        Debug.Log("nenhum inimigo");
     }
 
     public void ShootL()
@@ -50,13 +49,12 @@ public class EsqueletonScene : CharacterScene
 
         if (Physics.Raycast(pointFire1.transform.position, pointFire1.transform.forward, out hit, raycastDistanceShoot, mask, QueryTriggerInteraction.Collide))
         {
-            CharacterStatus carter = hit.transform.GetComponent<CharacterStatus>();
+            Carter carter = hit.transform.GetComponent<CarterScene>().carter;
             if (carter != null)
             {
-                Debug.Log("atirou no player");
+                carter.TakeLife(carter, esqueleton.damage, 1);
             }
         }
-        Debug.Log("nenhum inimigo");
     }
 
     void SpawnMuzzle(GameObject firePoint)

@@ -339,7 +339,7 @@ MonoBehaviour:
   typeWeapon: 0
   weaponName: pistol
   damage: 10
-  bullets: 0
+  bullets: 15
   bulletsMax: 15
   fireRate: 2
   bulletsText: {fileID: 0}

@@ -2440,6 +2440,7 @@ GameObject:
   - component: {fileID: 1981486397529835361}
   - component: {fileID: 1548694620}
   - component: {fileID: 1548694619}
+  - component: {fileID: 766240308}
   m_Layer: 12
   m_Name: "EsqueletoComAnima\xE7\xF5es "
   m_TagString: Untagged
@@ -2495,8 +2496,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406601829becbac4e9f610dfa2530df7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inBattle: 0
+  agent: {fileID: 0}
+  carter: {fileID: 0}
   maxDistance: 10
+  DropItem: {fileID: 0}
+  inBattle: 0
 --- !u!195 &1981486397529835361
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2553,6 +2557,20 @@ MonoBehaviour:
   raycastMask:
     serializedVersion: 2
     m_Bits: 2048
+--- !u!114 &766240308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520530303564560875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f4fc9eec7b7c04797bd6b0d20e38aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSlider: {fileID: 3299664623421719521}
+  lifeText: {fileID: 6495127123795495097}
 --- !u!1 &7688954277764146185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3268,6 +3286,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4898859203229822598, guid: 9c692c16002fc684ba05a69917c25df8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.22745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898859203229822598, guid: 9c692c16002fc684ba05a69917c25df8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.20784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898859203229822598, guid: 9c692c16002fc684ba05a69917c25df8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.20784314
+      objectReference: {fileID: 0}
     - target: {fileID: 5711805081369955809, guid: 9c692c16002fc684ba05a69917c25df8,
         type: 3}
       propertyPath: m_Name
@@ -3286,6 +3319,30 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 518596759}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3299664623421719521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3299664622970252150, guid: 9c692c16002fc684ba05a69917c25df8,
+    type: 3}
+  m_PrefabInstance: {fileID: 518596759}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6495127123795495097 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6495127123483484206, guid: 9c692c16002fc684ba05a69917c25df8,
+    type: 3}
+  m_PrefabInstance: {fileID: 518596759}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1981486397513362432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3466,15 +3523,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63078e504b12cac47814d6cff3a9195e, type: 3}
---- !u!1 &5626215178390960685 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2198671565353428289, guid: 63078e504b12cac47814d6cff3a9195e,
-    type: 3}
-  m_PrefabInstance: {fileID: 5807133089167826796}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6207049927540163339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 483235099444681831, guid: 63078e504b12cac47814d6cff3a9195e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5807133089167826796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5626215178390960685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2198671565353428289, guid: 63078e504b12cac47814d6cff3a9195e,
     type: 3}
   m_PrefabInstance: {fileID: 5807133089167826796}
   m_PrefabAsset: {fileID: 0}

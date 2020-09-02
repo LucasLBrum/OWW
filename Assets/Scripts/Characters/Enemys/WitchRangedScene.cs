@@ -16,10 +16,8 @@ public class WitchRangedScene : CharacterScene
         witchRanged.characterPrefab = gameObject;
         anim = GetComponent<Animator>();
         thisCharacter = witchRanged;
-        TakePotion();
     }
-
-    public void Atack()
+    public void SpawnPotion()
     {
         int a = Random.Range(1, 3);
         if(a == 1)
@@ -27,17 +25,16 @@ public class WitchRangedScene : CharacterScene
             var potion = Instantiate(potionObjectS, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
             this.potion = potion.GetComponent<PotionSlow>();
             transform.LookAt(Player.singleton.carterScene.transform);
-            anim.SetTrigger("Atack");
+            TakePotion();
         }
         else
         {
             var potion = Instantiate(potionObjectE, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
             this.potion = potion.GetComponent<PotionSlow>();
             transform.LookAt(Player.singleton.carterScene.transform);
-            anim.SetTrigger("Atack");
+            TakePotion();
         }
     }
-
     public void TakePotion()
     {
         if(GetComponentInChildren<PotionSlow>() != null)
@@ -45,19 +42,11 @@ public class WitchRangedScene : CharacterScene
             potion = GetComponentInChildren<PotionSlow>();
         }
     }
-
     public void PlayPotion()
     {
         if(potion != null)
         {
             potion.TakeImpulse(Player.singleton.carterScene.gameObject);
         }
-    }
-
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Y))
-            Atack();
     }
 }
