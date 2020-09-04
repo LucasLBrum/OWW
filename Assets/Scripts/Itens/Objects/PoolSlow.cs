@@ -4,25 +4,54 @@ using UnityEngine;
 
 public class PoolSlow : MonoBehaviour
 {
-    CharacterStatus character;
+    public Animator character;
+    bool colidindo;
 
-    private void OnTriggerStay(Collider other)
+
+    /// <summary>
+    /// OnTriggerEnter is called when the Collider other enters the trigger.
+    /// </summary>
+    /// <param name="other">The other Collider involved in this collision.</param>
+    void OnTriggerEnter(Collider other)
     {
-        character = other.GetComponent<CharacterStatus>();
-        if (character != null)
+        if(other.GetComponent<CarterStatus>())
         {
-            character.GetComponent<Animator>().speed = 0.5f;
+            character = other.GetComponent<Animator>();
+            character.speed = 0.6f;
+            colidindo = true;
         }
     }
+
+
+
     private void OnTriggerExit(Collider other)
     {
-        if(character != null)
-        character.GetComponent<Animator>().speed = 1;
+        if(other.GetComponent<CarterStatus>())
+        {
+            character.speed = 1f;
+            colidindo = false;
+        }
     }
 
     private void Start()
     {
-        Destroy(gameObject, 15);
+        StartCoroutine(Backvelocity());
     }
 
+    IEnumerator Backvelocity()
+    {
+        int time = 0;
+        while(time < 8)
+        {
+            time++;
+            yield return new WaitForSeconds(1);
+        }
+        if(colidindo == true){
+            if(character != null)
+            character.speed = 1;
+        }
+        Destroy(this.gameObject);
+        yield return null;
+
+    }
 }

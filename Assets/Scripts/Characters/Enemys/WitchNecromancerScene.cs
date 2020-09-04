@@ -8,9 +8,7 @@ using UnityEngine.Rendering.PostProcessing;
 public class WitchNecromancerScene : CharacterScene
 {
     public GameObject box;
-    public GameObject esqueleton;
     public GameObject crow;
-
     public GameObject pivot;
     public GameObject pivot1;
     public GameObject pivot2;

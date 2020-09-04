@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public GameObject inventoryObject;
+
+    public Sprite noneImage;
     public List<Slot> slots = new List<Slot>();
     public List<Slot> weaponSlot = new List<Slot>();
 

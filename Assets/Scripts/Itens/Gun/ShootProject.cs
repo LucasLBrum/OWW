@@ -8,6 +8,12 @@ public class ShootProject : MonoBehaviour
     public Animator rigController;//animator dos rig
     public ShootRaycast shootRaycast;//componente que controla os raycasts
 
+    public AudioClip shootAF;
+    public AudioClip reloadAF;
+
+
+    public AudioSource source;
+
     public GameObject muzzlePrefab;//prefab do muzzle flash
 
     WeaponInScene weaponScene;
@@ -16,17 +22,16 @@ public class ShootProject : MonoBehaviour
 
     private void Start()
     {
+        source = GetComponent<AudioSource>();
         weaponScene = GetComponent<WeaponInScene>();
         shootRaycast = Camera.main.GetComponent<ShootRaycast>();//componente que controla os raycasts
     }
 
-    void Update()
-    {
-        Shoot();//função de disparo.
-        Reaload();
-    }
-
-    void Shoot()
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+  
+    public void Shoot()
     {
         if (Input.GetMouseButton(0) && Time.time >= timeTofire)//se apertar o botão esquerdo do mouse e o tempo for maior ou igual à tempo de disparo.
         {
@@ -40,6 +45,7 @@ public class ShootProject : MonoBehaviour
                         {
                             weaponScene.bullets -= 1;
                             rigController.Play("weapon_recoil_" + weaponScene.weaponName, 1, 0.0f);//fazer a animação de disparo da arma.
+                            source.PlayOneShot(shootAF);
                             SpawnMuzzle();//intanciar o efeito de explosão
                             timeTofire = Time.time + 1 / weaponScene.fireRate;//verificar a taxa de disparo da arma atual e colocar no tempo de disparo.
                             if (shootRaycast.ShootR() != null)//se haver algum inimigo no caminho do disparo.
@@ -58,7 +64,7 @@ public class ShootProject : MonoBehaviour
         }
     }
 
-    void Reaload()
+    public void Reaload()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -77,6 +83,7 @@ public class ShootProject : MonoBehaviour
                                     Player.singleton.carterScene.inventoryInScene.munitionL.RemoveMuniton(1);
                                     weaponScene.bullets = weaponScene.bulletsMax;
                                     rigController.SetTrigger("Reload");
+                                    source.PlayOneShot(reloadAF);
                                 }
                             }
                             else if (weaponScene.typeWeapon == MunitionType.Big)
@@ -86,6 +93,7 @@ public class ShootProject : MonoBehaviour
                                     Player.singleton.carterScene.inventoryInScene.munitionB.RemoveMuniton(1);
                                     weaponScene.bullets = weaponScene.bulletsMax;
                                     rigController.SetTrigger("Reload");
+                                    source.PlayOneShot(reloadAF);
                                 }
                             }
                         }

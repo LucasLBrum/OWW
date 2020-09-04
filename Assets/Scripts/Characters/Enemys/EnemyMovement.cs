@@ -28,6 +28,10 @@ public class EnemyMovement : MonoBehaviour
     {
         carter = Player.singleton.carterScene;
         enemy = GetComponent<CharacterScene>().thisCharacter;
+        if(inBattle)
+        {
+            StartCoroutine(Chase());
+        }
     }
     public IEnumerator Chase()
     {

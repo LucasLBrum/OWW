@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PersistentScene.unity
+    guid: e897c18e01d7e3548893bdf7ca8a60f6
+  - enabled: 1
+    path: Assets/Scenes/Florest 1.unity
+    guid: 7693153bfd06ccb4e82a4b50b8a03f17
+  - enabled: 1
     path: Assets/Scenes/Winchester.unity
-    guid: be46bd5191367374593675497df73496
+    guid: 53248dc6d6e5de2468a1c599ba1fc1d1
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: f0ad722343070254eab7caf3492dde01
+  - enabled: 1
+    path: Assets/Scenes/Florest.unity
+    guid: fc4b3945dd843364589c72d81115d569
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a41925929dd04c646a67d65f14e75dcf,
       type: 2}

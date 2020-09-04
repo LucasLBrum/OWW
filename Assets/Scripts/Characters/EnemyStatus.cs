@@ -17,6 +17,7 @@ public class EnemyStatus : CharacterStatus
 
     private void Update()
     {
+        if(Camera.main != null)
         lifeSlider.transform.LookAt(Camera.main.transform);
     }
 }

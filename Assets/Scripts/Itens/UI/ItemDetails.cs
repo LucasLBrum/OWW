@@ -17,6 +17,7 @@ public class ItemDetails : MonoBehaviour
     {
         slot.RemoveItem();
     }
+
     public void GetSlotDetails(Slot newSlot)
     {
         slot = newSlot;
@@ -27,5 +28,9 @@ public class ItemDetails : MonoBehaviour
             detailsText.text = slot.item.description;
         }
 
+    }
+
+    public void UseItem(){
+        slot.UseItem();
     }
 }

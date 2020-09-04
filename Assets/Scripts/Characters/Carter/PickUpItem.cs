@@ -13,6 +13,7 @@ public class PickUpItem : MonoBehaviour
             {
                 ItemResource resorce = thisItem.GetComponent<ItemScene>().thisItem;//refêrencia do item do raycast
                 Player.singleton.carterScene.inventoryInScene.VerificationItem(resorce, thisItem);//adiciona esse item ao inventario.
+                GetComponent<AudioScript>().PickUpSound();
             }
             else if(thisItem.GetComponent<Munition>() != null)
             {
@@ -20,11 +21,13 @@ public class PickUpItem : MonoBehaviour
                 if (thisItem.GetComponent<Munition>().type == MunitionType.Big)
                 {
                     Player.singleton.carterScene.inventoryInScene.munitionB.AddMunition(bullets);
+                    GetComponent<AudioScript>().PickUpSound();
                     Destroy(thisItem);
                 }
                 else if(thisItem.GetComponent<Munition>().type == MunitionType.Little)
                 {
                     Player.singleton.carterScene.inventoryInScene.munitionL.AddMunition(bullets);
+                    GetComponent<AudioScript>().PickUpSound();
                     Destroy(thisItem);
                 }
 

@@ -29,28 +29,30 @@ public abstract class Character //classe base de todo personagem no jogo.
 
             }
             character.lifeCharacter -= value;
-            status.UpdateStatus(this);
-            
             if (character.lifeCharacter <= 0)
             {
                 character.Dead(character.characterPrefab.GetComponent<Animator>());
                 character.lifeCharacter = 0;
             }
+            status.UpdateStatus(this);
         }
         else
         {
             character.lifeCharacter += value;
-            status.UpdateStatus(this);
             if (character.lifeCharacter > character.lifeFullCharacter)
             {
                 character.lifeCharacter = character.lifeFullCharacter;
             }
+            status.UpdateStatus(this);
         }
     }
 
     public virtual void Dead(Animator anim)
     {
         anim.SetBool("Dead", true);
+        if(anim.gameObject.GetComponent<CarterScene>()){
+            Game.singleton.estadoMorto.Death();
+        }
     }
 
 }

@@ -10,11 +10,9 @@ public class PotionSlow : MonoBehaviour
     public float speed;
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.isStatic)
-        {
-            Instantiate(slowPool, transform.position, slowPool.transform.rotation);
+
+            var effect = Instantiate(slowPool, transform.position, slowPool.transform.rotation);
             Destroy(this.gameObject);
-        }
     }
 
     private void Start()

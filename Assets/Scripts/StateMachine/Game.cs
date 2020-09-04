@@ -6,12 +6,18 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
-    public static Game singleton { get; private set; }
+    public static Game singleton;
 
     public Catavento catavento;
     public ShootRaycast shootRay;
-    
     public StateMachine m_StateMachine = new StateMachine();
+
+    public Inventory inventory;
+    public GameObject pauseGameObject;
+    public GameObject deathGameObject;
+
+    public ShootProject weapon;
+
 
 
     //Estados do sistema
@@ -19,6 +25,10 @@ public class Game : MonoBehaviour
     public Navigation estadoNavegacao;
     public Playing estadoJogando;
     public Paused estadoPausado;
+    public InventoryState inventoryState;
+    public DeathState estadoMorto;
+    public LoadState loadState;
+
 
     private void Awake()
     {
@@ -38,6 +48,10 @@ public class Game : MonoBehaviour
         estadoNavegacao = new Navigation("Navegação");
         estadoJogando = new Playing("Jogando");
         estadoPausado = new Paused("Pausado");
+        inventoryState = new InventoryState("Inventario Aberto");
+        loadState = new LoadState("carregando");
+        estadoMorto = new DeathState("morto");
+
 
         m_StateMachine.ChangeState(estadoJogando);
     }
@@ -46,5 +60,10 @@ public class Game : MonoBehaviour
     void Update()
     {
         m_StateMachine.RunState();
+    }
+
+    public void Despause()
+    {
+        estadoPausado.Despause();
     }
 }

@@ -30,10 +30,8 @@ public class ActiveWeapon : MonoBehaviour
         handIK.weight = 1;
         rigController.Play("equip_" + weapon.weaponName);
         weapon.GetComponent<ShootProject>().rigController = rigController;
-
         weapon.GetComponent<BoxCollider>().enabled = false;
         weapon.gameObject.GetComponent<Rigidbody>().useGravity = false;
         weapon.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-
     }
 }

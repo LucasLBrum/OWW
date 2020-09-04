@@ -8,8 +8,6 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    GameObject imagePanel = null;//inventario.
     Animator anim; //componente de animação.
     Vector2 input;//input para ser usado na movimentação.
     Camera mainCamera; //main camera
@@ -84,24 +82,7 @@ public class PlayerMovement : MonoBehaviour
         float yawCamera = mainCamera.transform.rotation.eulerAngles.y; 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnSpeed * Time.fixedDeltaTime);
     }
-    void OpenInventory()//Abrir o Inventário.
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            if (imagePanel.activeSelf == true)
-            {
-                imagePanel.SetActive(false);
-                UnityEngine.Cursor.visible = false;
-                UnityEngine.Cursor.lockState = CursorLockMode.Locked;
-            }
-            else
-            {
-                imagePanel.SetActive(true);
-                UnityEngine.Cursor.visible = true;
-                UnityEngine.Cursor.lockState = CursorLockMode.Confined;
-            }
-        }
-    }
+
     void EquipWeapon()//Acessar os slots de armas do inventário.
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -118,13 +99,14 @@ public class PlayerMovement : MonoBehaviour
                 if (slotWeaponUse == Player.singleton.carterScene.inventoryInScene.weaponSlot[1])
                 {
                     activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+                    
                 }
                 activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
                 activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item, Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>());
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[0];
-
+                Game.singleton.estadoJogando.weaponShoot = activeWeapon.weapon.GetComponent<ShootProject>();
             }
         }//Acessar slot 1.
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -147,6 +129,7 @@ public class PlayerMovement : MonoBehaviour
                 activeWeapon.weapon = null;
                 activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item, Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>());
                 slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[1];
+                Game.singleton.estadoJogando.weaponShoot = activeWeapon.weapon.GetComponent<ShootProject>();
             }
 
         }//Acessar slot 2.
@@ -222,7 +205,6 @@ public class PlayerMovement : MonoBehaviour
     {
         CharacterMoviment();
         CharacterView();
-        OpenInventory();
         EquipWeapon();
         Drop();
     }

@@ -50,4 +50,29 @@ public class Slot : MonoBehaviour
     {
         itemDetails.GetSlotDetails(this);
     }
+
+    public void UseItem()
+    {
+        if(item.itemPrefab.GetComponent<ItemHealth>() != null)
+        item.itemPrefab.GetComponent<ItemHealth>().Healthitem();
+        DeleteItem();
+    }
+
+     public void DeleteItem()
+    {
+        if (!open)
+        {
+            if(Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)
+            {
+                if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item == this.item)
+                {
+                    Player.singleton.carterScene.GetComponent<PlayerMovement>().Desequip();
+                }
+            }
+
+            open = true;
+            itemImage.sprite = nothing;
+            item = null;
+        }
+    }
 }
