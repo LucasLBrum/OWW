@@ -28,6 +28,7 @@ public class Game : MonoBehaviour
     public InventoryState inventoryState;
     public DeathState estadoMorto;
     public LoadState loadState;
+    public TalkingState estadoFalando;
 
 
     private void Awake()
@@ -51,6 +52,7 @@ public class Game : MonoBehaviour
         inventoryState = new InventoryState("Inventario Aberto");
         loadState = new LoadState("carregando");
         estadoMorto = new DeathState("morto");
+        estadoFalando = new TalkingState("falando");
 
 
         m_StateMachine.ChangeState(estadoJogando);

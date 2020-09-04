@@ -54,8 +54,10 @@ public class Slot : MonoBehaviour
     public void UseItem()
     {
         if(item.itemPrefab.GetComponent<ItemHealth>() != null)
-        item.itemPrefab.GetComponent<ItemHealth>().Healthitem();
-        DeleteItem();
+        {
+            item.itemPrefab.GetComponent<ItemHealth>().Healthitem();
+            DeleteItem();
+        }
     }
 
      public void DeleteItem()

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Player : MonoBehaviour
 {
@@ -10,6 +12,10 @@ public class Player : MonoBehaviour
     public GameObject childrens;
 
     public GameObject meshPlayer;
+
+    public Text intectableText;
+
+    public QuestManager questManager;
 
     string playerName = null;//nome do player
 

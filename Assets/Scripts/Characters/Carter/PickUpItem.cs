@@ -11,6 +11,10 @@ public class PickUpItem : MonoBehaviour
         {
             if(thisItem.GetComponent<ItemScene>() != null)
             {
+                if(thisItem.GetComponent<QuestElement>() != null)
+                {
+                    thisItem.GetComponent<QuestElement>().CompleteRequest();
+                }
                 ItemResource resorce = thisItem.GetComponent<ItemScene>().thisItem;//refêrencia do item do raycast
                 Player.singleton.carterScene.inventoryInScene.VerificationItem(resorce, thisItem);//adiciona esse item ao inventario.
                 GetComponent<AudioScript>().PickUpSound();

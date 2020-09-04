@@ -17,48 +17,56 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 4b3a360162b155a419af55faa68c3cee
-    m_importFrom: Assets/Scripts/StateMachine/StateMachine/States/Playing.cs
+  - m_assetDatabaseId: d1695d0838f30a64aba2833593f03aa4
+    m_importFrom: Assets/Scripts/StateMachine/StateMachine/States/TalkingState.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 635ef84bec0f7a24f88a5a4651c00600
-    m_importFrom: Assets/Scripts/Itens/Gun/ShootProject.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: c7e88450ed100c344b5410ba1055aabc
-    m_importFrom: Assets/Scripts/Characters/Carter/PlayerMovement.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 87f4fc9eec7b7c04797bd6b0d20e38aa
-    m_importFrom: Assets/Scripts/Characters/EnemyStatus.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 87edca54c16941d4387ef54f5e51a5a7
-    m_importFrom: Assets/Scripts/Itens/ActiveWeapon.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 53248dc6d6e5de2468a1c599ba1fc1d1
-    m_importFrom: Assets/Scenes/Winchester.unity
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: b5ddb489e54a45841a53b5bfc1271ab0
-    m_importFrom: Assets/Models/Objetos/Roda.fbx
+  - m_assetDatabaseId: 2be578c1cffd3684eadf838d019a7504
+    m_importFrom: Assets/Scripts/StateMachine/StateMachine/States/TankingState.cs
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: ff4fbd85cf8b95d409d9de76abdeeb03
     m_importFrom: Assets/Scripts/StateMachine/Game.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: 7466856599639fe46854781216071aba
-    m_importFrom: Assets/Scripts/StateMachine/StateMachine/States/LoadState.cs
+  - m_assetDatabaseId: d99779a5ae2f2294097654cd07d791c9
+    m_importFrom: Assets/Scripts/Npc.cs
     m_exportTo: 
     m_variantName: 
-  - m_assetDatabaseId: b151f951087a18c4899fd5ebf2feb12f
-    m_importFrom: Assets/Design/Animations/Controllers/RigControl.controller
+  - m_assetDatabaseId: 126f82f1dac65c848940af2a7657e375
+    m_importFrom: Assets/Quest.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 53248dc6d6e5de2468a1c599ba1fc1d1
+    m_importFrom: Assets/Scenes/Winchester.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 52560c7e6e2a8ab4181b8cd0a118924d
+    m_importFrom: Assets/NpcInteractable.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ad1d69715ac0c0848844cad8c393db31
+    m_importFrom: Assets/QuestManager.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8f9007c400409474e8d33283fe4b148e
+    m_importFrom: Assets/QuestSlot.cs
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: a876622eb03109a48bf7f171f4850c48
     m_importFrom: Assets/Scripts/Player/Player.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8626442c323d5b240b7bca6b5d2d5d3a
+    m_importFrom: Assets/ObjectiveQuest.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: dd13ce8cfa9819946bcad01283c0305d
+    m_importFrom: Assets/Scripts/Characters/Carter/PickUpItem.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3aa495bae66670f48907af609181e68b
+    m_importFrom: Assets/QuestElement.cs
     m_exportTo: 
     m_variantName: 
   m_version: 2
