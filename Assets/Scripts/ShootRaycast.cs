@@ -9,6 +9,7 @@ public class ShootRaycast : MonoBehaviour
     public PickUpItem pickUp;
     public GameObject blood;
     public GameObject smoke;
+    public GameObject e;
     RaycastHit hit;//cria um objeto do tipo "RaycastHit"
     Ray ray;
 
@@ -33,12 +34,27 @@ public class ShootRaycast : MonoBehaviour
             if (interactable != null)
             {
                 pickUp.PickUp(interactable.gameObject);
+                e.SetActive(true);
             }
             var munition = hit.transform.GetComponent<Munition>();
             if (munition != null)
             {
                 pickUp.PickUp(munition.gameObject);
+                e.SetActive(true);
             }
+            var npc = hit.transform.GetComponent<Npc>();
+            if(npc != null)
+            {
+                e.SetActive(true);
+                if(Input.GetKeyDown(KeyCode.E))
+                {
+                    npc.GetComponent<Npc>().Intectable();
+                }
+            }
+        }
+        else
+        {
+            e.SetActive(false);
         }
     } 
    

@@ -13,8 +13,6 @@ public class Player : MonoBehaviour
 
     public GameObject meshPlayer;
 
-    public Text intectableText;
-
     public QuestManager questManager;
 
     string playerName = null;//nome do player

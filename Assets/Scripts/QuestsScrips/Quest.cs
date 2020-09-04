@@ -9,6 +9,7 @@ public class Quest : MonoBehaviour
     public ObjectiveQuest objectives;
     public GameObject drop;
     public QuestSlot slot;
+    public GameObject caution;
     public bool ready;
 
     void Start()
@@ -21,6 +22,7 @@ public class Quest : MonoBehaviour
         ready = true;
         var drop = Instantiate(this.drop, spawnPosition.position, Quaternion.identity);
         slot.RemoveQuest();
+        caution.SetActive(false);
     }
 
     public Quest(QuestInfo info, Npc npc, ObjectiveQuest objectives, GameObject drop)

@@ -31,6 +31,10 @@ public abstract class Character //classe base de todo personagem no jogo.
             character.lifeCharacter -= value;
             if (character.lifeCharacter <= 0)
             {
+                if(character.characterPrefab.GetComponent<QuestElement>() != null)
+                {
+                    character.characterPrefab.GetComponent<QuestElement>().CompleteRequest();
+                }
                 character.Dead(character.characterPrefab.GetComponent<Animator>());
                 character.lifeCharacter = 0;
             }
