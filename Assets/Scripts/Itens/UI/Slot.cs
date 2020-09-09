@@ -8,7 +8,6 @@ public class Slot : MonoBehaviour
     public bool open = true; //Há algum item no slot?
     public Image itemImage;//Componente de Imagem do slot
     public ItemResource item;//Componente de "ItemResource", que vai abrigar o item que o character recolher.
-    public Sprite nothing;//Sprite padrão da Imagem.
     public ItemDetails itemDetails;//Objeto que mostra os detalhes e as possiveis ações do item.
 
     public Transform characterTranform;
@@ -35,7 +34,7 @@ public class Slot : MonoBehaviour
             }
 
             open = true;
-            itemImage.sprite = nothing;
+            itemImage.sprite = Player.singleton.carterScene.inventoryInScene.noneImage;
             item = null;
         }
     }
@@ -73,7 +72,7 @@ public class Slot : MonoBehaviour
             }
 
             open = true;
-            itemImage.sprite = nothing;
+            itemImage.sprite = Player.singleton.carterScene.inventoryInScene.noneImage;
             item = null;
         }
     }

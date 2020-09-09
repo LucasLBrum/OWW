@@ -8,19 +8,16 @@ public class ActiveWeapon : MonoBehaviour
 {
     public Rig handIK; //layer que contra o ik das mãos do personagem
     public WeaponInScene weapon;//atual arma equipada do jogador
-
     public Transform weaponParent;//pai da arma
-
     public Transform weaponLeftGrip; //refêrencia das mãos do jogador para o ik
     public Transform weaponRightGrip;
-
     public GameObject weaponObject;//objeto da atual arma
     public Animator rigController; //animator do rig
 
 
     public void Equip(ItemResource resorceWeapon, WeaponInScene weaponScene)
     {
-        var weaponPrefab = Instantiate(resorceWeapon.itemPrefab, weaponParent.transform);
+        var weaponPrefab = Instantiate(resorceWeapon.itemPrefab, weaponParent.transform); 
         weaponObject = weaponPrefab;
         weapon = weaponPrefab.GetComponent<WeaponInScene>();
         weapon.GetDetailsWeapon(weapon, weaponScene);

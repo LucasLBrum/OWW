@@ -33,7 +33,6 @@ public class WeaponInScene : MonoBehaviour
         }
     }
 }
-
 public enum MunitionType
 {
     Little, Big

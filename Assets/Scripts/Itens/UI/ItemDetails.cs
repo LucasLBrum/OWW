@@ -24,7 +24,6 @@ public class ItemDetails : MonoBehaviour
         if(slot.item != null)
         {
             gameObject.SetActive(true);
-            GetDetails();
             detailsText.text = slot.item.description;
         }
 

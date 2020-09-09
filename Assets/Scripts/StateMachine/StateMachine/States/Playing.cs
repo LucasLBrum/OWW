@@ -53,14 +53,4 @@ public class Playing : State
 
         }
     }
-
-    public void inLoad()
-    {
-        Game.singleton.m_StateMachine.ChangeState(Game.singleton.loadState);
-        carter.transform.position = new Vector3(43.55f, 6, -24);
-        Player.singleton.childrens.SetActive(false);
-        Player.singleton.carterScene.GetComponent<AudioSource>().enabled = false;
-        Player.singleton.meshPlayer.SetActive(false);
-
-    }
 }

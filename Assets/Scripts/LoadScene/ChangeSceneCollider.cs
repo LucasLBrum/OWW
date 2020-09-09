@@ -13,7 +13,20 @@ public class ChangeSceneCollider : MonoBehaviour
     {
         if(other.GetComponent<CarterStatus>())
         {
-            Game.singleton.estadoJogando.inLoad();
+            Game.singleton.loadState.inLoad();
+            changeScene.ChangeScene("Florest");
+        }
+    }
+
+
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            Game.singleton.loadState.inLoad();
             changeScene.ChangeScene("Florest");
         }
     }

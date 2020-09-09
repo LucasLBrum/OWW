@@ -9,14 +9,12 @@ public class Player : MonoBehaviour
     public static Player singleton;//variavel static da mesma classe para criar um singleton.
     public CarterScene carterScene;//Personagem do jogador.
 
-    public GameObject childrens;
-
-    public GameObject meshPlayer;
+    public Canvas canvasPlayer;
+    public Camera c;
 
     public QuestManager questManager;
 
     string playerName = null;//nome do player
-
     public string PlayerName
     {
         get{return playerName;}

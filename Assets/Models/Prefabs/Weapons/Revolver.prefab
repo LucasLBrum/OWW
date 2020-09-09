@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 6219082169205798926}
   - component: {fileID: 126615457995102379}
   - component: {fileID: 5977845416447121599}
+  - component: {fileID: 6983113172917356799}
   m_Layer: 12
   m_Name: Corpo
   m_TagString: Untagged
@@ -109,6 +110,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6983113172917356799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592933767188831562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &1508889827776653334
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,6 +135,7 @@ GameObject:
   - component: {fileID: 1572011706371674244}
   - component: {fileID: 5664669890222106206}
   - component: {fileID: 2669077955395158952}
+  - component: {fileID: 7120103303709289237}
   m_Layer: 12
   m_Name: Parafuso_2
   m_TagString: Untagged
@@ -188,6 +204,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7120103303709289237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508889827776653334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &2203371843794521632
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +229,7 @@ GameObject:
   - component: {fileID: 468404185920321908}
   - component: {fileID: 2994024428425789016}
   - component: {fileID: 7233700368291121712}
+  - component: {fileID: 3401523594984707388}
   m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
@@ -267,6 +298,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3401523594984707388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203371843794521632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &3397699309482941988
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisItem: {fileID: 11400000, guid: 1992525059694704a97da44f6b89f13e, type: 2}
+  outlines: []
 --- !u!114 &3231517006748297395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,6 +546,7 @@ GameObject:
   - component: {fileID: 3239006052402964112}
   - component: {fileID: 4400646953210431563}
   - component: {fileID: 9114378914696223523}
+  - component: {fileID: 6838551374679396715}
   m_Layer: 12
   m_Name: Parafuso_1
   m_TagString: Untagged
@@ -568,6 +615,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6838551374679396715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024463343256699796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &5352848480708909999
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +640,7 @@ GameObject:
   - component: {fileID: 2370583208110462197}
   - component: {fileID: 4046475337217647342}
   - component: {fileID: 1931330150080963895}
+  - component: {fileID: 4766494438340199080}
   m_Layer: 12
   m_Name: CanoInferior
   m_TagString: Untagged
@@ -647,6 +709,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4766494438340199080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5352848480708909999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &5467748196415655566
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +734,7 @@ GameObject:
   - component: {fileID: 7782678532490160488}
   - component: {fileID: 1575337986553905886}
   - component: {fileID: 4036670657567471855}
+  - component: {fileID: 1765036952976812100}
   m_Layer: 12
   m_Name: Cabo
   m_TagString: Untagged
@@ -726,6 +803,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1765036952976812100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5467748196415655566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &8116742304440679947
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +828,7 @@ GameObject:
   - component: {fileID: 2921535384139775961}
   - component: {fileID: 1816117031282414507}
   - component: {fileID: 5056587013947432565}
+  - component: {fileID: 3345840167788509733}
   m_Layer: 12
   m_Name: Gatilho
   m_TagString: Untagged
@@ -805,6 +897,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3345840167788509733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116742304440679947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &8654529871847904072
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +922,7 @@ GameObject:
   - component: {fileID: 478476633723571479}
   - component: {fileID: 5496060234155647419}
   - component: {fileID: 5216531945415402481}
+  - component: {fileID: 8105992264825425769}
   m_Layer: 12
   m_Name: Tambor
   m_TagString: Untagged
@@ -884,3 +991,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8105992264825425769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8654529871847904072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0

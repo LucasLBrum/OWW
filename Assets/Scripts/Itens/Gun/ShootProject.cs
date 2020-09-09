@@ -18,6 +18,10 @@ public class ShootProject : MonoBehaviour
 
     WeaponInScene weaponScene;
 
+    PlayerMovement pMovement;
+
+    Inventory inventory;
+
     float timeTofire = 0;//tempo entre um disparo a outro
 
     private void Start()
@@ -25,25 +29,24 @@ public class ShootProject : MonoBehaviour
         source = GetComponent<AudioSource>();
         weaponScene = GetComponent<WeaponInScene>();
         shootRaycast = Camera.main.GetComponent<ShootRaycast>();//componente que controla os raycasts
+        pMovement = Player.singleton.carterScene.GetComponent<PlayerMovement>();
+        inventory = Player.singleton.carterScene.inventoryInScene;
     }
 
-    /// <summary>
-    /// Update is called every frame, if the MonoBehaviour is enabled.
-    /// </summary>
-  
     public void Shoot()
     {
         if (Input.GetMouseButton(0) && Time.time >= timeTofire)//se apertar o botão esquerdo do mouse e o tempo for maior ou igual à tempo de disparo.
         {
-            if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)//se haver algum slot de arma em uso.
+            if (pMovement.slotWeaponUse != null)//se haver algum slot de arma em uso.
             {
-                if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)//se esse item for o que estiver em uso.
+                if (GetComponent<ItemScene>().thisItem == pMovement.slotWeaponUse.item)//se esse item for o que estiver em uso.
                 {
-                    if (Player.singleton.carterScene.GetComponent<PlayerMovement>().activeWeapon.rigController.GetBool("Take") != true)
+                    if (pMovement.activeWeapon.rigController.GetBool("Take") != true)
                     {
                         if (weaponScene.bullets > 0)
                         {
                             weaponScene.bullets -= 1;
+                            inventory.UpdateMunitionText();
                             rigController.Play("weapon_recoil_" + weaponScene.weaponName, 1, 0.0f);//fazer a animação de disparo da arma.
                             source.PlayOneShot(shootAF);
                             SpawnMuzzle();//intanciar o efeito de explosão
@@ -68,9 +71,9 @@ public class ShootProject : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            if (Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse != null)//se haver algum slot de arma em uso.
+            if (pMovement.slotWeaponUse != null)//se haver algum slot de arma em uso.
             {
-                if (GetComponent<ItemScene>().thisItem == Player.singleton.carterScene.GetComponent<PlayerMovement>().slotWeaponUse.item)//se esse item for o que estiver em uso.
+                if (GetComponent<ItemScene>().thisItem == pMovement.slotWeaponUse.item)//se esse item for o que estiver em uso.
                 {
                     if (rigController.GetBool("Take") == false)
                     {
@@ -78,7 +81,7 @@ public class ShootProject : MonoBehaviour
                         {
                             if (weaponScene.typeWeapon == MunitionType.Little)
                             {
-                                if (Player.singleton.carterScene.inventoryInScene.munitionL.boxMunition > 0)
+                                if (inventory.munitionL.boxMunition > 0)
                                 {
                                     Player.singleton.carterScene.inventoryInScene.munitionL.RemoveMuniton(1);
                                     weaponScene.bullets = weaponScene.bulletsMax;
@@ -90,7 +93,7 @@ public class ShootProject : MonoBehaviour
                             {
                                 if (Player.singleton.carterScene.inventoryInScene.munitionB.boxMunition > 0)
                                 {
-                                    Player.singleton.carterScene.inventoryInScene.munitionB.RemoveMuniton(1);
+                                    inventory.munitionB.RemoveMuniton(1);
                                     weaponScene.bullets = weaponScene.bulletsMax;
                                     rigController.SetTrigger("Reload");
                                     source.PlayOneShot(reloadAF);

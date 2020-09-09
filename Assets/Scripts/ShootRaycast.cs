@@ -10,6 +10,7 @@ public class ShootRaycast : MonoBehaviour
     public GameObject blood;
     public GameObject smoke;
     public GameObject e;
+    public ItemScene a;
     RaycastHit hit;//cria um objeto do tipo "RaycastHit"
     Ray ray;
 
@@ -33,6 +34,15 @@ public class ShootRaycast : MonoBehaviour
             var interactable = hit.transform.GetComponent<ItemScene>();
             if (interactable != null)
             {
+                if(a != null)
+                {
+                    if(a != interactable)
+                    {
+                        a.ActiveOutlines(false);
+                    }
+                }
+                a = interactable;
+                a.ActiveOutlines(true);
                 pickUp.PickUp(interactable.gameObject);
                 e.SetActive(true);
             }
@@ -55,6 +65,10 @@ public class ShootRaycast : MonoBehaviour
         else
         {
             e.SetActive(false);
+            if(a != null){
+                a.ActiveOutlines(false);
+                a = null;
+            }
         }
     } 
    
@@ -80,5 +94,5 @@ public class ShootRaycast : MonoBehaviour
 
         Debug.Log("nenhum inimigo");
         return null;
-    } 
+    }
 }

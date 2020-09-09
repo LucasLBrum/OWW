@@ -11,22 +11,22 @@ public class PlayerMovement : MonoBehaviour
     Animator anim; //componente de animação.
     Vector2 input;//input para ser usado na movimentação.
     Camera mainCamera; //main camera
-    public CinemachineFreeLook freeLookCamera;//componente da cinemachine 
-    public CarterStatus status;
-
+    Inventory inventory;
+    CinemachineFreeLook freeLookCamera;//componente da cinemachine 
+    CarterStatus status;
     public ActiveWeapon activeWeapon;//componente que contem as refêrencias do rig do jogador.
-
     public Slot slotWeaponUse;//a arma que esta sendo usada atualmente 
 
     private void Awake()
     {
+        inventory = Player.singleton.carterScene.inventoryInScene;
+        mainCamera = Camera.main;
         activeWeapon = GetComponent<ActiveWeapon>();
         anim = GetComponent<Animator>();//pegar componente desse objeto.
-        mainCamera = Camera.main; //colocando a man camera na referencia.
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        freeLookCamera = GameObject.Find("CM FreeLook1").GetComponent<CinemachineFreeLook>();
     }
-
     private void Start()
     {
         status = Player.singleton.carterScene.carterStatus;
@@ -82,53 +82,52 @@ public class PlayerMovement : MonoBehaviour
         float yawCamera = mainCamera.transform.rotation.eulerAngles.y; 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnSpeed * Time.fixedDeltaTime);
     }
-
     void EquipWeapon()//Acessar os slots de armas do inventário.
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].open == false)
+            if(inventory.weaponSlot[0].open == false)
             {
                 if(slotWeaponUse != null)
                 {
-                    if (Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item == slotWeaponUse.item)
+                    if (inventory.weaponSlot[0].item == slotWeaponUse.item)
                     {
                         return;
                     }
                 }
-                if (slotWeaponUse == Player.singleton.carterScene.inventoryInScene.weaponSlot[1])
+                if (slotWeaponUse == inventory.weaponSlot[1])
                 {
-                    activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+                    activeWeapon.weapon.GetDetailsWeapon(inventory.weaponSlot[1].GetComponent<WeaponInScene>(), activeWeapon.weapon);
                     
                 }
                 activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
-                activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item, Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>());
-                slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[0];
+                activeWeapon.Equip(inventory.weaponSlot[0].item, inventory.weaponSlot[0].GetComponent<WeaponInScene>());
+                slotWeaponUse = inventory.weaponSlot[0];
                 Game.singleton.estadoJogando.weaponShoot = activeWeapon.weapon.GetComponent<ShootProject>();
             }
         }//Acessar slot 1.
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            if (Player.singleton.carterScene.inventoryInScene.weaponSlot[1].open == false)
+            if (inventory.weaponSlot[1].open == false)
             {
                 if (slotWeaponUse != null)
                 {
-                    if (Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item == slotWeaponUse.item)
+                    if (inventory.weaponSlot[1].item == slotWeaponUse.item)
                     {
                         return;
                     }
                 }
-                if(slotWeaponUse == Player.singleton.carterScene.inventoryInScene.weaponSlot[0])
+                if(slotWeaponUse == inventory.weaponSlot[0])
                 {
-                    activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+                    activeWeapon.weapon.GetDetailsWeapon(inventory.weaponSlot[0].GetComponent<WeaponInScene>(), activeWeapon.weapon);
                 }
                 activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
-                activeWeapon.Equip(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item, Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>());
-                slotWeaponUse = Player.singleton.carterScene.inventoryInScene.weaponSlot[1];
+                activeWeapon.Equip(inventory.weaponSlot[1].item, inventory.weaponSlot[1].GetComponent<WeaponInScene>());
+                slotWeaponUse = inventory.weaponSlot[1];
                 Game.singleton.estadoJogando.weaponShoot = activeWeapon.weapon.GetComponent<ShootProject>();
             }
 
@@ -137,13 +136,13 @@ public class PlayerMovement : MonoBehaviour
         {
             if (activeWeapon.weapon != null)
             {
-                if(slotWeaponUse.item == Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item)
+                if(slotWeaponUse.item == inventory.weaponSlot[0].item)
                 {
-                    activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>(),activeWeapon.weapon);
+                    activeWeapon.weapon.GetDetailsWeapon(inventory.weaponSlot[0].GetComponent<WeaponInScene>(),activeWeapon.weapon);
                 }
-                else if(slotWeaponUse.item == Player.singleton.carterScene.inventoryInScene.weaponSlot[1].item)
+                else if(slotWeaponUse.item == inventory.weaponSlot[1].item)
                 {
-                    activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[1].GetComponent<WeaponInScene>(), activeWeapon.weapon);
+                    activeWeapon.weapon.GetDetailsWeapon(inventory.weaponSlot[1].GetComponent<WeaponInScene>(), activeWeapon.weapon);
                 }
                 activeWeapon.rigController.SetBool("Take", false);
                 Destroy(activeWeapon.weaponObject);
@@ -153,6 +152,12 @@ public class PlayerMovement : MonoBehaviour
                 activeWeapon.rigController.Play("Default");
             }
         }//Ficar com as mãos nuas.
+        if(activeWeapon.weapon != null)
+        {
+            inventory.atualWeapon = activeWeapon.weapon;
+            inventory.UpdateMunitionText();
+        }
+
 
     }
     public void Desequip()
@@ -208,7 +213,6 @@ public class PlayerMovement : MonoBehaviour
         EquipWeapon();
         Drop();
     }
-
     public IEnumerator Run()
     {
         GuardarArma();
