@@ -17,4 +17,132 @@ MonoBehaviour:
     m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
     m_exportTo: 
     m_variantName: 
+  - m_assetDatabaseId: e8073d6a0540be145af052fdc4f8dacb
+    m_importFrom: Assets/Scripts/Itens/Inventory.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 789c1acc4533be64b833ac6ab599f80a
+    m_importFrom: Assets/Scripts/MarketInteractable.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: cfa54bc232d3e9e44bccc142b0ebd313
+    m_importFrom: Assets/Scripts/Itens/UI/ItemDetails.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4e000cc2d1f2c204085e10b6fbf51461
+    m_importFrom: Assets/Models/Objetos/Saco_de_dinheiro.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a5d8dee803af98a48bc108d1950aa617
+    m_importFrom: "Assets/Design/Materials/Sem T\xEDtulo-1.png"
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d22178626c67b1e4c96898844beff1b2
+    m_importFrom: Assets/Design/Animations/Idle.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 3b4e6bf4fa5e3e545a5874f79ee3e57e
+    m_importFrom: Assets/Design/Animations/Talking.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1ae04a11bc62cff458bc1a44fa7135ee
+    m_importFrom: Assets/Design/Materials/unknown.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 63135292fadd1cf49a3dd3f223dc7149
+    m_importFrom: Assets/Design/Materials/QuadroLauroMa.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: afc36186425dc7e468a927f931afc91f
+    m_importFrom: Assets/Design/Materials/QuadroMaterial.mat
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 94f98d1fa75fbdf4bae7c202ea653109
+    m_importFrom: Assets/Design/Materials/QuadroComEdicao.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2c8aa2d49c3ef0e4998f65f4d0e8d3ca
+    m_importFrom: Assets/Design/Animations/Vendedor.controller
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 87ac5eeb3c1e7fc459e561e6955f8bc5
+    m_importFrom: "Assets/Design/Materials/Sem T\xEDtulo-1.mat"
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d3bfba39ab2685f40b85294695ae391b
+    m_importFrom: Assets/Models/Prefabs/Objetos/Saco_de_dinheiro.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c6fc1035f5fa69544aaf05c860c115f1
+    m_importFrom: "Assets/Models/Objetos/Muni\xE7\xE3o pequena.fbx"
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a5aa5a09a76cd174781ef7090b1a46df
+    m_importFrom: Assets/Models/Objetos/Garrafa.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 16fa77b3fd582ca46a3744dce9222260
+    m_importFrom: Assets/Models/Objetos/Alce.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2009fdc7685f78e4c804b32bc2ad1135
+    m_importFrom: Assets/Models/Objetos/Mesa.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: b6bd2fd20ea5e1248bf52cd00a659a43
+    m_importFrom: Assets/Models/Objetos/QuadroCarol.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5a976957bb1fa4142955b64f3380b528
+    m_importFrom: Assets/Models/Objetos/QuadroLauro.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d9cd4565130c26c4b9e9d332e37db955
+    m_importFrom: Assets/Models/Objetos/Urso.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2aea2e6f0660285489354f3bb5eb9a17
+    m_importFrom: Assets/Models/Characters/Fantasma.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 12d52d3cc3080c346bcb459fb9c5aa51
+    m_importFrom: Assets/Models/Objetos/Munition.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 223d0cb952751234b9042d36cce3ade6
+    m_importFrom: Assets/Design/Animations/Fantasma.controller
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 55efa560c044dd24ea965f86323d8b6a
+    m_importFrom: Assets/Models/Prefabs/Constructions/Santuaio.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c49513abcf3b1b546b4a42b0d3c72f51
+    m_importFrom: Assets/Models/Prefabs/Objetos/Caution.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ac22160e23927884e9c1ddaa590772b8
+    m_importFrom: Assets/Models/Prefabs/Objetos/Munition.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 53248dc6d6e5de2468a1c599ba1fc1d1
+    m_importFrom: Assets/Scenes/Winchester.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9166156a324ce424cbdfdd12e126a126
+    m_importFrom: Assets/Models/Prefabs/Objetos/Mesa.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8418b99d2971a7a448dfe81054e6c781
+    m_importFrom: Assets/Models/Prefabs/Objetos/Alce.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: da0bc58b54e21ad4fa5f0f9ad18c7d61
+    m_importFrom: Assets/Models/Prefabs/Objetos/QuadroCarol.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5082a688cb1bea14eb90f947404eeaaf
+    m_importFrom: Assets/Models/Prefabs/Objetos/QuadroLauro.prefab
+    m_exportTo: 
+    m_variantName: 
   m_version: 2

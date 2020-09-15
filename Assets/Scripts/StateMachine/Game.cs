@@ -15,20 +15,21 @@ public class Game : MonoBehaviour
     public Inventory inventory;
     public GameObject pauseGameObject;
     public GameObject deathGameObject;
-
+    public Camera cameraMain;
     public ShootProject weapon;
+    public GameObject marketPanel;
 
 
 
     //Estados do sistema
 
-    public Navigation estadoNavegacao;
     public Playing estadoJogando;
     public Paused estadoPausado;
     public InventoryState inventoryState;
     public DeathState estadoMorto;
     public LoadState loadState;
     public TalkingState estadoFalando;
+    public MarketState estadoComprando;
 
 
     private void Awake()
@@ -46,13 +47,13 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        estadoNavegacao = new Navigation("Navegação");
         estadoJogando = new Playing("Jogando");
         estadoPausado = new Paused("Pausado");
         inventoryState = new InventoryState("Inventario Aberto");
         loadState = new LoadState("carregando");
         estadoMorto = new DeathState("morto");
         estadoFalando = new TalkingState("falando");
+        estadoComprando = new MarketState("Comprando");
 
 
         m_StateMachine.ChangeState(estadoJogando);

@@ -6,7 +6,7 @@ public class StateMachine
 {
     //Estados locais
 
-    private State currentState;
+    public State currentState;
     private State previousState;
     
     //Métodos

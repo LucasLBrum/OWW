@@ -42,7 +42,11 @@ public class Playing : State
             UnityEngine.Cursor.lockState = CursorLockMode.Confined;
         }
 
-        movement.All();
+        movement.EquipWeapon();
+        movement.CharacterView();
+        movement.Drop();
+        movement.CharacterMovement();
+        movement.GuardarArma();
         if(Game.singleton.catavento != null)
         catavento.Rotate();
         shootRay.PerformRaycast();
@@ -50,7 +54,11 @@ public class Playing : State
         {
             weaponShoot.Shoot();
             weaponShoot.Reaload();
-
+            if(Input.GetKey(KeyCode.Mouse1))
+            {
+                if(weaponShoot.loadingPower == false)
+                weaponShoot.StartCoroutine(weaponShoot.SuperShoot());
+            }
         }
     }
 }

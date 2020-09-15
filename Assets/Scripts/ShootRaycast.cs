@@ -9,8 +9,8 @@ public class ShootRaycast : MonoBehaviour
     public PickUpItem pickUp;
     public GameObject blood;
     public GameObject smoke;
-    public GameObject e;
-    public ItemScene a;
+    public ItemScene item;
+
     RaycastHit hit;//cria um objeto do tipo "RaycastHit"
     Ray ray;
 
@@ -31,43 +31,41 @@ public class ShootRaycast : MonoBehaviour
 
         if(Physics.Raycast(transform.position, transform.forward, out hit, raycastDistancePickup, mask, QueryTriggerInteraction.Collide))
         {
+
             var interactable = hit.transform.GetComponent<ItemScene>();
             if (interactable != null)
             {
-                if(a != null)
-                {
-                    if(a != interactable)
-                    {
-                        a.ActiveOutlines(false);
-                    }
-                }
-                a = interactable;
-                a.ActiveOutlines(true);
+                item = interactable;
+                item.ActiveOutlines(true);
                 pickUp.PickUp(interactable.gameObject);
-                e.SetActive(true);
             }
+            else
+            {
+                if(item != null)
+                {
+                    item.ActiveOutlines(false);
+                    item = null;
+                }
+            }
+            
             var munition = hit.transform.GetComponent<Munition>();
             if (munition != null)
             {
                 pickUp.PickUp(munition.gameObject);
-                e.SetActive(true);
             }
             var npc = hit.transform.GetComponent<Npc>();
             if(npc != null)
             {
-                e.SetActive(true);
                 if(Input.GetKeyDown(KeyCode.E))
                 {
                     npc.GetComponent<Npc>().Intectable();
                 }
             }
-        }
-        else
-        {
-            e.SetActive(false);
-            if(a != null){
-                a.ActiveOutlines(false);
-                a = null;
+            var money = hit.transform.GetComponent<MoneyScene>();
+            if(money != null)
+            {
+                Debug.Log("aa");
+                pickUp.PickUp(money.gameObject);
             }
         }
     } 

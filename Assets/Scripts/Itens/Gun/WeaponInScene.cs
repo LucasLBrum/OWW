@@ -11,9 +11,6 @@ public class WeaponInScene : MonoBehaviour
     public int bulletsMax;
     public float fireRate;
 
-    public UnityEngine.UI.Text bulletsText = null;
-
-
     public void GetDetailsWeapon(WeaponInScene thisWeapon, WeaponInScene weapon)
     {
         thisWeapon.damage = weapon.damage;

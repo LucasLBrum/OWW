@@ -15,6 +15,7 @@ public class ItemDetails : MonoBehaviour
     }
     public void DeleteItem()
     {
+        if(slot != null)
         slot.RemoveItem();
     }
 
@@ -29,7 +30,9 @@ public class ItemDetails : MonoBehaviour
 
     }
 
-    public void UseItem(){
+    public void UseItem()
+    {
+        if(slot != null)
         slot.UseItem();
     }
 }

@@ -1,18 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using Cinemachine;
-using UnityEngine.Animations.Rigging;
-using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Animator anim; //componente de animação.
+    public Animator anim;//componente de animação.
     Vector2 input;//input para ser usado na movimentação.
     Camera mainCamera; //main camera
     Inventory inventory;
-    CinemachineFreeLook freeLookCamera;//componente da cinemachine 
+    public CinemachineFreeLook freeLookCamera;//componente da cinemachine 
     CarterStatus status;
     public ActiveWeapon activeWeapon;//componente que contem as refêrencias do rig do jogador.
     public Slot slotWeaponUse;//a arma que esta sendo usada atualmente 
@@ -31,9 +28,8 @@ public class PlayerMovement : MonoBehaviour
     {
         status = Player.singleton.carterScene.carterStatus;
     }
-    void CharacterMoviment() 
+    public void CharacterMovement() 
     {
-
             input.x = Input.GetAxisRaw("Horizontal"); //recebe o valor dos parametros da unity de horizontal e vertical.
             input.y = Input.GetAxisRaw("Vertical");
 
@@ -45,11 +41,16 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    if (Player.singleton.carterScene.carter.stamina > 5)
+                    if (status.carter.stamina > 5)
                     {
+                        if(activeWeapon.weapon)
+                        {
+                            activeWeapon.weapon.GetComponent<ShootProject>().loadingPower = false;
+                        }
+                        activeWeapon.rigController.SetBool("Take", true);
                         status.TakeStamina(5);
                         anim.SetTrigger("Roll");
-                        if(Player.singleton.carterScene.carterStatus.regen == false)
+                        if(status.regen == false)
                         {
                             StartCoroutine(status.RegenStamina());
                         }
@@ -63,26 +64,16 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(Run());
             }
 
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                if (activeWeapon.rigController.GetBool("Take") == true)
-                {
-                    activeWeapon.rigController.SetBool("Take", false);
-                }
-                else
-                {
-                    activeWeapon.rigController.SetBool("Take", true);
-                }
-            }
+          
 
     }
-    void CharacterView()
+    public void CharacterView()
     {
         float turnSpeed = 10;
         float yawCamera = mainCamera.transform.rotation.eulerAngles.y; 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnSpeed * Time.fixedDeltaTime);
     }
-    void EquipWeapon()//Acessar os slots de armas do inventário.
+    public void EquipWeapon()//Acessar os slots de armas do inventário.
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -195,30 +186,33 @@ public class PlayerMovement : MonoBehaviour
     }//derruba a arma caso esteja em suas mãos.
     public void GuardarArma()
     {
-        activeWeapon.rigController.SetBool("Take", true);
+          if (Input.GetKeyDown(KeyCode.Q))
+            {
+                if (activeWeapon.rigController.GetBool("Take") == true)
+                {
+                    activeWeapon.rigController.SetBool("Take", false);
+                }
+                else
+                {
+                    activeWeapon.rigController.SetBool("Take", true);
+                }
+            }
+
     }//guarda a arma caso esteja em suas mãos.
-    public void SacarArma()
-    {
-        activeWeapon.rigController.SetBool("Take", false);
-    }
     public void StopCamera(int speedY, int speedX)
     {
         freeLookCamera.m_XAxis.m_MaxSpeed = speedX;
         freeLookCamera.m_YAxis.m_MaxSpeed = speedY;
     }//para a camera quando o jogador pausa o 
-    public void All()
-    {
-        CharacterMoviment();
-        CharacterView();
-        EquipWeapon();
-        Drop();
-    }
     public IEnumerator Run()
     {
-        GuardarArma();
+        activeWeapon.rigController.SetBool("Take", true);
+        if(activeWeapon.weapon)
+        {
+            activeWeapon.weapon.GetComponent<ShootProject>().loadingPower = false;
+        }
         while (Input.GetKey(KeyCode.LeftShift))
         {
-            
             if (status.carter.stamina > 1)
             {
                 status.regen = false;
@@ -241,5 +235,14 @@ public class PlayerMovement : MonoBehaviour
         }
         yield return null;
     }
+    public IEnumerator Roll()
+    {
+        anim.SetTrigger("Roll");
+        activeWeapon.weapon.GetComponent<ShootProject>().loadingPower = false;
+        while(anim.GetCurrentAnimatorStateInfo(0).IsName("Roll"))
+        {
+            
+        }
+        yield return null;
+    }
 }
-

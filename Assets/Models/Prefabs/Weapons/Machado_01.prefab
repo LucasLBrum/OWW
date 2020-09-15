@@ -247,8 +247,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6585154678607151453}
   - component: {fileID: 1587865015}
-  - component: {fileID: 1587865016}
-  - component: {fileID: 1587865017}
   m_Layer: 12
   m_Name: Machado_01
   m_TagString: Untagged
@@ -286,30 +284,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1, z: 0.5}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &1587865016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7870166322619315022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bc605d05afa883419b94f229614045c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisItem: {fileID: 11400000, guid: 03d79ae09d912c74c80d30f44cdbcad8, type: 2}
---- !u!114 &1587865017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7870166322619315022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49306c89fab9e5644ba2fa1af786f9fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponName: machado
-  inUse: 0

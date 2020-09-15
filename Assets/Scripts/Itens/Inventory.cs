@@ -14,8 +14,31 @@ public class Inventory : MonoBehaviour
     public Munition munitionL;
     public Munition munitionB;
     public WeaponInScene atualWeapon;
+    public float money;
     public Text munition;
+    public Text moneyText;
 
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    void Start()
+    {
+        UpdateMoneyText(100, 1);
+    }
+    public void UpdateMoneyText(float value, int op)
+    {
+        if(op == 1)
+        {
+            money += value;
+            moneyText.text = money.ToString() + "$";
+        }
+        else
+        {
+            money -= value;
+            moneyText.text = money.ToString() + "$";
+        }
+    }
     public void UpdateMunitionText()
     {
         munition.text = atualWeapon.bullets.ToString() + "/" + atualWeapon.bulletsMax.ToString();
@@ -47,6 +70,7 @@ public class Inventory : MonoBehaviour
                 if(listItens == weaponsResorces)
                 {
                     list[i].GetComponent<WeaponInScene>().GetDetailsWeapon(list[i].GetComponent<WeaponInScene>(), ItemScene.GetComponent<WeaponInScene>());
+                    if(ItemScene != null)
                     Destroy(ItemScene);
                     list[i].AddItem(item);
                     listItens.Add(item);
@@ -62,8 +86,20 @@ public class Inventory : MonoBehaviour
             }
             else
             {
-                //Debug.Log("Nenhum slot diponivel campeão");
+                
             }
         }
+        Debug.Log("sem slots");
+    }
+    public bool VerificationSlotsOpen()
+    {
+        for (int i = 0; i < slots.Count; i++)//verifico a quantidade de itens na lista
+        {
+            if(slots[i].open)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
