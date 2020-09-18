@@ -17,18 +17,20 @@ public class TalkingState : State
         
     }
 
-    public void EnterState()
+    public void EnterState(Npc npc)
     {
-            UnityEngine.Cursor.visible = true;
-            UnityEngine.Cursor.lockState = CursorLockMode.Confined;
-            Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoFalando);
-            Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(0,0);
-            Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputX", 0f);
-            Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputY", 0f);
+        Game.singleton.boxTalk.SetActive(true);
+        UnityEngine.Cursor.visible = true;
+        UnityEngine.Cursor.lockState = CursorLockMode.Confined;
+        Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoFalando);
+        Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(0,0);
+        Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputX", 0f);
+        Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputY", 0f);
     }
 
     public void ExitState()
     {
+        Game.singleton.boxTalk.SetActive(false);
         UnityEngine.Cursor.visible = false;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoJogando);

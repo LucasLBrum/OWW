@@ -9,7 +9,6 @@ public class Npc : MonoBehaviour
     public string[] talkText;
     public string talkText2;
     int atualText = 0;
-    public GameObject box;
     public Text talkText_m;
     public Quest quest = null;
     public Transform dropPosition;
@@ -28,15 +27,13 @@ public class Npc : MonoBehaviour
             {
                 return;
             }
-            Game.singleton.estadoFalando.EnterState();
-            box.SetActive(true);
+            Game.singleton.estadoFalando.EnterState(this);
             talkText_m.text = talkText[atualText];
         }
 
         if(quest.ready == true)
         {
-            Game.singleton.estadoFalando.EnterState();
-            box.SetActive(true);
+            Game.singleton.estadoFalando.EnterState(this);
             talkText_m.text = talkText2;
         }
 
@@ -46,14 +43,12 @@ public class Npc : MonoBehaviour
     {
         if(quest.ready)
         {
-            box.SetActive(false);
             Game.singleton.estadoFalando.ExitState();
             return;
         }
         atualText++;
         if(atualText >= talkText.Length)
         {
-            box.SetActive(false);
             Game.singleton.estadoFalando.ExitState();
             if(quest != null)
             {

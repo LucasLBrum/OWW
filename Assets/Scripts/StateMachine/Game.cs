@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Game : MonoBehaviour
 {
@@ -18,6 +20,8 @@ public class Game : MonoBehaviour
     public Camera cameraMain;
     public ShootProject weapon;
     public GameObject marketPanel;
+    public GameObject boxTalk;
+    public Text talkText;
 
 
 
