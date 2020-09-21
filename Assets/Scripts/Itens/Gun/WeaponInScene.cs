@@ -10,6 +10,7 @@ public class WeaponInScene : MonoBehaviour
     public int bullets;
     public int bulletsMax;
     public float fireRate;
+    public float shootDistance;
 
     public void GetDetailsWeapon(WeaponInScene thisWeapon, WeaponInScene weapon)
     {

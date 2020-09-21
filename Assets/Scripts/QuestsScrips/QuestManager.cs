@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class QuestManager : MonoBehaviour
 {
     public List<QuestSlot> quests;
+    public Npc npc;
 
     public void AddQuest(Quest quest)
     {
@@ -19,5 +20,25 @@ public class QuestManager : MonoBehaviour
             }
             i++;
         }
+    }
+    public void NextIntec()
+    {
+        if(npc.quest.ready)
+        {
+            Game.singleton.estadoFalando.ExitState();
+            return;
+        }
+        npc.atualText++;
+        if(npc.atualText >= npc.talkText.Length)
+        {
+            Game.singleton.estadoFalando.ExitState();
+            if(npc.quest != null)
+            {
+                Player.singleton.questManager.AddQuest(npc.quest);
+            }
+
+            return;
+        }
+        npc.talkText_m.text = npc.talkText[npc.atualText];
     }
 }

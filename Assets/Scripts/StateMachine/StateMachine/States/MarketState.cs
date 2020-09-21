@@ -15,7 +15,7 @@ public class MarketState : State
 
     }
 
-    public void EnterState()
+    public override void EnterState()
     {
         Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoComprando);
         Game.singleton.marketPanel.SetActive(true);
@@ -26,7 +26,7 @@ public class MarketState : State
         Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputY", 0f);
     }
 
-    public void ExitState()
+    public override void ExitState()
     {
         UnityEngine.Cursor.visible = false;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;

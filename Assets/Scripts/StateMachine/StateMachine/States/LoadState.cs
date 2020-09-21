@@ -14,12 +14,12 @@ public class LoadState : State
         base.Execute();
     }
 
-    public void LoadPlaying()
+    public override void ExitState()
     {
         Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoJogando);
     }
 
-    public void inLoad()
+    public override void EnterState()
     {
         Player.singleton.canvasPlayer.enabled = false;
         Game.singleton.cameraMain.enabled = false;

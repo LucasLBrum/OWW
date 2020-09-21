@@ -19,6 +19,10 @@ public class QuestSlot : MonoBehaviour
         titleQuests.text = quest.questInfo.title;
         progressText.text = quest.objectives.progress.ToString();
         quest.slot = this;
+        for (int i = 0; i < otherQuest.elements.Length; i++)
+        { 
+            otherQuest.elements[i].gameObject.gameObject.SetActive(true);
+        }
     }
 
     public void RemoveQuest()

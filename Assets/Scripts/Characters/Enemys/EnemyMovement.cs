@@ -5,6 +5,8 @@ using UnityEngine.AI;
 using UnityEngine.Animations;
 using UnityEngine.PlayerLoop;
 using System;
+using cakeslice;
+
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -17,20 +19,32 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     public GameObject DropItem = null;
     public bool inBattle;
+    public Outline[] outlines;
+    public  IEnumerator chaseC;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();//pegando refêrencia dos componenetes nesse objeto.
         anim = GetComponent<Animator>();
+        outlines = GetComponentsInChildren<Outline>();
+        ActiveOutlines(true);
     }
 
     private void Start()
     {
+        chaseC = Chase();
         carter = Player.singleton.carterScene;
         enemy = GetComponent<CharacterScene>().thisCharacter;
         if(inBattle)
         {
-            StartCoroutine(Chase());
+            StartCoroutine(chaseC);
+        }
+    }
+    public void ActiveOutlines(bool op)
+    {
+        for (int i = 0; i < outlines.Length; i++)//verifico a quantidade de itens na lista
+        {
+            outlines[i].enabled = op;
         }
     }
     public IEnumerator Chase()
@@ -78,15 +92,24 @@ public class EnemyMovement : MonoBehaviour
             anim.SetTrigger("celebrate");//faz animação de ataque
         }
     }
-
-
     public void DeadFuncion()
     {
         if(DropItem != null)
         {
             Instantiate(DropItem, transform.position, Quaternion.identity);
         }
+        if(GetComponent<EnemyStatus>().lifeSlider != null)
+        {
+            GetComponent<EnemyStatus>().lifeSlider.gameObject.SetActive(false);
+        }
+        ActiveOutlines(false);
         GetComponent<Collider>().enabled = false;
         GetComponent<EnemyMovement>().enabled = false;
+    }
+    public void StopEnemy()
+    {
+        agent.updatePosition = false;//ele para de andar
+        anim.SetBool("isLocomotion", false);//para de fazer a animação de locomoção
+        anim.SetBool("isAtack", false);//faz animação de ataque
     }
 }

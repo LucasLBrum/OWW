@@ -12,8 +12,13 @@ public class BattleRange : MonoBehaviour
         {
             for (int i = 0; i < enemy.Count; i++)
             {
-                if(enemy[i].inBattle == false)
-                StartCoroutine(enemy[i].Chase());
+                if(enemy[i].gameObject.activeSelf)
+                {
+                    if(enemy[i].inBattle == false)
+                    {
+                        enemy[i].StartCoroutine(enemy[i].chaseC);
+                    }
+                }
             }
         }
     }

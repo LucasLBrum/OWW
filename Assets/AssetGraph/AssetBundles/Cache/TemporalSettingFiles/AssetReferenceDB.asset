@@ -12,29 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4bc21567f434b598a3c96ba4946372, type: 3}
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
-  m_assets:
-  - m_assetDatabaseId: 5443a266b274aec4c90c663acb12df48
-    m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: ebfb4988eb16add4784122504f75fe2f
-    m_importFrom: Assets/Design/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: afdc2f4075d5b424d86449d9d2197539
-    m_importFrom: Assets/Models/Prefabs/Characters/CavaloBranco.prefab
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: d99779a5ae2f2294097654cd07d791c9
-    m_importFrom: Assets/Scripts/QuestsScrips/Npc.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: 2be578c1cffd3684eadf838d019a7504
-    m_importFrom: Assets/Scripts/StateMachine/StateMachine/States/TalkingState.cs
-    m_exportTo: 
-    m_variantName: 
-  - m_assetDatabaseId: ff4fbd85cf8b95d409d9de76abdeeb03
-    m_importFrom: Assets/Scripts/StateMachine/Game.cs
-    m_exportTo: 
-    m_variantName: 
+  m_assets: []
   m_version: 2

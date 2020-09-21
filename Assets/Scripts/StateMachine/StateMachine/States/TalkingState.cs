@@ -16,8 +16,7 @@ public class TalkingState : State
 
         
     }
-
-    public void EnterState(Npc npc)
+    public override void EnterState()
     {
         Game.singleton.boxTalk.SetActive(true);
         UnityEngine.Cursor.visible = true;
@@ -28,7 +27,7 @@ public class TalkingState : State
         Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputY", 0f);
     }
 
-    public void ExitState()
+    public override void ExitState()
     {
         Game.singleton.boxTalk.SetActive(false);
         UnityEngine.Cursor.visible = false;

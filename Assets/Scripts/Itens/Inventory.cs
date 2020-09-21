@@ -69,6 +69,10 @@ public class Inventory : MonoBehaviour
             {
                 if(listItens == weaponsResorces)
                 {
+                    if(ItemScene == null)
+                    {
+                        ItemScene = item.itemPrefab;
+                    }
                     list[i].GetComponent<WeaponInScene>().GetDetailsWeapon(list[i].GetComponent<WeaponInScene>(), ItemScene.GetComponent<WeaponInScene>());
                     if(ItemScene != null)
                     Destroy(ItemScene);
@@ -91,11 +95,11 @@ public class Inventory : MonoBehaviour
         }
         Debug.Log("sem slots");
     }
-    public bool VerificationSlotsOpen()
+    public bool VerificationSlotsOpen(List<Slot> slotTemp)
     {
-        for (int i = 0; i < slots.Count; i++)//verifico a quantidade de itens na lista
+        for (int i = 0; i < slotTemp.Count; i++)//verifico a quantidade de itens na lista
         {
-            if(slots[i].open)
+            if(slotTemp[i].open)
             {
                 return true;
             }

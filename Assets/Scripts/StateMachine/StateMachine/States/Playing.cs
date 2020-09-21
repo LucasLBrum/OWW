@@ -14,6 +14,8 @@ public class Playing : State
     public ShootRaycast shootRay = Game.singleton.shootRay;
     public Catavento catavento = Game.singleton.catavento;
     public ShootProject weaponShoot;
+    EnemyMovement[] enemys;
+
 
 
     public override void Execute()
@@ -22,24 +24,12 @@ public class Playing : State
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            UnityEngine.Cursor.visible = true;
-            UnityEngine.Cursor.lockState = CursorLockMode.Confined;
-            Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoPausado);
-            Game.singleton.pauseGameObject.SetActive(true);
-            Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(0,0);
-            Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputX", 0f);
-            Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputY", 0f);
+            Game.singleton.estadoPausado.EnterState();
         }
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            Game.singleton.m_StateMachine.ChangeState(Game.singleton.inventoryState);
-            Game.singleton.inventory.inventoryObject.SetActive(true);
-            movement.StopCamera(0,0);
-            movement.GetComponent<Animator>().SetFloat("InputX", 0f);
-            movement.GetComponent<Animator>().SetFloat("InputY", 0f);
-            UnityEngine.Cursor.visible = true;
-            UnityEngine.Cursor.lockState = CursorLockMode.Confined;
+            Game.singleton.inventoryState.EnterState();
         }
 
         movement.EquipWeapon();
@@ -58,6 +48,26 @@ public class Playing : State
             {
                 if(weaponShoot.loadingPower == false)
                 weaponShoot.StartCoroutine(weaponShoot.SuperShoot());
+            }
+        }
+    }
+
+    public override void EnterState()
+    {
+        enemys = Game.singleton.enemys;
+        UnityEngine.Cursor.visible = false;
+        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+        Game.singleton.pauseGameObject.SetActive(false);
+        Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoJogando);
+        Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(2, 300);
+
+        for (int i = 0; i < enemys.Length; i++)
+        {
+            if(enemys[i].inBattle == true)
+            {
+                Debug.Log("para poha");
+                if(enemys[i].inBattle == true)
+                enemys[i].StartCoroutine(enemys[i].chaseC);
             }
         }
     }

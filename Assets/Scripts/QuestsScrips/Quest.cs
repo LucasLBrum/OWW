@@ -10,6 +10,7 @@ public class Quest : MonoBehaviour
     public GameObject drop;
     public QuestSlot slot;
     public GameObject caution;
+    public QuestElement[] elements;
     public bool ready;
 
     void Start()

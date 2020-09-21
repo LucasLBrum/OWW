@@ -14,8 +14,14 @@ public class ChangeSceneButton : MonoBehaviour
 		}
 	}
 
-	public void ExitGame(){
-		Application.Quit();
+	public void ExitPause()
+	{
+		Game.singleton.estadoPausado.ExitState();
+		Game.singleton.estadoJogando.EnterState();
+	}
 
+	public void ExitGame()
+	{
+		Application.Quit();
 	}
 }

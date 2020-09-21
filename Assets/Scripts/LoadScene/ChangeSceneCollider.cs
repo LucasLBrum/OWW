@@ -13,7 +13,7 @@ public class ChangeSceneCollider : MonoBehaviour
     {
         if(other.GetComponent<CarterStatus>())
         {
-            Game.singleton.loadState.inLoad();
+            Game.singleton.loadState.EnterState();
             changeScene.ChangeScene("Florest");
         }
     }
@@ -26,7 +26,7 @@ public class ChangeSceneCollider : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.P))
         {
-            Game.singleton.loadState.inLoad();
+            Game.singleton.loadState.EnterState();
             changeScene.ChangeScene("Florest");
         }
     }

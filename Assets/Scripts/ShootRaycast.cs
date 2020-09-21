@@ -5,11 +5,13 @@ using UnityEngine;
 public class ShootRaycast : MonoBehaviour
 {
     float raycastDistancePickup = 10f;
-    float raycastDistanceShoot = 25f;
+    public float raycastDistanceShoot = 25f;
     public PickUpItem pickUp;
     public GameObject blood;
     public GameObject smoke;
     public ItemScene item;
+    Npc npc;
+    OutlineChildren lineChildren;
 
     RaycastHit hit;//cria um objeto do tipo "RaycastHit"
     Ray ray;
@@ -31,23 +33,26 @@ public class ShootRaycast : MonoBehaviour
 
         if(Physics.Raycast(transform.position, transform.forward, out hit, raycastDistancePickup, mask, QueryTriggerInteraction.Collide))
         {
-
+            var outline = hit.transform.GetComponent<OutlineChildren>();
+            if(outline != null)
+            {
+                lineChildren = outline;
+                lineChildren.ActiveOutlines(true);
+            }
+            else
+            {
+                if(lineChildren != null)
+                {
+                    lineChildren.ActiveOutlines(false);
+                    lineChildren = null;
+                }
+            }
             var interactable = hit.transform.GetComponent<ItemScene>();
             if (interactable != null)
             {
                 item = interactable;
-                item.ActiveOutlines(true);
                 pickUp.PickUp(interactable.gameObject);
             }
-            else
-            {
-                if(item != null)
-                {
-                    item.ActiveOutlines(false);
-                    item = null;
-                }
-            }
-            
             var munition = hit.transform.GetComponent<Munition>();
             if (munition != null)
             {
@@ -64,8 +69,15 @@ public class ShootRaycast : MonoBehaviour
             var money = hit.transform.GetComponent<MoneyScene>();
             if(money != null)
             {
-                Debug.Log("aa");
                 pickUp.PickUp(money.gameObject);
+            }
+            var market = hit.transform.GetComponent<MarketInteractable>();
+            if(market != null)
+            {
+                if(Input.GetKeyDown(KeyCode.E))
+                {
+                    Game.singleton.estadoComprando.EnterState();
+                }
             }
         }
     } 

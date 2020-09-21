@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6355403439744017418}
   - component: {fileID: 1394223933013742653}
   - component: {fileID: 1600455592356761056}
+  - component: {fileID: 2803686065707673559}
   m_Layer: 12
   m_Name: Prego.007
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2803686065707673559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202505181377406141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &661395223833307852
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,6 +136,7 @@ GameObject:
   - component: {fileID: 2615211661995335183}
   - component: {fileID: 7600950244236448872}
   - component: {fileID: 3186435168696880176}
+  - component: {fileID: 3756726955807750555}
   m_Layer: 12
   m_Name: Prego.002
   m_TagString: Untagged
@@ -189,6 +205,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3756726955807750555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861485861185992675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &933748988888183850
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +230,7 @@ GameObject:
   - component: {fileID: 2784193674419445995}
   - component: {fileID: 3186538061560138808}
   - component: {fileID: 6811863410719714}
+  - component: {fileID: 8868216628460414081}
   m_Layer: 12
   m_Name: Cylinder.004
   m_TagString: Untagged
@@ -268,6 +299,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8868216628460414081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933748988888183850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &1464612145802082026
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +355,7 @@ GameObject:
   - component: {fileID: 8764833214714564056}
   - component: {fileID: 5837758458439598704}
   - component: {fileID: 155230768081295014}
+  - component: {fileID: 1976263697123078635}
   m_Layer: 12
   m_Name: Cylinder.002
   m_TagString: Untagged
@@ -378,6 +424,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1976263697123078635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300364439756278001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &2493774018592388905
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +449,7 @@ GameObject:
   - component: {fileID: 2226650280199422202}
   - component: {fileID: 7789380904913955950}
   - component: {fileID: 4495571256571559027}
+  - component: {fileID: 246331038261591270}
   m_Layer: 12
   m_Name: Cylinder.001
   m_TagString: Untagged
@@ -457,6 +518,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &246331038261591270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2493774018592388905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &2770099669970044688
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,6 +543,7 @@ GameObject:
   - component: {fileID: 3701968074120930763}
   - component: {fileID: 4324139353509461570}
   - component: {fileID: 5177258953332230215}
+  - component: {fileID: 2285991686664283791}
   m_Layer: 12
   m_Name: Prego.006
   m_TagString: Untagged
@@ -536,6 +612,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2285991686664283791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770099669970044688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &2993614248218926709
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +668,7 @@ GameObject:
   - component: {fileID: 269600272853333870}
   - component: {fileID: 1308037734310552350}
   - component: {fileID: 3682212958247805669}
+  - component: {fileID: 522925474102294027}
   m_Layer: 12
   m_Name: Prego.001
   m_TagString: Untagged
@@ -646,6 +737,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &522925474102294027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3151546175548638501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &3167978019170962532
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +793,7 @@ GameObject:
   - component: {fileID: 7093643404577165795}
   - component: {fileID: 3956046483887036656}
   - component: {fileID: 5956208395808685857}
+  - component: {fileID: 9093441812507022198}
   m_Layer: 12
   m_Name: Prego.005
   m_TagString: Untagged
@@ -756,6 +862,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &9093441812507022198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219548938080999011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &3324614836111418879
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,6 +887,7 @@ GameObject:
   - component: {fileID: 100388142441586936}
   - component: {fileID: 4637557085083656017}
   - component: {fileID: 3322253752340269754}
+  - component: {fileID: 6470598956317149068}
   m_Layer: 12
   m_Name: Cylinder.005
   m_TagString: Untagged
@@ -835,6 +956,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6470598956317149068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3324614836111418879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &3400339687503137408
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,6 +1043,7 @@ GameObject:
   - component: {fileID: 8941093847387941378}
   - component: {fileID: 7414195142553760332}
   - component: {fileID: 7779183123281840114}
+  - component: {fileID: 8411908540524250050}
   m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
@@ -976,6 +1112,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8411908540524250050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3972543078414232399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &4404973628873142740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1199,7 @@ GameObject:
   - component: {fileID: 7029269998228578414}
   - component: {fileID: 3879527100657589253}
   - component: {fileID: 1742137263989777291}
+  - component: {fileID: 5105029185410296783}
   m_Layer: 12
   m_Name: Prego
   m_TagString: Untagged
@@ -1117,6 +1268,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5105029185410296783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987127937963395615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &6103090514471000403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1293,7 @@ GameObject:
   - component: {fileID: 8002754069026387256}
   - component: {fileID: 4183070450022334604}
   - component: {fileID: 1969971524352955768}
+  - component: {fileID: 562652636864930849}
   m_Layer: 12
   m_Name: Cube.001
   m_TagString: Untagged
@@ -1196,6 +1362,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &562652636864930849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6103090514471000403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &6272881187681923195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1387,7 @@ GameObject:
   - component: {fileID: 5701038231750739759}
   - component: {fileID: 6922835726800486403}
   - component: {fileID: 3313935847268578411}
+  - component: {fileID: 339452177386385779}
   m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1275,6 +1456,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &339452177386385779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6272881187681923195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &6792583794864895634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,6 +1481,7 @@ GameObject:
   - component: {fileID: 3150023821778046170}
   - component: {fileID: 4233914821065784452}
   - component: {fileID: 75472377807088592}
+  - component: {fileID: 3326276478337141749}
   m_Layer: 12
   m_Name: Prego.003
   m_TagString: Untagged
@@ -1354,6 +1550,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3326276478337141749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6792583794864895634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &7402016413095338111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,8 +1574,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5828334586219614828}
   - component: {fileID: 8648530952717687866}
-  - component: {fileID: 7406378849328499883}
   - component: {fileID: 8388645453187887779}
+  - component: {fileID: 3012907120982812107}
+  - component: {fileID: 1551619168}
   m_Layer: 12
   m_Name: Munition
   m_TagString: Untagged
@@ -1413,27 +1624,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7402016413095338111}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5, z: 0.7}
   m_Center: {x: 0, y: 0.2, z: 0}
---- !u!54 &7406378849328499883
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7402016413095338111}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8388645453187887779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,6 +1645,32 @@ MonoBehaviour:
   boxMunitionMax: 50
   bulletText: {fileID: 0}
   type: 1
+--- !u!114 &3012907120982812107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7402016413095338111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850e58fbccd1adb41871f21454f0e00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 7402016413095338111}
+  outlines: []
+--- !u!114 &1551619168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7402016413095338111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc72f5658a23940bbdac31a9069f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7556506763181943296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1713,7 @@ GameObject:
   - component: {fileID: 4874492792260923919}
   - component: {fileID: 5216295095861488953}
   - component: {fileID: 5845547892620980361}
+  - component: {fileID: 5520838910760574804}
   m_Layer: 12
   m_Name: Prego.004
   m_TagString: Untagged
@@ -1560,6 +1782,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5520838910760574804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8216156565599501827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &8489696675923442990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,6 +1806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2668000023182210251}
   - component: {fileID: 63665138207184171}
+  - component: {fileID: 7498043335111441477}
   m_Layer: 12
   m_Name: "Muni\xE7\xE3o cinto"
   m_TagString: Untagged
@@ -1651,6 +1888,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0003000311, y: 0.0021430978, z: 0.000024208974}
     m_Extent: {x: 0.0007218422, y: 0.002534902, z: 0.0005230942}
   m_DirtyAABB: 0
+--- !u!114 &7498043335111441477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489696675923442990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &8762297844013697195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,6 +1943,7 @@ GameObject:
   - component: {fileID: 4084828627217549482}
   - component: {fileID: 1824124186193825296}
   - component: {fileID: 4894229168931856741}
+  - component: {fileID: 4131097836693572703}
   m_Layer: 12
   m_Name: Cylinder.006
   m_TagString: Untagged
@@ -1760,6 +2012,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4131097836693572703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8942014180480780543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &8998129061143221576
 GameObject:
   m_ObjectHideFlags: 0

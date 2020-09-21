@@ -20,6 +20,7 @@ public class ActiveWeapon : MonoBehaviour
         var weaponPrefab = Instantiate(resorceWeapon.itemPrefab, weaponParent.transform); 
         weaponObject = weaponPrefab;
         weapon = weaponPrefab.GetComponent<WeaponInScene>();
+        Camera.main.GetComponent<ShootRaycast>().raycastDistanceShoot = weapon.shootDistance;
         weapon.GetDetailsWeapon(weapon, weaponScene);
         weapon.transform.parent = weaponParent; 
         weapon.gameObject.transform.localPosition = Vector3.zero;

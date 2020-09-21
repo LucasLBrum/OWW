@@ -10,4 +10,7 @@ public abstract class State
     {
         Debug.Log("Executando o estado " + Name);
     }
+
+    public virtual void EnterState(){}
+    public virtual void ExitState(){}
 }

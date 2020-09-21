@@ -43,17 +43,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     if (status.carter.stamina > 5)
                     {
-                        if(activeWeapon.weapon)
-                        {
-                            activeWeapon.weapon.GetComponent<ShootProject>().loadingPower = false;
-                        }
-                        activeWeapon.rigController.SetBool("Take", true);
-                        status.TakeStamina(5);
-                        anim.SetTrigger("Roll");
-                        if(status.regen == false)
-                        {
-                            StartCoroutine(status.RegenStamina());
-                        }
+                        StartCoroutine(Roll());
                     }
                 }
             }
@@ -233,16 +223,39 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(status.RegenStamina());
         }
+        if(activeWeapon.weapon != null)
+        {
+            activeWeapon.rigController.SetBool("Take", false);
+        }
+
         yield return null;
     }
     public IEnumerator Roll()
     {
         anim.SetTrigger("Roll");
-        activeWeapon.weapon.GetComponent<ShootProject>().loadingPower = false;
+        if(activeWeapon.weapon != null)
+        {
+            activeWeapon.weapon.GetComponent<ShootProject>().loadingPower = false;
+            activeWeapon.rigController.SetBool("Take", true);
+        }
+        status.TakeStamina(5);
+        yield return new WaitUntil(WaitStateRoll);
         while(anim.GetCurrentAnimatorStateInfo(0).IsName("Roll"))
         {
-            
+            yield return new WaitForSeconds(0.1f);
+        }
+        if(activeWeapon.weapon != null)
+        {
+            activeWeapon.rigController.SetBool("Take", false);
+        }
+        if(status.regen == false)
+        {
+            StartCoroutine(status.RegenStamina());
         }
         yield return null;
+    }
+    bool WaitStateRoll()
+    {
+        return anim.GetCurrentAnimatorStateInfo(0).IsName("Roll");
     }
 }

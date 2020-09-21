@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 7209033830704239482}
   - component: {fileID: 2511704411481148096}
   - component: {fileID: 1188085089}
+  - component: {fileID: 4840446284142184929}
   m_Layer: 12
   m_Name: Revolver
   m_TagString: Coletavel
@@ -370,7 +371,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisItem: {fileID: 11400000, guid: 1992525059694704a97da44f6b89f13e, type: 2}
-  outlines: []
 --- !u!114 &3231517006748297395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +389,7 @@ MonoBehaviour:
   bullets: 15
   bulletsMax: 15
   fireRate: 2
-  bulletsText: {fileID: 0}
+  shootDistance: 35
 --- !u!114 &139423158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,12 +402,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635ef84bec0f7a24f88a5a4651c00600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingPower: 0
   firePoint: {fileID: 93414221324670225}
   rigController: {fileID: 0}
-  shootRaycast: {fileID: 0}
   shootAF: {fileID: 8300000, guid: cf5c6da980b29db479e8ad37a61cccd3, type: 3}
   reloadAF: {fileID: 8300000, guid: 3a18afe585602354484c1962af187284, type: 3}
-  source: {fileID: 0}
   muzzlePrefab: {fileID: 1438847440653584173, guid: f81904db7c61152409c702875cacff9a,
     type: 3}
 --- !u!65 &7209033830704239482
@@ -535,6 +534,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4840446284142184929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3397699309482941988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850e58fbccd1adb41871f21454f0e00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 3397699309482941988}
+  outlines: []
 --- !u!1 &5024463343256699796
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,7 +55,7 @@ public abstract class Character //classe base de todo personagem no jogo.
     {
         anim.SetBool("Dead", true);
         if(anim.gameObject.GetComponent<CarterScene>()){
-            Game.singleton.estadoMorto.Death();
+            Game.singleton.estadoMorto.EnterState();
         }
     }
 

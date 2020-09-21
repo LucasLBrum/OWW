@@ -9,16 +9,6 @@ public class MarketInteractable : MonoBehaviour
     public ItemResource selectedItem;
     public Text descriptionText;
 
-    void OnTriggerStay(Collider other)
-    {
-        if(other.GetComponent<CarterStatus>())
-        {
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                Game.singleton.estadoComprando.EnterState();
-            }
-        }
-    }
 
     public void ExitMarket()
     {
@@ -29,16 +19,33 @@ public class MarketInteractable : MonoBehaviour
     {
         if(selectedItem != null)
         {
-            if(Player.singleton.carterScene.inventoryInScene.money >= selectedItem.cost)
+            if(selectedItem.itemType == ItemType.Consumable || selectedItem.itemType == ItemType.Other)
             {
-                if(Player.singleton.carterScene.inventoryInScene.VerificationSlotsOpen() == true)
+                if(Player.singleton.carterScene.inventoryInScene.money >= selectedItem.cost)
                 {
-                     Player.singleton.carterScene.inventoryInScene.UpdateMoneyText(selectedItem.cost, 2);
-                    Player.singleton.carterScene.inventoryInScene.VerificationItem(selectedItem, null);
-                    Debug.Log("Comprei");
-                }
+                    if(Player.singleton.carterScene.inventoryInScene.VerificationSlotsOpen(Player.singleton.carterScene.inventoryInScene.slots) == true)
+                    {
+                        Player.singleton.carterScene.inventoryInScene.UpdateMoneyText(selectedItem.cost, 2);
+                        Player.singleton.carterScene.inventoryInScene.VerificationItem(selectedItem, null);
+                        Debug.Log("Comprei");
+                    }
 
+                }
             }
+            else
+            {
+                if(Player.singleton.carterScene.inventoryInScene.money >= selectedItem.cost)
+                {
+                    if(Player.singleton.carterScene.inventoryInScene.VerificationSlotsOpen(Player.singleton.carterScene.inventoryInScene.weaponSlot) == true)
+                    {
+                        Player.singleton.carterScene.inventoryInScene.UpdateMoneyText(selectedItem.cost, 2);
+                        Player.singleton.carterScene.inventoryInScene.VerificationItem(selectedItem, null);
+                        Debug.Log("Comprei");
+                    }
+
+                }
+            }
+            
         }
     }
 

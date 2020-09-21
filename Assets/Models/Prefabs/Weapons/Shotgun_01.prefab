@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 1670534725000905548}
   - component: {fileID: 5735576516927952063}
   - component: {fileID: 8877285033091066335}
+  - component: {fileID: 6397151634409357490}
   m_Layer: 12
   m_Name: Shotgun_01
   m_TagString: Untagged
@@ -149,7 +150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisItem: {fileID: 11400000, guid: 56aac4bb6c8c71347b0bb4aab5d19f59, type: 2}
-  outlines: []
 --- !u!114 &7648671338060254245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +168,7 @@ MonoBehaviour:
   bullets: 4
   bulletsMax: 4
   fireRate: 1
+  shootDistance: 15
 --- !u!114 &2069432415773351084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,12 +181,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635ef84bec0f7a24f88a5a4651c00600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingPower: 0
   firePoint: {fileID: 3894648598151660565}
   rigController: {fileID: 0}
-  shootRaycast: {fileID: 0}
   shootAF: {fileID: 8300000, guid: f3ef5e8c4f9381e45a4049b302e6a2fa, type: 3}
   reloadAF: {fileID: 8300000, guid: 1606556e4261c114090e2c194ff3273c, type: 3}
-  source: {fileID: 0}
   muzzlePrefab: {fileID: 1438847440653584173, guid: f81904db7c61152409c702875cacff9a,
     type: 3}
 --- !u!65 &1670534725000905548
@@ -313,6 +313,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6397151634409357490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670268909682462824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850e58fbccd1adb41871f21454f0e00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 1670268909682462824}
+  outlines: []
 --- !u!1 &2100510945528115364
 GameObject:
   m_ObjectHideFlags: 0

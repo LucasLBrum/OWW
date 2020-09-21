@@ -22,6 +22,7 @@ public class Game : MonoBehaviour
     public GameObject marketPanel;
     public GameObject boxTalk;
     public Text talkText;
+    public EnemyMovement[] enemys;
 
 
 
@@ -67,10 +68,5 @@ public class Game : MonoBehaviour
     void Update()
     {
         m_StateMachine.RunState();
-    }
-
-    public void Despause()
-    {
-        estadoPausado.Despause();
     }
 }
