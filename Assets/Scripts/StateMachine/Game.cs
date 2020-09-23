@@ -60,6 +60,8 @@ public class Game : MonoBehaviour
         estadoFalando = new TalkingState("falando");
         estadoComprando = new MarketState("Comprando");
 
+        estadoJogando.enemys = enemys;
+
 
         m_StateMachine.ChangeState(estadoJogando);
     }

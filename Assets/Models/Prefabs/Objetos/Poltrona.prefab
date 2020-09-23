@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 6210548055693556775}
   - component: {fileID: 3128675946204513809}
   - component: {fileID: 8671614394982972136}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Poltrona
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6210548055693556775
 Transform:
@@ -25,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6947670307910815284}
-  m_LocalRotation: {x: -0.18474814, y: -0.6825454, z: -0.68254524, w: 0.18474816}
+  m_LocalRotation: {x: -0.1847466, y: -0.6825458, z: -0.6825458, w: 0.1847466}
   m_LocalPosition: {x: -55.58, y: 50.647, z: -59.706}
-  m_LocalScale: {x: 113.05181, y: 110.02382, z: 10.335416}
+  m_LocalScale: {x: 113.051796, y: 110.0238, z: 10.335415}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6478536213147159724, guid: ddee325133c6a5b45a6dcfaeb023c6c0, type: 3}
+  - {fileID: 2100000, guid: 13e38661b55594549a36d4fce0ccf736, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

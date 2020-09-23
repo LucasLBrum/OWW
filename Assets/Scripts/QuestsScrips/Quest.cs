@@ -15,6 +15,8 @@ public class Quest : MonoBehaviour
 
     void Start()
     {
+        npc = gameObject.GetComponent<Npc>();
+        objectives = gameObject.GetComponent<ObjectiveQuest>();
         objectives = GetComponent<ObjectiveQuest>();
     }
 

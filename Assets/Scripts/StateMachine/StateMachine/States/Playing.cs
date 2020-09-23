@@ -14,7 +14,7 @@ public class Playing : State
     public ShootRaycast shootRay = Game.singleton.shootRay;
     public Catavento catavento = Game.singleton.catavento;
     public ShootProject weaponShoot;
-    EnemyMovement[] enemys;
+    public EnemyMovement[] enemys;
 
 
 
@@ -54,20 +54,21 @@ public class Playing : State
 
     public override void EnterState()
     {
-        enemys = Game.singleton.enemys;
         UnityEngine.Cursor.visible = false;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         Game.singleton.pauseGameObject.SetActive(false);
         Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoJogando);
         Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(2, 300);
-
-        for (int i = 0; i < enemys.Length; i++)
+        if(enemys != null)
         {
-            if(enemys[i].inBattle == true)
+            for (int i = 0; i < enemys.Length; i++)
             {
-                Debug.Log("para poha");
                 if(enemys[i].inBattle == true)
-                enemys[i].StartCoroutine(enemys[i].chaseC);
+                {
+                    Debug.Log("para poha");
+                    if(enemys[i].inBattle == true)
+                    enemys[i].StartCoroutine(enemys[i].chaseC);
+                }
             }
         }
     }

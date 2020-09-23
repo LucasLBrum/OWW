@@ -13,10 +13,12 @@ public class ActiveWeapon : MonoBehaviour
     public Transform weaponRightGrip;
     public GameObject weaponObject;//objeto da atual arma
     public Animator rigController; //animator do rig
+    public GameObject BulletImage;
 
 
     public void Equip(ItemResource resorceWeapon, WeaponInScene weaponScene)
     {
+        BulletImage.SetActive(true);
         var weaponPrefab = Instantiate(resorceWeapon.itemPrefab, weaponParent.transform); 
         weaponObject = weaponPrefab;
         weapon = weaponPrefab.GetComponent<WeaponInScene>();

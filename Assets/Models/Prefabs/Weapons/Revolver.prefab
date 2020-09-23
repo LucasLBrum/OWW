@@ -385,7 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeWeapon: 0
   weaponName: pistol
-  damage: 10
+  damage: 15
   bullets: 15
   bulletsMax: 15
   fireRate: 2

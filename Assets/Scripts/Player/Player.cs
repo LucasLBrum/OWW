@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 
     public QuestManager questManager;
 
+
     string playerName = null;//nome do player
     public string PlayerName
     {

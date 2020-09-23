@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1181789569927613461}
   - component: {fileID: 4973742895041803258}
   - component: {fileID: 3746999537305261994}
+  - component: {fileID: 6794543868412891142}
   m_Layer: 12
   m_Name: Saco
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6794543868412891142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152529931346392339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &1660248475438498000
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +105,7 @@ GameObject:
   - component: {fileID: 6036483450939638070}
   - component: {fileID: 9193844214170446860}
   - component: {fileID: 1544541615819632370}
+  - component: {fileID: 5001339310667155541}
   m_Layer: 12
   m_Name: P2
   m_TagString: Untagged
@@ -158,6 +174,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5001339310667155541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660248475438498000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &2145866331966893675
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +200,7 @@ GameObject:
   - component: {fileID: 2729523137092840421}
   - component: {fileID: 7369759022673090817}
   - component: {fileID: 2498154701474051417}
+  - component: {fileID: 2978457693222466628}
   m_Layer: 12
   m_Name: Saco_de_dinheiro
   m_TagString: Untagged
@@ -236,6 +267,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &2978457693222466628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145866331966893675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850e58fbccd1adb41871f21454f0e00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 2145866331966893675}
+  outlines: []
 --- !u!1 &4543506653886699294
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +292,7 @@ GameObject:
   - component: {fileID: 985412268432176006}
   - component: {fileID: 474660219777054178}
   - component: {fileID: 7444985178880729805}
+  - component: {fileID: 2811821507109963614}
   m_Layer: 12
   m_Name: P1
   m_TagString: Untagged
@@ -315,3 +361,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2811821507109963614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4543506653886699294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0

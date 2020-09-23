@@ -115,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
         }//Acessar slot 2.
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
+            activeWeapon.BulletImage.SetActive(false);
             if (activeWeapon.weapon != null)
             {
                 if(slotWeaponUse.item == inventory.weaponSlot[0].item)
@@ -145,6 +146,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(slotWeaponUse != null)
         {
+            
             if (slotWeaponUse.item == Player.singleton.carterScene.inventoryInScene.weaponSlot[0].item)
             {
                 activeWeapon.weapon.GetDetailsWeapon(Player.singleton.carterScene.inventoryInScene.weaponSlot[0].GetComponent<WeaponInScene>(), activeWeapon.weapon);
@@ -156,6 +158,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (activeWeapon.weaponObject.GetComponent<ItemScene>().thisItem == slotWeaponUse.item)
             {
+                activeWeapon.BulletImage.SetActive(false);
                 Destroy(activeWeapon.weaponObject);
                 activeWeapon.weapon = null;
                 slotWeaponUse = null;

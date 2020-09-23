@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Shotgun
   description: Uma bela Shotgun para causar grandes dano a corpo-a-corpo.
   stackable: 0
-  cost: 30
+  cost: 40
   amount: 0
   itemPrefab: {fileID: 1670268909682462824, guid: c440fffe701f3514995f375d44712a3f,
     type: 3}

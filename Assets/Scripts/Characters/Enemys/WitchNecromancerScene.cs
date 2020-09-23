@@ -17,7 +17,7 @@ public class WitchNecromancerScene : CharacterScene
 
     bool esqueletonSpawn;
 
-    public WitchNecromancer necromancer = new WitchNecromancer("necromancer", 50, 50, 20);
+    public WitchNecromancer necromancer = new WitchNecromancer("necromancer", 200, 200, 20);
 
     private void Awake()
     {

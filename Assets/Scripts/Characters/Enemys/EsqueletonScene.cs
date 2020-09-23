@@ -9,7 +9,7 @@ public class EsqueletonScene : CharacterScene
 
     public GameObject muzzle;
 
-    Esqueleton esqueleton = new Esqueleton("Billy", 100, 100, 20);
+    Esqueleton esqueleton = new Esqueleton("Billy", 200, 200, 20);
 
     public float raycastDistanceShoot;
 

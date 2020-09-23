@@ -9,7 +9,7 @@ public class WitchRangedScene : CharacterScene
     public GameObject potionObjectS;
     public GameObject pivot;
 
-    WitchRanged witchRanged = new WitchRanged("", 50, 50, 10);
+    WitchRanged witchRanged = new WitchRanged("", 100, 100, 10);
 
     private void Awake()
     {

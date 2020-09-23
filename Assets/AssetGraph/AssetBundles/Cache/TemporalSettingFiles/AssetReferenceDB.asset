@@ -12,5 +12,149 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4bc21567f434b598a3c96ba4946372, type: 3}
   m_Name: AssetReferenceDB
   m_EditorClassIdentifier: 
-  m_assets: []
+  m_assets:
+  - m_assetDatabaseId: fc4b3945dd843364589c72d81115d569
+    m_importFrom: Assets/Scenes/Florest.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5443a266b274aec4c90c663acb12df48
+    m_importFrom: Assets/AssetGraph/AssetBundles/Cache/TemporalSettingFiles/AssetReferenceDB.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ebfb4988eb16add4784122504f75fe2f
+    m_importFrom: Assets/Design/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 53248dc6d6e5de2468a1c599ba1fc1d1
+    m_importFrom: Assets/Scenes/Winchester.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 1fc5081e07c7a344eb6f78c052bd605b
+    m_importFrom: Assets/Scripts/Player/SpawnPlayer.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e6320e986c5ee8b41a8bdc4e38e804e6
+    m_importFrom: Assets/Scripts/LoadScene/SceneController.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 4b3a360162b155a419af55faa68c3cee
+    m_importFrom: Assets/Scripts/StateMachine/StateMachine/States/Playing.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ff4fbd85cf8b95d409d9de76abdeeb03
+    m_importFrom: Assets/Scripts/StateMachine/Game.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6601f42c2ff50d54f9d4759c3f5e10aa
+    m_importFrom: Assets/Models/Characters/Bruxaazulossofull.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: c77e98b5f7548b64081522414847a976
+    m_importFrom: Assets/Models/Colar.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8cb39007e8c7f004e9186bf4fe3f9d8e
+    m_importFrom: Assets/Models/Characters/Annoyed Head Shake.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 30b18a98ec7b8744cbde15c441b67571
+    m_importFrom: Assets/Design/BruxaAzul.controller
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: fcd2bc4269af660498deadb5620675a7
+    m_importFrom: Assets/Models/Prefabs/Objetos/Arvore3.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 91627a83a1692f54f8450a74baad387c
+    m_importFrom: Assets/Models/Prefabs/Objetos/Arvore2.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d3ceb37a3ddcc05449e605f162963ffe
+    m_importFrom: Assets/Models/Prefabs/Objetos/Arvore.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 34d72f92ccf4ece4085d10bb84c311d1
+    m_importFrom: "Assets/Models/Prefabs/Objetos/Muni\xE7\xE3o pequena.prefab"
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 126f82f1dac65c848940af2a7657e375
+    m_importFrom: Assets/Scripts/QuestsScrips/Quest.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 8626442c323d5b240b7bca6b5d2d5d3a
+    m_importFrom: Assets/Scripts/QuestsScrips/ObjectiveQuest.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a876622eb03109a48bf7f171f4850c48
+    m_importFrom: Assets/Scripts/Player/Player.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 17c47dd0bd9584940ab7a5d645f2a07a
+    m_importFrom: Assets/ScriptablesObjects/Cambina.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f9e4fde816f97ad4981d60aadd1d6913
+    m_importFrom: Assets/ScriptablesObjects/Whisky.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: e7d8422a1f1e7594a89721b7da38aa6c
+    m_importFrom: Assets/ScriptablesObjects/ShotGunSpecial.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 56aac4bb6c8c71347b0bb4aab5d19f59
+    m_importFrom: Assets/ScriptablesObjects/Shotgun.asset
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 6974c4489c387314789cfbbd29133b52
+    m_importFrom: Assets/Fantasma.controller
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 2aea2e6f0660285489354f3bb5eb9a17
+    m_importFrom: Assets/Models/Characters/Fantasma.fbx
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9849c0219b6c4684686bd8d8a6d23416
+    m_importFrom: Assets/Models/Prefabs/Characters/Fantasma.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5eb6900a396092c4d89639dd192573e0
+    m_importFrom: Assets/Captura de tela 2020-09-23 171911.png
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: f0ad722343070254eab7caf3492dde01
+    m_importFrom: Assets/Scenes/LoadingScene.unity
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: cbf7a20221ef9b148bda4162e5ae7fc2
+    m_importFrom: Assets/Scripts/Characters/Enemys/WitchNecromancerScene.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: d688414627f94b141bc3583a62e9452e
+    m_importFrom: Assets/Scripts/Characters/Enemys/WitchRangedScene.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: bccc09077b1652b42ae7a17443ddf8ee
+    m_importFrom: Assets/Scripts/Characters/Enemys/WitchMelee.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: a569c11f380edf64aae10d9dd36054f9
+    m_importFrom: Assets/Scripts/Characters/Enemys/EsqueletonScene.cs
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 5705c018567a04f4a8773ede32874401
+    m_importFrom: Assets/Models/Prefabs/Characters/Xerife (1).prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 26e8a9bc2f7d4334bb799589596e9789
+    m_importFrom: Assets/Models/Prefabs/Weapons/Revolver.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: ab077f9eaefb7c64893234870276002d
+    m_importFrom: Assets/Models/Prefabs/Weapons/ShotGunEspecial.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 9a21645d50a34de4d90cb83f0adab713
+    m_importFrom: Assets/Models/Prefabs/Weapons/Carabina.prefab
+    m_exportTo: 
+    m_variantName: 
   m_version: 2

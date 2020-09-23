@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Especial Shotgun
   description: Uma Shotgun especial apenas encontradas por grandes jogadores.
   stackable: 0
-  cost: 20
+  cost: 70
   amount: 0
   itemPrefab: {fileID: 3381110024668523829, guid: ab077f9eaefb7c64893234870276002d,
     type: 3}

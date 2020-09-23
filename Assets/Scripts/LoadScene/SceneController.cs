@@ -93,8 +93,8 @@ namespace T191.Controllers
 					//Se o jogador apertou qualquer tecla...
 					if (Input.anyKeyDown)
 					{
-						//if(sceneName == "Florest")
-						//Game.singleton.loadState.LoadPlaying();
+						if(sceneName == "Florest")
+						Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoJogando);
 						//Permitir a ativação da cena
 						async.allowSceneActivation = true;
 						//Armazenar uma referência para a cena de loading(transição)

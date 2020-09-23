@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class QuestManager : MonoBehaviour
 {
     public List<QuestSlot> quests;
+    public ColliderMission cMission;
     public Npc npc;
 
     public void AddQuest(Quest quest)
@@ -18,11 +19,15 @@ public class QuestManager : MonoBehaviour
                quests[i].AddQuest(quest); 
                return;
             }
-            i++;
         }
     }
     public void NextIntec()
     {
+        if(cMission != null)
+        {
+            cMission.VerificationQuests();
+        }
+        if(npc.quest != null)
         if(npc.quest.ready)
         {
             Game.singleton.estadoFalando.ExitState();

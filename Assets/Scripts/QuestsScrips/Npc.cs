@@ -12,6 +12,7 @@ public class Npc : MonoBehaviour
     public Quest quest = null;
     public Transform dropPosition;
     public Text talkText_m;
+    public NpcType type;
 
 
     void Start()
@@ -22,6 +23,7 @@ public class Npc : MonoBehaviour
     public void Intectable()
     {
         Player.singleton.questManager.npc = this;
+        if(quest != null)
         if(quest.ready == false)
         {
             if(quest.objectives.complete)
@@ -38,6 +40,24 @@ public class Npc : MonoBehaviour
             talkText_m.text = talkText[atualText];
         }
 
+        if(quest == null)
+        {
+            if(type == NpcType.Repeat)
+            {
+                atualText = 0;
+                Game.singleton.estadoFalando.EnterState();
+                talkText_m.text = talkText[atualText];
+                return;
+            }
+            if(atualText >= talkText.Length)
+            {
+                return;
+            }
+            Game.singleton.estadoFalando.EnterState();
+            talkText_m.text = talkText[atualText];
+        }
+
+        if(quest != null)
         if(quest.ready == true)
         {
             Game.singleton.estadoFalando.EnterState();
@@ -45,5 +65,8 @@ public class Npc : MonoBehaviour
         }
 
     }
-    
+}
+public enum NpcType
+{
+    Repeat, OneInteractable
 }

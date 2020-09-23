@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Whisky
   m_EditorClassIdentifier: 
   itemName: Whisky
-  description: "Ao Consumir essa bebida voc\xEA recupera 25 de vigor ao longo de
-    15s."
-  cost: 8
+  description: "Ao consumir essa bebida voc\xEA recupera 15 de vigor."
+  stackable: 0
+  cost: 10
+  amount: 0
   itemPrefab: {fileID: 2214497537543728763, guid: 3abd02b1df448634fb92aad454f93eb9,
     type: 3}
   itemSprite: {fileID: 21300000, guid: 47f9d0f155b86384bb1d5a071448ac3f, type: 3}

@@ -45,7 +45,8 @@ public class Paused : State
             if(enemys[i].inBattle == true)
             {
                 Debug.Log("para poha");
-                enemys[i].StopCoroutine(enemys[i].chaseC);
+                //enemys[i].StopCoroutine(enemys[i].chaseC);
+                enemys[i].StopAllCoroutines();
                 enemys[i].StopEnemy();
             }
         }

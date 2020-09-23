@@ -16,7 +16,7 @@ MonoBehaviour:
   description: "Uma arma de press\xE3o que deixar\xE1 seus inimigos assustados com
     tamanho poder de fogo."
   stackable: 0
-  cost: 0
+  cost: 60
   amount: 0
   itemPrefab: {fileID: 8130268023602314683, guid: 9a21645d50a34de4d90cb83f0adab713,
     type: 3}
