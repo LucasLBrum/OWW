@@ -106,7 +106,7 @@ MonoBehaviour:
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: 6974c4489c387314789cfbbd29133b52
-    m_importFrom: Assets/Fantasma.controller
+    m_importFrom: Assets/Design/Fantasma.controller
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: 2aea2e6f0660285489354f3bb5eb9a17
@@ -118,7 +118,7 @@ MonoBehaviour:
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: 5eb6900a396092c4d89639dd192573e0
-    m_importFrom: Assets/Captura de tela 2020-09-23 171911.png
+    m_importFrom: Assets/Design/Captura de tela 2020-09-23 171911.png
     m_exportTo: 
     m_variantName: 
   - m_assetDatabaseId: f0ad722343070254eab7caf3492dde01
@@ -155,6 +155,10 @@ MonoBehaviour:
     m_variantName: 
   - m_assetDatabaseId: 9a21645d50a34de4d90cb83f0adab713
     m_importFrom: Assets/Models/Prefabs/Weapons/Carabina.prefab
+    m_exportTo: 
+    m_variantName: 
+  - m_assetDatabaseId: 83abb8adad7b11a43a059067ac7cf050
+    m_importFrom: Assets/Design/Btn_comprar.png
     m_exportTo: 
     m_variantName: 
   m_version: 2
