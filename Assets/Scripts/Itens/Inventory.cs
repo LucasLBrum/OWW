@@ -24,7 +24,7 @@ public class Inventory : MonoBehaviour
     /// </summary>
     void Start()
     {
-        UpdateMoneyText(100, 1);
+        UpdateMoneyText(50, 1);
     }
     public void UpdateMoneyText(float value, int op)
     {
@@ -74,7 +74,7 @@ public class Inventory : MonoBehaviour
                         ItemScene = item.itemPrefab;
                     }
                     list[i].GetComponent<WeaponInScene>().GetDetailsWeapon(list[i].GetComponent<WeaponInScene>(), ItemScene.GetComponent<WeaponInScene>());
-                    if(ItemScene != null)
+                    if(ItemScene != item.itemPrefab)
                     Destroy(ItemScene);
                     list[i].AddItem(item);
                     listItens.Add(item);

@@ -36,6 +36,8 @@ public class PoolSlow : MonoBehaviour
     private void Start()
     {
         StartCoroutine(Backvelocity());
+        GetComponent<AudioSource>().volume = GameConfig.singleton.volumeAudios;
+        GetComponent<AudioSource>().Play();
     }
 
     IEnumerator Backvelocity()

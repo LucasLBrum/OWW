@@ -16,6 +16,10 @@ public abstract class Character //classe base de todo personagem no jogo.
     {
         if(op == 1)
         {
+            if(characterPrefab.GetComponent<CarterScene>() != null)
+            {
+                characterPrefab.GetComponent<CarterStatus>().StartCoroutine(characterPrefab.GetComponent<CarterStatus>().FeedBackDamage());
+            }
             if (characterPrefab.GetComponent<EnemyMovement>() != null)
             {
                 if(characterPrefab.GetComponent<EnemyMovement>().inBattle == false)
@@ -32,6 +36,10 @@ public abstract class Character //classe base de todo personagem no jogo.
             character.lifeCharacter -= value;
             if (character.lifeCharacter <= 0)
             {
+                if(character.characterPrefab.GetComponent<WitchNecromancerScene>() != null) 
+                {
+                    character.characterPrefab.GetComponent<WitchNecromancerScene>().EndGame();
+                }
                 if(character.characterPrefab.GetComponent<QuestElement>() != null)
                 {
                     character.characterPrefab.GetComponent<QuestElement>().CompleteRequest();
@@ -55,7 +63,8 @@ public abstract class Character //classe base de todo personagem no jogo.
     public virtual void Dead(Animator anim)
     {
         anim.SetBool("Dead", true);
-        if(anim.gameObject.GetComponent<CarterScene>()){
+        if(anim.gameObject.GetComponent<CarterScene>())
+        {
             Game.singleton.estadoMorto.EnterState();
         }
     }

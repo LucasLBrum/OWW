@@ -16,6 +16,8 @@ public class Paused : State
         base.Execute();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            UnityEngine.Cursor.visible = false;
+            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
             Game.singleton.estadoJogando.EnterState();
         }
     }
@@ -26,7 +28,7 @@ public class Paused : State
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         Game.singleton.pauseGameObject.SetActive(false);
         Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoJogando);
-        Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(2, 300);
+        Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(false);
     }
 
     public override void EnterState()
@@ -36,7 +38,7 @@ public class Paused : State
         UnityEngine.Cursor.lockState = CursorLockMode.Confined;
         Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoPausado);
         Game.singleton.pauseGameObject.SetActive(true);
-        Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(0,0);
+        Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(true);
         Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputX", 0f);
         Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputY", 0f);
         

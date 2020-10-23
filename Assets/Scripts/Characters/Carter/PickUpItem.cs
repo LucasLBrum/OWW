@@ -10,6 +10,7 @@ public class PickUpItem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            
             if(thisItem.GetComponent<ItemScene>() != null)
             {
                 if(thisItem.GetComponent<QuestElement>() != null)

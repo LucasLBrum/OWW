@@ -7,7 +7,7 @@ namespace T191.Controllers
 {
 	public class SceneController : MonoBehaviour
 	{
-		public event Action OnSceneLoaded;
+		public event Action OnSceneLoaded = null;
 
 		public static SceneController singleton { get; private set; }
 

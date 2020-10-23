@@ -13,6 +13,10 @@ public class WitchNecromancerScene : CharacterScene
     public GameObject pivot1;
     public GameObject pivot2;
 
+    public GameObject esqueleton;
+    public GameObject esqueleton1;
+
+
     public PostProcessVolume ppv;
 
     bool esqueletonSpawn;
@@ -33,6 +37,9 @@ public class WitchNecromancerScene : CharacterScene
         transform.LookAt(Player.singleton.carterScene.transform.position);
         var a = Instantiate(box, pivot.transform.position, pivot.transform.rotation, null);
         var b = Instantiate(box, pivot1.transform.position, pivot1.transform.rotation, null);
+
+        esqueleton = a;
+        esqueleton1 = b;
     }
 
     public void ExecuteAnimationSpawn()
@@ -68,5 +75,20 @@ public class WitchNecromancerScene : CharacterScene
         }
         ppv.weight = 0;
         yield return null;
+    }
+
+    public void EndGame()
+    {
+        if (esqueleton != null) 
+        {
+            esqueleton.SetActive(false);
+            esqueleton1.SetActive(false);
+        }
+        UnityEngine.Cursor.visible = true;
+        UnityEngine.Cursor.lockState = CursorLockMode.Confined;
+        Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(true);
+        Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputX", 0f);
+        Player.singleton.carterScene.GetComponent<Animator>().SetFloat("InputY", 0f);
+        Player.singleton.panelEnd.SetActive(true);
     }
 }

@@ -8,6 +8,7 @@ public class SpawnPlayer : MonoBehaviour
     public Quest[] quests;
     public ColliderMission colliderMission;
     public Catavento catavento;
+    public GameObject panelEnd;
 
 
     void Start()
@@ -20,6 +21,8 @@ public class SpawnPlayer : MonoBehaviour
         Player.singleton.questManager.cMission = colliderMission;
         Game.singleton.estadoJogando.catavento = catavento;
         Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoJogando);
+        Player.singleton.panelEnd = panelEnd;
+
 
     }
 

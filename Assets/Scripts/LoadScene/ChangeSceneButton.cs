@@ -11,6 +11,7 @@ public class ChangeSceneButton : MonoBehaviour
 		if(sceneName == "Florest 1")
 		{
 			Destroy(Player.singleton.gameObject);
+			Destroy(GameConfig.singleton.gameObject);
 		}
 	}
 

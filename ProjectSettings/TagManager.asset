@@ -9,6 +9,8 @@ TagManager:
   - Coletavel
   - Slot
   - Ground
+  - FxTemporaire
+  - "Ch\xE3o"
   layers:
   - Default
   - TransparentFX

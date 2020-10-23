@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        inventory = Player.singleton.carterScene.inventoryInScene;
         mainCamera = Camera.main;
         activeWeapon = GetComponent<ActiveWeapon>();
         anim = GetComponent<Animator>();//pegar componente desse objeto.
@@ -26,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Start()
     {
+        inventory = Player.singleton.carterScene.inventoryInScene;
         status = Player.singleton.carterScene.carterStatus;
     }
     public void CharacterMovement() 
@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void CharacterView()
     {
-        float turnSpeed = 10;
+        float turnSpeed = 10f;
         float yawCamera = mainCamera.transform.rotation.eulerAngles.y; 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnSpeed * Time.fixedDeltaTime);
     }
@@ -192,10 +192,29 @@ public class PlayerMovement : MonoBehaviour
             }
 
     }//guarda a arma caso esteja em suas mãos.
-    public void StopCamera(int speedY, int speedX)
+    public void StopCamera(bool op)
     {
-        freeLookCamera.m_XAxis.m_MaxSpeed = speedX;
-        freeLookCamera.m_YAxis.m_MaxSpeed = speedY;
+        if(op == true)
+        {
+            freeLookCamera.m_XAxis.m_MaxSpeed = 0;
+            freeLookCamera.m_YAxis.m_MaxSpeed = 0;
+        }
+        else
+        {
+            if(GameConfig.singleton != null)
+            {
+                freeLookCamera.m_XAxis.m_MaxSpeed = GameConfig.singleton.speedX;
+                freeLookCamera.m_YAxis.m_MaxSpeed = GameConfig.singleton.speedY;
+            }
+            else
+            {
+                freeLookCamera.m_XAxis.m_MaxSpeed = 300;
+                freeLookCamera.m_YAxis.m_MaxSpeed = 2;
+
+            }
+
+        }
+
     }//para a camera quando o jogador pausa o 
     public IEnumerator Run()
     {

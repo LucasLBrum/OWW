@@ -8,6 +8,7 @@ public class EsqueletonScene : CharacterScene
     public GameObject pointFire1;
 
     public GameObject muzzle;
+    public AudioSource source;
 
     Esqueleton esqueleton = new Esqueleton("Billy", 200, 200, 20);
 
@@ -25,12 +26,16 @@ public class EsqueletonScene : CharacterScene
         esqueleton.characterPrefab = gameObject;
         thisCharacter = esqueleton;
         anim = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();
+        source.volume = GameConfig.singleton.volumeAudios;
     }
 
     public void ShootR()
     {
+        source.volume = GameConfig.singleton.volumeAudios;
+        source.Play();
         SpawnMuzzle(pointFire);
-        Debug.DrawRay(pointFire.transform.position, pointFire.transform.forward * raycastDistanceShoot, Color.red);
+        Debug.DrawRay(pointFire.transform.position, pointFire.transform.forward * raycastDistanceShoot, Color.green);
 
         if (Physics.Raycast(pointFire.transform.position, pointFire.transform.forward, out hit, raycastDistanceShoot, mask, QueryTriggerInteraction.Collide))
         {
@@ -44,6 +49,8 @@ public class EsqueletonScene : CharacterScene
 
     public void ShootL()
     {
+        source.volume = GameConfig.singleton.volumeAudios;
+        source.Play();
         SpawnMuzzle(pointFire1);
         Debug.DrawRay(pointFire1.transform.position, pointFire1.transform.forward * raycastDistanceShoot, Color.red);
 

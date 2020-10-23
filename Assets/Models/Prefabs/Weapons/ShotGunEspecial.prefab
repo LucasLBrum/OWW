@@ -544,8 +544,8 @@ MonoBehaviour:
   typeWeapon: 1
   weaponName: shotgun
   damage: 25
-  bullets: 25
-  bulletsMax: 25
+  bullets: 8
+  bulletsMax: 8
   fireRate: 1
   shootDistance: 20
 --- !u!114 &5424022213400808166

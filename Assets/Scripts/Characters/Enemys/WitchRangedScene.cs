@@ -22,24 +22,16 @@ public class WitchRangedScene : CharacterScene
         int a = Random.Range(1, 3);
         if(a == 1)
         {
-            var potion = Instantiate(potionObjectS, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
-            this.potion = potion.GetComponent<PotionSlow>();
+            
+            var potionT = Instantiate(potionObjectS, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
+            this.potion = potionT.GetComponent<PotionSlow>();
             transform.LookAt(Player.singleton.carterScene.transform);
-            TakePotion();
         }
         else
         {
-            var potion = Instantiate(potionObjectE, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
-            this.potion = potion.GetComponent<PotionSlow>();
+            var potionT = Instantiate(potionObjectE, pivot.transform.position, Quaternion.identity, pivot.transform.parent);
+            this.potion = potionT.GetComponent<PotionSlow>();
             transform.LookAt(Player.singleton.carterScene.transform);
-            TakePotion();
-        }
-    }
-    public void TakePotion()
-    {
-        if(GetComponentInChildren<PotionSlow>() != null)
-        {
-            potion = GetComponentInChildren<PotionSlow>();
         }
     }
     public void PlayPotion()

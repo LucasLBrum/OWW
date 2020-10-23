@@ -8,12 +8,16 @@ public class PotionSlow : MonoBehaviour
 
     Rigidbody rb;
     public float speed;
+    
     private void OnCollisionEnter(Collision collision)
     {
-
-            var effect = Instantiate(slowPool, transform.position, slowPool.transform.rotation);
-            Destroy(this.gameObject);
+        if(collision.gameObject.tag == "Chão")
+        {
+            GameObject a = Instantiate(slowPool, transform.position, slowPool.transform.rotation);
+            Destroy(gameObject);
+        }
     }
+
 
     private void Start()
     {

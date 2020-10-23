@@ -6,7 +6,7 @@ public class CarterScene : CharacterScene
 {
     public GameObject carterPrefab;//prefab public do personagem para refêrenciar no script do personagem.
     public Inventory inventoryInScene;//inventario presente na cena; 
-    public Carter carter = new Carter("Carter", 100, 100, 25, 25, 0.1f);//Personagem principal
+    public Carter carter = new Carter("Carter", 100, 100, 50, 50, 0.1f);//Personagem principal
     public CarterStatus carterStatus; 
 
     private void Awake()

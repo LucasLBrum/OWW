@@ -9,6 +9,7 @@ public class CarterStatus : CharacterStatus
     public Slider staminaSlider;
     public Text staminaText;
     public Carter carter;
+    public GameObject panelDamage;
 
     
 
@@ -71,5 +72,18 @@ public class CarterStatus : CharacterStatus
     {
         carter.TakeStamina(value, 1);
         UpdateStamina();
+    }
+
+    public IEnumerator FeedBackDamage()
+    {
+        float time = 3;
+        panelDamage.SetActive(true);
+        while(time > 1)
+        {
+            yield return new WaitForSeconds(1f);
+            time--;
+        }
+        panelDamage.SetActive(false);
+        yield return null;
     }
 }

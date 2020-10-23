@@ -2589,8 +2589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   box: {fileID: 1575912278302954277, guid: ab851862cee8d8e4bb027ac24a6e7fcb, type: 3}
-  esqueleton: {fileID: 0}
-  crow: {fileID: 4547403219133214008, guid: 264b67aa157095a4193cd1f4b0c0b071, type: 3}
+  crow: {fileID: 1740070469557749985, guid: 9849c0219b6c4684686bd8d8a6d23416, type: 3}
   pivot: {fileID: 4736740902883355145}
   pivot1: {fileID: 4736740902895265855}
   pivot2: {fileID: 1865147823}
@@ -2659,9 +2658,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
   carter: {fileID: 0}
-  maxDistance: 10
-  DropItem: {fileID: 0}
+  maxDistance: 25
+  DropItem: {fileID: -927199367670048503, guid: c77e98b5f7548b64081522414847a976,
+    type: 3}
   inBattle: 0
+  outlines: []
 --- !u!1 &7218635181659760294
 GameObject:
   m_ObjectHideFlags: 0

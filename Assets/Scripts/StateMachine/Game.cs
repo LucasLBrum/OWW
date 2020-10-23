@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class Game : MonoBehaviour
 {
     public static Game singleton;
-
+    public PlayerMovement movement;
     public Catavento catavento;
     public ShootRaycast shootRay;
     public StateMachine m_StateMachine = new StateMachine();
@@ -23,7 +23,7 @@ public class Game : MonoBehaviour
     public GameObject boxTalk;
     public Text talkText;
     public EnemyMovement[] enemys;
-
+    public GameObject winPanel;
 
 
     //Estados do sistema
@@ -35,6 +35,8 @@ public class Game : MonoBehaviour
     public LoadState loadState;
     public TalkingState estadoFalando;
     public MarketState estadoComprando;
+    public WinState estadoFim;
+    public Cutscene EstadoCutscene;
 
 
     private void Awake()
@@ -53,6 +55,8 @@ public class Game : MonoBehaviour
     void Start()
     {
         estadoJogando = new Playing("Jogando");
+        estadoFim = new WinState("ganhou");
+        EstadoCutscene = new Cutscene("cutscene");
         estadoPausado = new Paused("Pausado");
         inventoryState = new InventoryState("Inventario Aberto");
         loadState = new LoadState("carregando");
@@ -62,8 +66,9 @@ public class Game : MonoBehaviour
 
         estadoJogando.enemys = enemys;
 
-
-        m_StateMachine.ChangeState(estadoJogando);
+        movement = Player.singleton.carterScene.GetComponent<PlayerMovement>();
+        estadoJogando.movement = movement;
+        EstadoCutscene.EnterState();
     }
 
     // Update is called once per frame

@@ -10,7 +10,7 @@ public class Playing : State
     }
 
     public CarterScene carter = Player.singleton.carterScene;
-    public PlayerMovement movement = Player.singleton.carterScene.GetComponent<PlayerMovement>();
+    public PlayerMovement movement;
     public ShootRaycast shootRay = Game.singleton.shootRay;
     public Catavento catavento = Game.singleton.catavento;
     public ShootProject weaponShoot;
@@ -54,11 +54,12 @@ public class Playing : State
 
     public override void EnterState()
     {
+
         UnityEngine.Cursor.visible = false;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         Game.singleton.pauseGameObject.SetActive(false);
         Game.singleton.m_StateMachine.ChangeState(Game.singleton.estadoJogando);
-        Player.singleton.carterScene.GetComponent<PlayerMovement>().StopCamera(2, 300);
+        movement.StopCamera(false);
         if(enemys != null)
         {
             for (int i = 0; i < enemys.Length; i++)

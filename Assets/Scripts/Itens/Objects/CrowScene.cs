@@ -9,7 +9,7 @@ public class CrowScene : CharacterScene
     public WitchNecromancerScene witch;
     public bool follow = true;
     public float speed = 1;
-
+    public GameObject player;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -18,15 +18,19 @@ public class CrowScene : CharacterScene
     {
         crow.characterPrefab = gameObject;
         thisCharacter = crow;
+        player = Player.singleton.carterScene.gameObject;
     }
     private void Start()
     {
-        transform.LookAt(Player.singleton.carterScene.inventoryInScene.transform.position);
+        GetComponent<AudioSource>().volume = GameConfig.singleton.volumeAudios;
+        GetComponent<AudioSource>().Play();
+        Destroy(gameObject, 10f);
     }
     private void Update()
     {
         if(follow == true)
         {
+            transform.LookAt(player.transform.position);
             transform.position += transform.forward * speed; 
         }
     }

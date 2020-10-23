@@ -20,7 +20,7 @@ public class ShootProject : MonoBehaviour
 
     private void Start()
     {
-        crosshairAnim = Player.singleton.crosshair.GetComponent<Animator>();
+        crosshairAnim = Player.singleton.crossHairAnim;
         source = GetComponent<AudioSource>();
         weaponScene = GetComponent<WeaponInScene>();
         shootRaycast = Camera.main.GetComponent<ShootRaycast>();//componente que controla os raycasts
